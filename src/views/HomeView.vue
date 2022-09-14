@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import HeaderPage from '../components/HeaderPage.vue';
+import ExplorePage from '../components/ExplorePage.vue';
+import HigherPage from '../components/HigherPage.vue';
+import FeaturesPage from '../components/FeaturesPage.vue';
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <HeaderPage/>
+  <ExplorePage/>
+  <HigherPage/>
+  <FeaturesPage />
 </template>
