@@ -148,7 +148,7 @@ export default {
   margin: 0 auto;
 }
 .dapp-title {
-  margin-top: 120px;
+  margin-top: 80px;
   font-size: 48px;
   color: #000000;
   line-height: 48px;
@@ -161,7 +161,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin-top: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .dapp-table{
   display: flex;

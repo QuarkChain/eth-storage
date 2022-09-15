@@ -23,7 +23,7 @@
 }
 
 .explore-title {
-  margin-top: 120px;
+  margin-top: 80px;
   font-size: 48px;
   color: #000000;
   line-height: 48px;
@@ -33,6 +33,6 @@
 .explore-img {
   width: 880px;
   margin-top: 80px;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 </style>

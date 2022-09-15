@@ -47,7 +47,7 @@
   margin: 0 auto;
 }
 .feature-title {
-  margin-top: 120px;
+  margin-top: 80px;
   font-size: 48px;
   color: #000000;
   line-height: 48px;
@@ -99,6 +99,6 @@
 .feature-img {
   width: 1200px;
   margin-top: 40px;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 </style>

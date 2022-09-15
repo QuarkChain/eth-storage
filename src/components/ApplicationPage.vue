@@ -36,7 +36,7 @@
   margin: 0 auto;
 }
 .application-title {
-  margin-top: 120px;
+  margin-top: 80px;
   font-size: 48px;
   color: #000000;
   line-height: 60px;
@@ -50,7 +50,7 @@
   align-items: flex-start;
   width: 1200px;
   margin-top: 80px;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .application-context-item {
