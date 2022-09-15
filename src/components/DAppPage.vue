@@ -23,7 +23,7 @@
             <div class="dapp-item-link">web3://w3mail.w3q/</div>
           </div>
         </div>
-        <div class="dapp-table" style="margin-top: 25px">
+        <div class="dapp-table" style="margin-top: 40px">
           <div class="dapp-item" @click="goW3box">
             <img class="dapp-item-img" src="@/assets/w3box.png"/>
             <div class="dapp-item-title">W3Box</div>
@@ -148,10 +148,10 @@ export default {
   margin: 0 auto;
 }
 .dapp-title {
-  margin-top: 70px;
-  font-size: 30px;
+  margin-top: 120px;
+  font-size: 48px;
   color: #000000;
-  line-height: 38px;
+  line-height: 48px;
   font-family: AlibabaPuHuiTiB;
 }
 
@@ -160,8 +160,8 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 75px;
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
 .dapp-table{
   display: flex;
@@ -174,13 +174,13 @@ export default {
   justify-content: start;
   align-items: start;
   cursor: pointer;
-  width: 250px;
-  height: 220px;
+  width: 360px;
+  height: 320px;
   background: #FFFFFF;
   box-shadow: 0 0 30px 0 rgba(0,0,0,0.0500);
   border-radius: 20px;
-  padding: 20px 20px 0;
-  margin: 0 15px;
+  padding: 20px 30px 0;
+  margin: 0 20px;
 }
 .dapp-item:hover {
   background: #F6F9FC;
@@ -188,29 +188,28 @@ export default {
 }
 .dapp-item-img {
   margin-top: -10px;
-  margin-left: -10px;
-  width: 50px;
+  margin-left: -15px;
+  width: 80px;
 }
 .dapp-item-title {
-  font-size: 11px;
+  font-size: 18px;
   color: #000000;
-  line-height: 16px;
+  line-height: 25px;
   margin-top: 5px;
   font-family: AlibabaPuHuiTiB;
 }
 .dapp-item-message {
-  color: #333333;
-  margin-top: 5px;
-  font-size: 10px;
-  line-height: 19px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 30px;
   text-align: left;
-  font-weight: normal;
+  margin-top: 5px;
   font-family: AlibabaPuHuiTiR;
 }
 .dapp-item-link {
-  font-size: 10px;
+  font-size: 16px;
   color: #1B60FF;
-  line-height: 14px;
+  line-height: 22px;
   margin-top: auto;
   margin-bottom: 20px;
   font-family: AlibabaPuHuiTiR;

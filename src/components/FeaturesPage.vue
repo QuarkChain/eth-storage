@@ -47,11 +47,10 @@
   margin: 0 auto;
 }
 .feature-title {
-  margin-top: 70px;
-  font-size: 30px;
+  margin-top: 120px;
+  font-size: 48px;
   color: #000000;
-  line-height: 30px;
-  margin-bottom: 15px;
+  line-height: 48px;
   font-family: AlibabaPuHuiTiB;
 }
 
@@ -60,46 +59,46 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  width: 750px;
-  margin-top: 30px;
+  width: 100%;
+  margin-top: 75px;
 }
 .feature-context-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 270px;
+  max-width: 430px;
 }
 .feature-context-image {
-  width: 45px;
-  height: 45px;
+  width: 75px;
+  height: 75px;
 }
 .feature-context-title {
   margin-top: 6px;
-  font-size: 13px;
+  font-size: 20px;
   color: #000000;
-  line-height: 17px;
+  line-height: 27px;
   font-family: AlibabaPuHuiTiB;
 }
 .feature-context-message {
   margin-top: 6px;
-  font-size: 10px;
+  font-size: 16px;
   color: #000000;
-  line-height: 19px;
+  line-height: 30px;
   text-align: left;
   font-family: AlibabaPuHuiTiR;
 }
 
 .feature-message {
-  font-size: 19px;
+  font-size: 30px;
   color: #000000;
-  line-height: 19px;
-  margin-top: 50px;
+  line-height: 30px;
+  margin-top: 80px;
   font-family: AlibabaPuHuiTiR;
 }
 .feature-img {
-  width: 750px;
-  margin-top: 25px;
-  margin-bottom: 75px;
+  width: 1200px;
+  margin-top: 40px;
+  margin-bottom: 120px;
 }
 </style>

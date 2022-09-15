@@ -22,8 +22,8 @@
 .footer {
   padding-top: 20px !important;
   padding-bottom: 20px !important;
-  background-color: transparent !important;
-  height: 75px;
+  background: white;
+  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@
   vertical-align: middle;
 }
 .footer-img {
-  width: 25px;
-  height: 25px;
+  width: 36px;
+  height: 36px;
 }
 </style>

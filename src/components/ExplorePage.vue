@@ -19,20 +19,20 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background: radial-gradient(circle, #F4FAFF 28%, #FFFFFF 50%, #FFFFFF);
+  background: radial-gradient(circle, #F4FAFF 28%, #FFFFFF 70%, #FFFFFF);
 }
 
 .explore-title {
-  margin-top: 70px;
-  font-size: 30px;
+  margin-top: 120px;
+  font-size: 48px;
   color: #000000;
-  line-height: 30px;
+  line-height: 48px;
   font-family: AlibabaPuHuiTiB;
 }
 
 .explore-img {
-  width: 500px;
-  margin-top: 50px;
-  margin-bottom: 75px;
+  width: 880px;
+  margin-top: 80px;
+  margin-bottom: 120px;
 }
 </style>

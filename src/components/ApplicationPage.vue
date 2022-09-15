@@ -24,7 +24,7 @@
 
 <style scoped>
 .home {
-  background: #FFFFFF;
+  background: #FBFBFB;
 }
 
 .application {
@@ -36,21 +36,21 @@
   margin: 0 auto;
 }
 .application-title {
-  margin-top: 70px;
-  font-size: 30px;
+  margin-top: 120px;
+  font-size: 48px;
   color: #000000;
-  line-height: 38px;
+  line-height: 60px;
   font-family: AlibabaPuHuiTiB;
 }
 
 .application-context {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
-  width: 750px;
-  margin-top: 50px;
-  margin-bottom: 65px;
+  width: 1200px;
+  margin-top: 80px;
+  margin-bottom: 120px;
 }
 
 .application-context-item {
@@ -58,25 +58,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 345px;
 }
 .application-context-title {
-  margin-top: 18px;
-  font-size: 11px;
+  margin-top: 40px;
+  font-size: 18px;
   color: #000000;
-  line-height: 20px;
+  line-height: 32px;
   font-family: AlibabaPuHuiTiB;
 }
 .application-context-message {
   margin-top: 3px;
-  font-size: 10px;
+  font-size: 16px;
   color: #000000;
-  line-height: 19px;
+  line-height: 25px;
   text-align: left;
   font-family: AlibabaPuHuiTiR;
 }
 
 .application-image {
-  width: 300px;
+  width: 475px;
 }
 </style>
