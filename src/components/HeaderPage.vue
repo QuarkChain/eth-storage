@@ -43,7 +43,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 .header-title1 {
@@ -52,6 +52,7 @@
   font-weight: normal;
   color: #000000;
   line-height: 80px;
+  margin-top: -50px;
   font-family: AlibabaPuHuiTiH;
 }
 .header-title2 {
@@ -67,6 +68,6 @@
 }
 .header-logo {
   width: 550px;
-  margin-left: -20px;
+  margin-left: -40px;
 }
 </style>
