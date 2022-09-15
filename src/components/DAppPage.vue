@@ -85,25 +85,25 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "DAppPage",
-  data: () => {
-    return {
-      fullWidth: document.documentElement.clientWidth
-    };
-  },
-  computed:{
-    isMobile() {
-      return this.fullWidth <= 420;
-    },
-  },
+  // data: () => {
+  //   return {
+  //     fullWidth: document.documentElement.clientWidth
+  //   };
+  // },
+  // computed:{
+  //   isMobile() {
+  //     return this.fullWidth <= 420;
+  //   },
+  // },
   methods: {
-    handleResize() {
-      this.fullWidth = document.documentElement.clientWidth;
-      console.log(this.fullWidth);
-    },
-    openUrl(url) {
+    // handleResize() {
+    //   this.fullWidth = document.documentElement.clientWidth;
+    //   console.log(this.fullWidth);
+    // },
+    openUrl(url: string) {
       window.open(url, "_blank");
       //_blank : 在新窗口打开
       //_self : 在当前窗口打开
@@ -125,12 +125,12 @@ export default {
       this.openUrl("https://web3q.io/w3drive.w3q/");
     },
   },
-  created() {
-    window.addEventListener('resize', this.handleResize);
-  },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.handleResize);
-  },
+  // created() {
+  //   window.addEventListener('resize', this.handleResize);
+  // },
+  // beforeDestroy() {
+  //   window.removeEventListener('resize', this.handleResize);
+  // },
 };
 </script>
 
