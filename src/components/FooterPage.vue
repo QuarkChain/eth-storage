@@ -39,4 +39,16 @@
   width: 36px;
   height: 36px;
 }
+
+@media screen and (max-width: 420px) {
+  .footer {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 56px;
+  }
+  .footer-img {
+    width: 25px;
+    height: 25px;
+  }
+}
 </style>

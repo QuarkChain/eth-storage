@@ -5,7 +5,7 @@ html, body, #app {
 }
 
 #app {
-  max-width: 100%;
+  width: 100%;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -35,4 +35,23 @@
   margin-top: 80px;
   margin-bottom: 80px;
 }
+
+@media screen and (max-width: 420px) {
+  .explore {
+    max-width: 100%;
+  }
+
+  .explore-title {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .explore-img {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    content: url("../assets/explore-phone.png");
+  }
+}
 </style>

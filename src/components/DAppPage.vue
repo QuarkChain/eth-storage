@@ -23,7 +23,7 @@
             <div class="dapp-item-link">web3://w3mail.w3q/</div>
           </div>
         </div>
-        <div class="dapp-table" style="margin-top: 40px">
+        <div class="dapp-table dapp-table-mg-top">
           <div class="dapp-item" @click="goW3box">
             <img class="dapp-item-img" src="@/assets/w3box.png"/>
             <div class="dapp-item-title">W3Box</div>
@@ -38,49 +38,6 @@
           </div>
         </div>
       </div>
-
-<!--      <el-col v-else class="dapp-table-margin">-->
-<!--        <div class="dapp-item" @click="goTutorial">-->
-<!--          <img class="dapp-item-img" src="../assets/web.png"/>-->
-<!--          <div class="dapp-item-title">dWeb Launcher</div>-->
-<!--          <div class="dapp-item-message">Launch your own dWeb on Web3Q in 5 mins.</div>-->
-<!--          <div class="dapp-item-link">web3://home.w3q/#/tutorial</div>-->
-<!--        </div>-->
-<!--        <div class="dapp-item" @click="goBlog">-->
-<!--          <img class="dapp-item-img" src="../assets/deblog.png"/>-->
-<!--          <div class="dapp-item-title">Web3Q dBlog</div>-->
-<!--          <div class="dapp-item-message">Fully decentralized blog platform. The frontend and contents are all deployed-->
-<!--            on Web3Q.-->
-<!--          </div>-->
-<!--          <div class="dapp-item-link">web3://home.w3q/#/blog</div>-->
-<!--        </div>-->
-<!--        <div class="dapp-item" @click="goRbot">-->
-<!--          <img class="dapp-item-img" src="../assets/qrbot.png"/>-->
-<!--          <div class="dapp-item-title">Web3 QRobot</div>-->
-<!--          <div class="dapp-item-message">An NFT collection of cute robots that can be minted freely. All the metadata-->
-<!--            including the images are deployed on Web3Q.-->
-<!--          </div>-->
-<!--          <div class="dapp-item-link">web3://qrobot.w3q/</div>-->
-<!--        </div>-->
-<!--        <div class="dapp-item" @click="goW3ns">-->
-<!--          <img class="dapp-item-img" src="../assets/w3ns.png"/>-->
-<!--          <div class="dapp-item-title">W3NS</div>-->
-<!--          <div class="dapp-item-message">The name service on Web3Q.</div>-->
-<!--          <div class="dapp-item-link">web3://w3ns.w3q/</div>-->
-<!--        </div>-->
-<!--        <div class="dapp-item" @click="goW3box">-->
-<!--          <img class="dapp-item-img" src="../assets/w3box.png"/>-->
-<!--          <div class="dapp-item-title">W3BOX</div>-->
-<!--          <div class="dapp-item-message">The file hosting service on Web3Q.</div>-->
-<!--          <div class="dapp-item-link">web3://w3box.w3q/</div>-->
-<!--        </div>-->
-<!--        <div class="dapp-item" @click="goW3drive">-->
-<!--          <img class="dapp-item-img" src="../assets/w3drive.png"/>-->
-<!--          <div class="dapp-item-title">W3Drive</div>-->
-<!--          <div class="dapp-item-message">Your Private Hard Drive on Blockchain.</div>-->
-<!--          <div class="dapp-item-link">web3://w3drive.w3q/</div>-->
-<!--        </div>-->
-<!--      </el-col>-->
     </div>
   </div>
 </template>
@@ -88,21 +45,7 @@
 <script lang="ts">
 export default {
   name: "DAppPage",
-  // data: () => {
-  //   return {
-  //     fullWidth: document.documentElement.clientWidth
-  //   };
-  // },
-  // computed:{
-  //   isMobile() {
-  //     return this.fullWidth <= 420;
-  //   },
-  // },
   methods: {
-    // handleResize() {
-    //   this.fullWidth = document.documentElement.clientWidth;
-    //   console.log(this.fullWidth);
-    // },
     openUrl(url: string) {
       window.open(url, "_blank");
       //_blank : 在新窗口打开
@@ -125,12 +68,6 @@ export default {
       this.openUrl("https://web3q.io/w3drive.w3q/");
     },
   },
-  // created() {
-  //   window.addEventListener('resize', this.handleResize);
-  // },
-  // beforeDestroy() {
-  //   window.removeEventListener('resize', this.handleResize);
-  // },
 };
 </script>
 
@@ -158,7 +95,7 @@ export default {
 .dapp-table-margin{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   margin-top: 80px;
   margin-bottom: 60px;
@@ -167,6 +104,9 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.dapp-table-mg-top {
+  margin-top: 40px;
 }
 .dapp-item {
   display: flex;
@@ -213,5 +153,59 @@ export default {
   margin-top: auto;
   margin-bottom: 20px;
   font-family: AlibabaPuHuiTiR;
+}
+
+
+@media screen and (max-width: 420px) {
+  .dapp {
+    max-width: 100%;
+  }
+  .dapp-title {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .dapp-table-margin{
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .dapp-table{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .dapp-table-mg-top {
+    margin-top: 0;
+  }
+  .dapp-item {
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 200px;
+    border-radius: 11px;
+    padding: 11px 15px 0;
+    margin: 20px 0 0;
+  }
+  .dapp-item-img {
+    margin-top: 0;
+    margin-left: 0;
+    width: 45px;
+  }
+  .dapp-item-title {
+    font-size: 13px;
+    line-height: 13px;
+    margin-top: 7px;
+  }
+  .dapp-item-message {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 7px;
+  }
+  .dapp-item-link {
+    font-size: 11px;
+    line-height: 11px;
+  }
 }
 </style>

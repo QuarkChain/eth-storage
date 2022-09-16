@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import DocumentationIcon from './IconHeaderLogo.vue';
 </script>
 
@@ -69,5 +69,40 @@ import DocumentationIcon from './IconHeaderLogo.vue';
 }
 .header-logo {
   width: 650px;
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+    max-width: 100%;
+  }
+  .logo-icon {
+    margin: 15px 0 0 5px;
+    height: 40px;
+  }
+
+  .header {
+    background-size: 90% auto;
+  }
+
+  .header-content {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .header-title1 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: -40px;
+  }
+  .header-title2 {
+    border-radius: 35px;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 8px 10px;
+  }
+  .header-logo {
+    width: 150px;
+    height: 160px;
+  }
 }
 </style>

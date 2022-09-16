@@ -78,4 +78,44 @@
 .application-image {
   width: 475px;
 }
+
+@media screen and (max-width: 420px) {
+  .application {
+    max-width: 100%;
+  }
+  .application-title {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .application-context {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .application-context-item {
+    align-items: center;
+  }
+  .application-context-title {
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .application-context-message {
+    margin-top: 3px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .application-image {
+    width: 260px;
+  }
+}
 </style>

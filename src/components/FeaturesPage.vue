@@ -101,4 +101,57 @@
   margin-top: 40px;
   margin-bottom: 80px;
 }
+
+@media screen and (max-width: 420px) {
+  .feature {
+    max-width: 100%;
+  }
+  .feature-title {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .feature-context {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-top: 0px;
+  }
+  .feature-context-item {
+    align-items: center;
+    max-width: 90%;
+    margin-top: 30px;
+  }
+  .feature-context-image {
+    width: 50px;
+    height: 50px;
+  }
+  .feature-context-title {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .feature-context-message {
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .feature-message {
+    font-size: 13px;
+    line-height: 17px;
+    margin-top: 45px;
+    font-family: AlibabaPuHuiTiB;
+  }
+  .feature-img {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    content: url("../assets/feature-phone.png");
+  }
+}
 </style>
