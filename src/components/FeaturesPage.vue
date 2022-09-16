@@ -16,12 +16,12 @@
       </div>
       <div class="feature-context">
         <div class="feature-context-item">
-          <img class="feature-context-image" src="@/assets/feature-icon2.png" />
+          <img class="feature-context-image" src="@/assets/feature-icon3.png" />
           <span class="feature-context-title">Data composability</span>
           <span class="feature-context-message">It does not only maintain the composability relationship of the contents in contracts, but also the client-side and server-side rendering.</span>
         </div>
         <div class="feature-context-item">
-          <img class="feature-context-image" src="@/assets/feature-icon3.png" />
+          <img class="feature-context-image" src="@/assets/feature-icon4.png" />
           <span class="feature-context-title">Data Availability</span>
           <span class="feature-context-message">Leverage Danksharding's data availability technology to get higher upload bandwidth and lower cost.</span>
         </div>
