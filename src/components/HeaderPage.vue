@@ -1,3 +1,7 @@
+<script setup>
+import DocumentationIcon from './IconHeaderLogo.vue';
+</script>
+
 <template>
   <div class="home">
     <div class="logo">
@@ -9,7 +13,7 @@
           <p class="header-title1">Scaling Storage</p>
           <p class="header-title2">of The World Computer</p>
         </div>
-        <img class="header-logo" src="@/assets/header-logo.png" alt="header logo">
+        <DocumentationIcon class="header-logo"/>
       </div>
     </div>
   </div>
