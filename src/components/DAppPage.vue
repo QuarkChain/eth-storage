@@ -6,20 +6,20 @@
         <div class="dapp-table">
           <div class="dapp-item" @click="goBlog">
             <img class="dapp-item-img" src="@/assets/deblog.png"/>
-            <div class="dapp-item-title">Web3Q dBlog</div>
-            <div class="dapp-item-message">Fully decentralized blog platform. The frontend and contents are all deployed on Web3Q.</div>
-            <div class="dapp-item-link">web3://home.w3q/#/blog</div>
+            <div class="dapp-item-title">W3Blog</div>
+            <div class="dapp-item-message">Fully decentralized blog platform. The frontend and contents are all deployed on EthStorage.</div>
+            <div class="dapp-item-link">web3://blog.w3q/</div>
           </div>
           <div class="dapp-item" @click="goRbot">
             <img class="dapp-item-img" src="@/assets/qrbot.png"/>
             <div class="dapp-item-title">Web3 QRobot</div>
-            <div class="dapp-item-message">An NFT collection of cute robots that can beminted freely. All the metadata including the images are deployed on Web3Q blockchain.</div>
+            <div class="dapp-item-message">An NFT collection of cute robots that can be minted freely. All the metadata including the images are deployed on EthStorage.</div>
             <div class="dapp-item-link">web3://qrobot.w3q/</div>
           </div>
           <div class="dapp-item" @click="goW3mail">
             <img class="dapp-item-img" src="@/assets/w3mail.png"/>
             <div class="dapp-item-title">W3Mail</div>
-            <div class="dapp-item-message">Fully decentralized email service on Web3Q.</div>
+            <div class="dapp-item-message">Fully decentralized email service on EthStorage.</div>
             <div class="dapp-item-link">web3://w3mail.w3q/</div>
           </div>
         </div>
@@ -27,13 +27,13 @@
           <div class="dapp-item" @click="goW3box">
             <img class="dapp-item-img" src="@/assets/w3box.png"/>
             <div class="dapp-item-title">W3Box</div>
-            <div class="dapp-item-message">The file hosting service on Web3Q.</div>
+            <div class="dapp-item-message">The file hosting service on EthStorage.</div>
             <div class="dapp-item-link">web3://w3box.w3q/</div>
           </div>
           <div class="dapp-item" @click="goW3drive">
             <img class="dapp-item-img" src="@/assets/w3drive.png"/>
             <div class="dapp-item-title">W3Drive</div>
-            <div class="dapp-item-message">Your Private Hard Drive on Blockchain.</div>
+            <div class="dapp-item-message">Your Private Hard Drive on EthStorage.</div>
             <div class="dapp-item-link">web3://w3drive.w3q/</div>
           </div>
         </div>
