@@ -182,7 +182,7 @@ export default {
     flex-direction: column;
     align-items: center;
     width: 350px;
-    height: 200px;
+    height: 220px;
     border-radius: 11px;
     padding: 11px 15px 0;
     margin: 20px 0 0;
@@ -194,12 +194,12 @@ export default {
   }
   .dapp-item-title {
     font-size: 13px;
-    line-height: 13px;
+    line-height: 15px;
     margin-top: 7px;
   }
   .dapp-item-message {
     font-size: 13px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     margin-top: 7px;
   }

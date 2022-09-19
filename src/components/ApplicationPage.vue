@@ -86,7 +86,7 @@
   .application-title {
     margin-top: 40px;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 25px;
   }
 
   .application-context {
@@ -104,7 +104,7 @@
   }
   .application-context-title {
     margin-top: 20px;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 20px;
   }
   .application-context-message {
