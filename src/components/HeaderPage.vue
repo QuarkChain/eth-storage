@@ -76,17 +76,18 @@ import DocumentationIcon from './IconHeaderLogo.vue';
     max-width: 100%;
   }
   .logo-icon {
-    margin: 15px 0 0 5px;
+    margin: 15px 0 0 12px;
     height: 40px;
   }
 
   .header {
-    background-size: 90% auto;
+    background-size: 100% auto;
   }
 
   .header-content {
-    padding-top: 20px;
-    padding-bottom: 40px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 10px 40px 20px;
   }
   .header-title1 {
     font-size: 25px;
