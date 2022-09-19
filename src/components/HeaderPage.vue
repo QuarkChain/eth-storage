@@ -73,10 +73,10 @@ import DocumentationIcon from './IconHeaderLogo.vue';
 
 @media screen and (max-width: 420px) {
   .logo {
-    max-width: 100%;
+    width: 353px;
   }
   .logo-icon {
-    margin: 15px 0 0 12px;
+    margin: 15px 0 0 -10px;
     height: 40px;
   }
 
@@ -85,9 +85,11 @@ import DocumentationIcon from './IconHeaderLogo.vue';
   }
 
   .header-content {
-    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 353px;
     justify-content: space-between;
-    padding: 20px 10px 40px 20px;
+    margin: 0 auto;
   }
   .header-title1 {
     font-size: 25px;
