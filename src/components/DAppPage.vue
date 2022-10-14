@@ -4,6 +4,26 @@
       <p class="dapp-title">Live dApps on Testnet</p>
       <div class="dapp-table-margin">
         <div class="dapp-table">
+          <div class="dapp-item" @click="goUni">
+            <img class="dapp-item-img" src="@/assets/uni.png"/>
+            <div class="dapp-item-title">Uniswap</div>
+            <div class="dapp-item-message">Uniswap's frontend hosted by EthStorage.</div>
+            <div class="dapp-item-link">web3://app-uniswap-org.eth/</div>
+          </div>
+          <div class="dapp-item" @click="goEns">
+            <img class="dapp-item-img" src="@/assets/ens.png"/>
+            <div class="dapp-item-title">ENS</div>
+            <div class="dapp-item-message">ENS's frontend hosted by EthStorage.</div>
+            <div class="dapp-item-link">web3://app-ens-domain.eth/</div>
+          </div>
+          <div class="dapp-item" @click="goVblog">
+            <img class="dapp-item-img" src="@/assets/vblog.png"/>
+            <div class="dapp-item-title">Vitalik's Blog</div>
+            <div class="dapp-item-message">Vitalik's blog hosted by EthStorage.</div>
+            <div class="dapp-item-link">web3://vitalikblog.eth/</div>
+          </div>
+        </div>
+        <div class="dapp-table dapp-table-mg-top">
           <div class="dapp-item" @click="goBlog">
             <img class="dapp-item-img" src="@/assets/deblog.png"/>
             <div class="dapp-item-title">W3Blog</div>
@@ -67,6 +87,15 @@ export default {
     goW3drive(){
       this.openUrl("https://web3q.io/w3drive.w3q/");
     },
+    goUni() {
+      this.openUrl("https://web3q.io/app-uniswap-org.eth/");
+    },
+    goEns() {
+      this.openUrl("https://web3q.io/app-ens-domain.eth/");
+    },
+    goVblog() {
+      this.openUrl("https://web3q.io/vitalikblog.eth/");
+    }
   },
 };
 </script>
