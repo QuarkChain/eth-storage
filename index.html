@@ -23,8 +23,8 @@
             const recalCulate = function() {
                 let docEle = document.documentElement,
                     w = docEle.clientWidth,
-                    num = (w > 1080 ? 1080 : w) / 1080
-                const w3qSize = (num * 15).toFixed(1) + 'px'
+                    num = w > 1080 ? 15 : 11;
+                const w3qSize = num + 'px'
                 const w3q = document.getElementById('w3q')
                 w3q.setAttribute('fontSize', w3qSize)
             }
