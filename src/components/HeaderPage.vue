@@ -4,9 +4,21 @@ import DocumentationIcon from './IconHeaderLogo.vue';
 
 <template>
   <div class="home">
-    <div class="logo">
-      <img class="logo-icon" src="@/assets/logo.png" alt="logo">
-    </div>
+    <t-head-menu class="navbar" expand-type="popup">
+      <template #logo>
+        <img class="navbar-icon" src="@/assets/logo.png" alt="logo">
+      </template>
+      <template #operations>
+        <a class="navbar-item" href="https://galileo.web3q.io/faucet.w3q/" target="_blank">Faucet</a>
+        <a class="navbar-item" href="https://docs.web3q.io" target="_blank">Technology</a>
+        <t-submenu class="navbar-item" value="0" title="Community">
+          <t-menu-item value="1" href="https://twitter.com/EthStorage" target="_blank">Twitter</t-menu-item>
+          <t-menu-item value="2" href="https://discord.gg/mZqqUZxjed" target="_blank">Discord</t-menu-item>
+          <t-menu-item value="3" href="https://t.me/ethstorage" target="_blank">Telegram</t-menu-item>
+        </t-submenu>
+        <a class="navbar-item" href="https://github.com/ethstorage" target="_blank">Developer</a>
+      </template>
+    </t-head-menu>
     <div class="header">
       <div class="header-content">
         <div>
@@ -22,17 +34,28 @@ import DocumentationIcon from './IconHeaderLogo.vue';
 <style scoped>
 .home {
   background: linear-gradient(91deg, #DAE3EB 0%, #EEF2FF 100%);
+  padding-top: 20px;
 }
 
-.logo {
+.navbar {
   max-width: 1340px;
-  display: flex;
-  flex-direction: row;
   margin: 0 auto;
+  background: transparent;
 }
-.logo-icon {
-  margin: 20px -30px 0;
-  height: 100px;
+.navbar-icon {
+  height: 90px;
+}
+.navbar-item {
+  color: #000000 !important;
+  padding: 0 1rem;
+  font-size: 17px;
+  font-family: AlibabaPuHuiTiR;
+}
+a.navbar-item:focus-within,
+a.navbar-item:hover,
+a.navbar-item.is-active {
+  color: rgba(0, 0, 0, 0.5) !important;
+  background-color: transparent !important;
 }
 
 .header {
@@ -72,18 +95,25 @@ import DocumentationIcon from './IconHeaderLogo.vue';
 }
 
 @media screen and (max-width: 420px) {
-  .logo {
-    width: 353px;
+  .home {
+    padding-top: 15px;
   }
-  .logo-icon {
-    margin: 15px 0 0 -10px;
+
+  .navbar {
+    max-width: 96%;
+  }
+  .navbar-icon {
     height: 40px;
   }
+  .navbar-item {
+    padding: 0 4px;
+    font-size: 9px;
+  }
+
 
   .header {
     background-size: 100% auto;
   }
-
   .header-content {
     padding-top: 20px;
     padding-bottom: 40px;
@@ -106,6 +136,46 @@ import DocumentationIcon from './IconHeaderLogo.vue';
   .header-logo {
     width: 150px;
     height: 160px;
+  }
+}
+</style>
+
+<style>
+.t-head-menu__inner {
+  height: 90px !important;
+}
+.t-menu__operations {
+  height: 90px !important;
+  line-height: 90px !important;
+}
+
+.t-menu__item.t-is-active,
+.t-menu__item,
+.t-menu__item-link {
+  color: #000000 !important;
+  background-color: transparent !important;
+}
+.t-menu__item:focus-within,
+.t-menu__item:hover,
+.t-menu__item-link:hover {
+  color: rgba(0, 0, 0, 0.5) !important;
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 420px) {
+  .t-head-menu__inner {
+    height: 40px !important;
+  }
+  .t-menu__operations {
+    height: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .t-menu__item {
+    min-width: inherit !important;
+  }
+  .t-fake-arrow {
+    margin-left: 3px !important;
   }
 }
 </style>

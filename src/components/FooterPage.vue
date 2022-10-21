@@ -1,15 +1,15 @@
 <template>
   <div class="footer">
-    <a href="https://github.com/web3q" target="_blank">
+    <a href="https://github.com/ethstorage/" target="_blank">
       <img class="footer-img" src="@/assets/github.png">
     </a>
-    <a href="https://twitter.com/Web3Q_io" target="_blank">
+    <a href="https://twitter.com/EthStorage" target="_blank">
       <img class="footer-img" src="@/assets/twiter.png">
     </a>
-    <a href="https://medium.com/@Web3Q_io" target="_blank">
+    <a href="https://ethstorage.medium.com/" target="_blank">
       <img class="footer-img" src="@/assets/medium.png">
     </a>
-    <a href="https://t.me/Web3Q" target="_blank">
+    <a href="https://t.me/ethstorage" target="_blank">
       <img class="footer-img" src="@/assets/telegram.png">
     </a>
     <a href="https://discord.gg/mZqqUZxjed" target="_blank">
