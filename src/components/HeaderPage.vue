@@ -7,10 +7,11 @@ import DocumentationIcon from './IconHeaderLogo.vue';
     <t-head-menu class="navbar" expand-type="popup">
       <template #logo>
         <img class="navbar-icon" src="@/assets/logo.png" alt="logo">
+        <div class="navbar-text">EthStorage</div>
       </template>
       <template #operations>
-        <a class="navbar-item" href="https://galileo.web3q.io/faucet.w3q/" target="_blank">Faucet</a>
-        <a class="navbar-item" href="https://docs.web3q.io" target="_blank">Technology</a>
+        <a class="navbar-item" href="https://web3q.io/faucet.w3q/" target="_blank">Faucet</a>
+        <a class="navbar-item" href="https://web3q.io/file.w3q/0x67d0481cc9c2e9dad2987e58a365aae977dcb8da/dynamic_data_sharding_v0_1_4" target="_blank">Technology</a>
         <t-submenu class="navbar-item" value="0" title="Community">
           <t-menu-item value="1" href="https://twitter.com/EthStorage" target="_blank">Twitter</t-menu-item>
           <t-menu-item value="2" href="https://discord.gg/mZqqUZxjed" target="_blank">Discord</t-menu-item>
@@ -43,7 +44,13 @@ import DocumentationIcon from './IconHeaderLogo.vue';
   background: transparent;
 }
 .navbar-icon {
-  height: 90px;
+  height: 50px;
+}
+.navbar-text {
+  font-size: 23px;
+  margin-left: 15px;
+  color: #000000 !important;
+  font-family: AlibabaPuHuiTiB;
 }
 .navbar-item {
   color: #000000 !important;
@@ -100,10 +107,14 @@ a.navbar-item.is-active {
   }
 
   .navbar {
-    max-width: 96%;
+    max-width: 95%;
   }
   .navbar-icon {
-    height: 40px;
+    height: 25px;
+  }
+  .navbar-text {
+    font-size: 14px;
+    margin-left: 8px;
   }
   .navbar-item {
     padding: 0 4px;
@@ -142,11 +153,11 @@ a.navbar-item.is-active {
 
 <style>
 .t-head-menu__inner {
-  height: 90px !important;
+  height: 30px !important;
 }
 .t-menu__operations {
-  height: 90px !important;
-  line-height: 90px !important;
+  height: 30px !important;
+  line-height: 30px !important;
 }
 
 .t-menu__item.t-is-active,
