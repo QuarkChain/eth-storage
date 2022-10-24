@@ -114,6 +114,7 @@ export default {
 
   .navbar {
     max-width: 95%;
+    padding-left: 15px;
   }
   .navbar-icon {
     height: 25px;

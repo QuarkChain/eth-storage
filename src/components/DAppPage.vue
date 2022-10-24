@@ -124,7 +124,7 @@ export default {
 .dapp-table-margin{
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 80px;
   margin-bottom: 60px;
@@ -140,8 +140,8 @@ export default {
 .dapp-item {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   cursor: pointer;
   width: 360px;
   height: 320px;
