@@ -7,19 +7,19 @@
           <div class="dapp-item" @click="goUni">
             <img class="dapp-item-img" src="@/assets/uni.png"/>
             <div class="dapp-item-title">Uniswap</div>
-            <div class="dapp-item-message">Uniswap's frontend hosted by EthStorage.</div>
+            <div class="dapp-item-message">Uniswap frontend hosted by EthStorage.</div>
             <div class="dapp-item-link">web3://app-uniswap-org.eth/</div>
           </div>
           <div class="dapp-item" @click="goEns">
             <img class="dapp-item-img" src="@/assets/ens.png"/>
             <div class="dapp-item-title">ENS</div>
-            <div class="dapp-item-message">ENS's frontend hosted by EthStorage.</div>
+            <div class="dapp-item-message">ENS frontend hosted by EthStorage.</div>
             <div class="dapp-item-link">web3://app-ens-domain.eth/</div>
           </div>
           <div class="dapp-item" @click="goVblog">
             <img class="dapp-item-img" src="@/assets/vblog.png"/>
-            <div class="dapp-item-title">Vitalik's Blog</div>
-            <div class="dapp-item-message">Vitalik's blog hosted by EthStorage.</div>
+            <div class="dapp-item-title">Vitalik Blog</div>
+            <div class="dapp-item-message">Vitalik blog hosted by EthStorage.</div>
             <div class="dapp-item-link">web3://vitalikblog.eth/</div>
           </div>
         </div>

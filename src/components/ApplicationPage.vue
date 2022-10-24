@@ -8,10 +8,10 @@
           <span class="application-context-message">Uniswap, AAVE, Curve, OpenSea, ENS, etc.</span>
 
           <span class="application-context-title">Decentralized social network</span>
-          <span class="application-context-message">Decentralized medium (Mirror), decentralized twitter, personal blog.</span>
+          <span class="application-context-message">Decentralized medium (Mirror), decentralized twitter, personal blog, etc.</span>
 
           <span class="application-context-title">Web2 to Web3 applications</span>
-          <span class="application-context-message">Decentralized Dropbox, Decentralized Tiktok.</span>
+          <span class="application-context-message">Decentralized Dropbox, decentralized tiktok, etc.</span>
 
           <span class="application-context-title">Composable NFT</span>
           <span class="application-context-message">ERC721 and image with on-chain programmability.</span>
