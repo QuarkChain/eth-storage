@@ -53,7 +53,7 @@
           <div class="dapp-item" @click="goW3drive">
             <img class="dapp-item-img" src="@/assets/w3drive.png"/>
             <div class="dapp-item-title">W3Drive</div>
-            <div class="dapp-item-message">Your Private Hard Drive on EthStorage.</div>
+            <div class="dapp-item-message">Your private hard drive on EthStorage.</div>
             <div class="dapp-item-link">web3://w3drive.w3q/</div>
           </div>
         </div>
