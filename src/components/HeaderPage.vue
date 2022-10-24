@@ -2,10 +2,10 @@
   <div class="home">
     <b-navbar class="navbar">
       <template #brand>
-        <b-navbar-item tag="div">
+        <div class="navbar-logo">
           <img class="navbar-icon" src="@/assets/logo.png" alt="logo">
           <div class="navbar-text">EthStorage</div>
-        </b-navbar-item>
+        </div>
       </template>
       <template #start></template>
       <template #end>
@@ -13,16 +13,12 @@
         <b-navbar-item href="https://web3q.io/file.w3q/0x67d0481cc9c2e9dad2987e58a365aae977dcb8da/dynamic_data_sharding_v0_1_4" target="_blank">
           Technology
         </b-navbar-item>
-        <b-navbar-item tag="div">
-          <b-navbar-dropdown label="Community">
-            <b-navbar-item href="https://twitter.com/EthStorage" target="_blank">Twitter</b-navbar-item>
-            <b-navbar-item href="https://discord.gg/mZqqUZxjed" target="_blank">Discord</b-navbar-item>
-            <b-navbar-item href="https://t.me/ethstorage" target="_blank">Telegram</b-navbar-item>
-          </b-navbar-dropdown>
-        </b-navbar-item>
-        <b-navbar-item href="https://github.com/ethstorage" target="_blank" >
-          Developer
-        </b-navbar-item>
+        <b-navbar-dropdown label="Community">
+          <b-navbar-item href="https://twitter.com/EthStorage" target="_blank">Twitter</b-navbar-item>
+          <b-navbar-item href="https://discord.gg/mZqqUZxjed" target="_blank">Discord</b-navbar-item>
+          <b-navbar-item href="https://t.me/ethstorage" target="_blank">Telegram</b-navbar-item>
+        </b-navbar-dropdown>
+        <b-navbar-item href="https://github.com/ethstorage" target="_blank">Developer</b-navbar-item>
       </template>
     </b-navbar>
     <div class="header">
@@ -58,6 +54,12 @@ export default {
   max-width: 1340px;
   margin: 0 auto;
   background: transparent;
+}
+.navbar-logo {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
 }
 .navbar-icon {
   height: 50px;
@@ -151,17 +153,13 @@ export default {
 </style>
 
 <style>
-.b-pagination {
-  margin-bottom: 145px !important;
-}
-
 .navbar {
   background-color: transparent !important;
 }
 .navbar-item,
 .navbar-link {
+  font-weight: normal;
   color: #000000 !important;
-  padding: 0.5rem 1rem;
   border-color: #000000 !important;
   font-family: AlibabaPuHuiTiR;
 }
@@ -181,6 +179,7 @@ a.navbar-item.is-active,
   outline: -webkit-focus-ring-color auto 0px;
 }
 .navbar-link:not(.is-arrowless)::after {
+  border-width: 1px !important;
   border-color: #000000 !important;
 }
 .navbar-item.has-dropdown.is-active .navbar-link {
