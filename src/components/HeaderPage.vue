@@ -9,7 +9,7 @@
       </template>
       <template #start></template>
       <template #end>
-        <b-navbar-item href="https://galileo.web3q.io/faucet.w3q/" target="_blank">Faucet</b-navbar-item>
+        <b-navbar-item href="https://web3q.io/faucet.w3q/" target="_blank">Faucet</b-navbar-item>
         <b-navbar-item href="https://web3q.io/file.w3q/0x67d0481cc9c2e9dad2987e58a365aae977dcb8da/dynamic_data_sharding_v0_1_4" target="_blank">
           Technology
         </b-navbar-item>
