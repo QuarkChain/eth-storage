@@ -158,7 +158,6 @@ export default {
 }
 .navbar-item,
 .navbar-link {
-  font-weight: normal;
   color: #000000 !important;
   border-color: #000000 !important;
   font-family: AlibabaPuHuiTiR;
@@ -202,6 +201,10 @@ a.navbar-item.is-active,
 
   .navbar-burger {
     color: black !important;
+  }
+
+  .navbar-link {
+    padding-left: 37.5px !important;
   }
 }
 </style>
