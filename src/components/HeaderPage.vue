@@ -1,25 +1,30 @@
-<script setup lang="ts">
-import DocumentationIcon from './IconHeaderLogo.vue';
-</script>
-
 <template>
   <div class="home">
-    <t-head-menu class="navbar" expand-type="popup">
-      <template #logo>
-        <img class="navbar-icon" src="@/assets/logo.png" alt="logo">
-        <div class="navbar-text">EthStorage</div>
+    <b-navbar class="navbar">
+      <template #brand>
+        <b-navbar-item tag="div">
+          <img class="navbar-icon" src="@/assets/logo.png" alt="logo">
+          <div class="navbar-text">EthStorage</div>
+        </b-navbar-item>
       </template>
-      <template #operations>
-        <a class="navbar-item" href="https://web3q.io/faucet.w3q/" target="_blank">Faucet</a>
-        <a class="navbar-item" href="https://web3q.io/file.w3q/0x67d0481cc9c2e9dad2987e58a365aae977dcb8da/dynamic_data_sharding_v0_1_4" target="_blank">Technology</a>
-        <t-submenu class="navbar-item" value="0" title="Community">
-          <t-menu-item value="1" href="https://twitter.com/EthStorage" target="_blank">Twitter</t-menu-item>
-          <t-menu-item value="2" href="https://discord.gg/mZqqUZxjed" target="_blank">Discord</t-menu-item>
-          <t-menu-item value="3" href="https://t.me/ethstorage" target="_blank">Telegram</t-menu-item>
-        </t-submenu>
-        <a class="navbar-item" href="https://github.com/ethstorage" target="_blank">Developer</a>
+      <template #start></template>
+      <template #end>
+        <b-navbar-item href="https://galileo.web3q.io/faucet.w3q/" target="_blank">Faucet</b-navbar-item>
+        <b-navbar-item href="https://web3q.io/file.w3q/0x67d0481cc9c2e9dad2987e58a365aae977dcb8da/dynamic_data_sharding_v0_1_4" target="_blank">
+          Technology
+        </b-navbar-item>
+        <b-navbar-item tag="div">
+          <b-navbar-dropdown label="Community">
+            <b-navbar-item href="https://twitter.com/EthStorage" target="_blank">Twitter</b-navbar-item>
+            <b-navbar-item href="https://discord.gg/mZqqUZxjed" target="_blank">Discord</b-navbar-item>
+            <b-navbar-item href="https://t.me/ethstorage" target="_blank">Telegram</b-navbar-item>
+          </b-navbar-dropdown>
+        </b-navbar-item>
+        <b-navbar-item href="https://github.com/ethstorage" target="_blank" >
+          Developer
+        </b-navbar-item>
       </template>
-    </t-head-menu>
+    </b-navbar>
     <div class="header">
       <div class="header-content">
         <div>
@@ -31,6 +36,17 @@ import DocumentationIcon from './IconHeaderLogo.vue';
     </div>
   </div>
 </template>
+
+<script>
+import DocumentationIcon from './IconHeaderLogo.vue';
+
+export default {
+  name: "HeaderPage",
+  components: {
+    DocumentationIcon
+  },
+};
+</script>
 
 <style scoped>
 .home {
@@ -51,18 +67,6 @@ import DocumentationIcon from './IconHeaderLogo.vue';
   margin-left: 15px;
   color: #000000 !important;
   font-family: AlibabaPuHuiTiB;
-}
-.navbar-item {
-  color: #000000 !important;
-  padding: 0 1rem;
-  font-size: 17px;
-  font-family: AlibabaPuHuiTiR;
-}
-a.navbar-item:focus-within,
-a.navbar-item:hover,
-a.navbar-item.is-active {
-  color: rgba(0, 0, 0, 0.5) !important;
-  background-color: transparent !important;
 }
 
 .header {
@@ -116,11 +120,6 @@ a.navbar-item.is-active {
     font-size: 14px;
     margin-left: 8px;
   }
-  .navbar-item {
-    padding: 0 4px;
-    font-size: 9px;
-  }
-
 
   .header {
     background-size: 100% auto;
@@ -152,41 +151,58 @@ a.navbar-item.is-active {
 </style>
 
 <style>
-.t-head-menu__inner {
-  height: 30px !important;
-}
-.t-menu__operations {
-  height: 30px !important;
-  line-height: 30px !important;
+.b-pagination {
+  margin-bottom: 145px !important;
 }
 
-.t-menu__item.t-is-active,
-.t-menu__item,
-.t-menu__item-link {
-  color: #000000 !important;
+.navbar {
   background-color: transparent !important;
 }
-.t-menu__item:focus-within,
-.t-menu__item:hover,
-.t-menu__item-link:hover {
+.navbar-item,
+.navbar-link {
+  color: #000000 !important;
+  padding: 0.5rem 1rem;
+  border-color: #000000 !important;
+  font-family: AlibabaPuHuiTiR;
+}
+a.navbar-item:focus-within,
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.router-link-exact-active,
+.navbar-item:focus,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+.navbar-link.is-active {
   color: rgba(0, 0, 0, 0.5) !important;
   background-color: transparent !important;
 }
-
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+.navbar-link:not(.is-arrowless)::after {
+  border-color: #000000 !important;
+}
+.navbar-item.has-dropdown.is-active .navbar-link {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.navbar-dropdown {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.b-nav {
+  background: transparent !important;
+}
 @media screen and (max-width: 420px) {
-  .t-head-menu__inner {
-    height: 40px !important;
-  }
-  .t-menu__operations {
-    height: 40px !important;
-    line-height: 40px !important;
+  .b-pagination {
+    margin-bottom: 230px !important;
   }
 
-  .t-menu__item {
-    min-width: inherit !important;
+  .navbar-menu {
+    background: linear-gradient(91deg, #DAE3EB 0%, #EEF2FF 100%) !important;
   }
-  .t-fake-arrow {
-    margin-left: 3px !important;
+
+  .navbar-burger {
+    color: black !important;
   }
 }
 </style>

@@ -62,11 +62,11 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   name: "DAppPage",
   methods: {
-    openUrl(url: string) {
+    openUrl(url) {
       window.open(url, "_blank");
       //_blank : 在新窗口打开
       //_self : 在当前窗口打开
