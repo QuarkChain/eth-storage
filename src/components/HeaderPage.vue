@@ -24,8 +24,8 @@
     <div class="header">
       <div class="header-content">
         <div>
-          <p class="header-title1">Scaling Storage</p>
-          <p class="header-title2">of The World Computer</p>
+          <p class="header-title1">Scaling the Storage</p>
+          <p class="header-title2">of the World Computer</p>
         </div>
         <DocumentationIcon class="header-logo"/>
       </div>
@@ -85,7 +85,7 @@ export default {
   padding-bottom: 80px;
 }
 .header-title1 {
-  font-size: 90px;
+  font-size: 70px;
   line-height: 90px;
   font-weight: normal;
   color: #000000;
@@ -135,16 +135,16 @@ export default {
     margin: 0 auto;
   }
   .header-title1 {
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 18px;
     margin-top: -40px;
   }
   .header-title2 {
     border-radius: 35px;
     margin-top: 15px;
-    font-size: 15px;
-    line-height: 15px;
-    padding: 8px 10px;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 8px;
   }
   .header-logo {
     width: 150px;
