@@ -4,13 +4,13 @@
       <p class="application-title">New Applications <br/> Enabled by EthStorage</p>
       <div class="application-context">
         <div class="application-context-item">
-          <span class="application-context-title" style="margin-top: 25px">Trusted website host</span>
+          <span class="application-context-title" style="margin-top: 25px">Trusted Website Host</span>
           <span class="application-context-message">Uniswap, AAVE, Curve, OpenSea, ENS, etc.</span>
 
-          <span class="application-context-title">Decentralized social network</span>
+          <span class="application-context-title">Decentralized Social Network</span>
           <span class="application-context-message">Decentralized medium (Mirror), decentralized twitter, personal blog, etc.</span>
 
-          <span class="application-context-title">Web2 to Web3 applications</span>
+          <span class="application-context-title">Web2 to Web3 Applications</span>
           <span class="application-context-message">Decentralized dropbox, decentralized tiktok, etc.</span>
 
           <span class="application-context-title">Composable NFT</span>

@@ -5,25 +5,25 @@
       <div class="feature-context">
         <div class="feature-context-item">
           <img class="feature-context-image" src="@/assets/feature-icon1.png" />
-          <span class="feature-context-title">Programmable large KV storage by EVM</span>
-          <span class="feature-context-message">Support CRUD semantics provided by a system contract, and it is optimized for large value read/write with ~ PB capacity.</span>
+          <span class="feature-context-title">Programmable Large KV Store</span>
+          <span class="feature-context-message">Smart contract programmable CRUD for large-value reads/writes with ~ PB capacity.</span>
         </div>
         <div class="feature-context-item">
           <img class="feature-context-image" src="@/assets/feature-icon2.png" />
-          <span class="feature-context-title">Dynamic Data Sharding</span>
-          <span class="feature-context-message">Use Proof of Random Access (PoRA) to incentive data storage in multiple shards, and the rental fee model enables 10-100x decentralized replications with very low cost.</span>
+          <span class="feature-context-title">Proof of Storage on Large Dynamic Datasets</span>
+          <span class="feature-context-message">Use Proof of Random Access (PoRA) and dynamic data sharding to prove data retention and encourage re-replication.</span>
         </div>
       </div>
       <div class="feature-context">
         <div class="feature-context-item">
-          <img class="feature-context-image" src="@/assets/feature-icon3.png" />
-          <span class="feature-context-title">Data composability</span>
-          <span class="feature-context-message">It does not only maintain the composability relationship of the contents in contracts, but also the client-side and server-side rendering.</span>
+          <img class="feature-context-image" src="@/assets/feature-icon4.png" />
+          <span class="feature-context-title">Proof of Publication via Data Availability</span>
+          <span class="feature-context-message">Increase data upload speed using KZG commitment and Reed-Solomon code powered by Danksharding.</span>
         </div>
         <div class="feature-context-item">
-          <img class="feature-context-image" src="@/assets/feature-icon4.png" />
-          <span class="feature-context-title">Data Availability</span>
-          <span class="feature-context-message">Leverage Danksharding's data availability technology to get higher upload bandwidth and lower cost.</span>
+          <img class="feature-context-image" src="@/assets/feature-icon3.png" />
+          <span class="feature-context-title">web3:// Access Protocol</span>
+          <span class="feature-context-message">Decentralized access to dynamic web objects hosted by smart contracts and EthStorage.</span>
         </div>
       </div>
 
