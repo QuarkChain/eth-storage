@@ -11,7 +11,7 @@
         <div class="feature-context-item">
           <img class="feature-context-image" src="@/assets/feature-icon2.png" />
           <span class="feature-context-title">Proof of Storage on Large Dynamic Datasets</span>
-          <span class="feature-context-message">Use Proof of Random Access (PoRA) and dynamic data sharding to prove data retention and encourage re-replication.</span>
+          <span class="feature-context-message">Use random sampling and dynamic data sharding to prove data retention and encourage re-replication.</span>
         </div>
       </div>
       <div class="feature-context">
