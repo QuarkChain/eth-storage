@@ -23,7 +23,8 @@
         <div class="feature-context-item">
           <img class="feature-context-image" src="@/assets/feature-icon3.png" />
           <span class="feature-context-title">web3:// Access Protocol</span>
-          <span class="feature-context-message">Decentralized access to dynamic web objects hosted by smart contracts and EthStorage.</span>
+          <span class="feature-context-message">Decentralized access to dynamic web objects hosted by smart contracts and EthStorage.
+            Visit <a class="f-link" href="https://web3q.io/w3url.eth/#/" target="_blank">Web3URL</a> for more details.</span>
         </div>
       </div>
 
@@ -100,6 +101,13 @@
   width: 1200px;
   margin-top: 40px;
   margin-bottom: 80px;
+}
+
+a.f-link:link,
+a.f-link:visited,
+a.f-link:hover {
+  color: #0d64c6;
+  background: transparent;
 }
 
 @media screen and (max-width: 420px) {
