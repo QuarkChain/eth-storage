@@ -44,7 +44,7 @@
   display: none;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
   .higher {
     max-width: 100%;
   }

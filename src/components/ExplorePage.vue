@@ -36,7 +36,7 @@
   margin-bottom: 80px;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
   .explore {
     max-width: 100%;
   }
