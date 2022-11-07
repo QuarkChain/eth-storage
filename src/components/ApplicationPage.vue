@@ -79,7 +79,7 @@
   width: 475px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .application {
     max-width: 100%;
   }

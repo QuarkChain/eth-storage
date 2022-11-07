@@ -110,7 +110,7 @@ a.f-link:hover {
   background: transparent;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .feature {
     max-width: 100%;
   }

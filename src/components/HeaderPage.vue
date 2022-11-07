@@ -150,7 +150,7 @@ a.w3q-link:hover {
   width: 650px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .header-banner {
     align-items: flex-start;
     padding: 3px 5px;

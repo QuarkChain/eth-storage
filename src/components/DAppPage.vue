@@ -185,7 +185,7 @@ export default {
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .dapp {
     max-width: 100%;
   }
