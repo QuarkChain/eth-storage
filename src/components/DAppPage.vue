@@ -28,7 +28,7 @@
             <img class="dapp-item-img" src="@/assets/deblog.png"/>
             <div class="dapp-item-title">W3Blog</div>
             <div class="dapp-item-message">Fully decentralized blog platform. The frontend and contents are all deployed on EthStorage.</div>
-            <div class="dapp-item-link">web3://blog.w3q/</div>
+            <div class="dapp-item-link">web3://dblog.w3q/</div>
           </div>
           <div class="dapp-item" @click="goRbot">
             <img class="dapp-item-img" src="@/assets/qrbot.png"/>
@@ -73,28 +73,28 @@ export default {
       //window.location.href = url : 当前页面重定向
     },
     goBlog(){
-      this.openUrl("https://web3q.io/dblog.w3q/");
+      this.openUrl("https://dblog.w3q.w3q-g.w3link.io/");
     },
     goRbot(){
-      this.openUrl("https://web3q.io/qrobot.w3q/");
+      this.openUrl("https://qrobot.w3q.w3q-g.w3link.io/");
     },
     goW3mail(){
-      this.openUrl("https://web3q.io/w3mail.w3q/");
+      this.openUrl("https://w3mail.w3q.w3q-g.w3link.io/");
     },
     goW3box(){
-      this.openUrl("https://web3q.io/w3box.w3q/");
+      this.openUrl("https://w3box.w3q.w3q-g.w3link.io/");
     },
     goW3drive(){
-      this.openUrl("https://web3q.io/w3drive.w3q/");
+      this.openUrl("https://w3drive.w3q.w3q-g.w3link.io/");
     },
     goUni() {
-      this.openUrl("https://web3q.io/app-uniswap-org.eth/");
+      this.openUrl("https://app-uniswap-org.eth.w3link.io/");
     },
     goEns() {
-      this.openUrl("https://web3q.io/app-ens-domain.eth/");
+      this.openUrl("https://app-ens-domain.eth.w3link.io/");
     },
     goVblog() {
-      this.openUrl("https://web3q.io/vitalikblog.eth/");
+      this.openUrl("https://vitalikblog.eth.w3link.io/");
     }
   },
 };
