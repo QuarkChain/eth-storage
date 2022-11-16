@@ -88,13 +88,13 @@ export default {
       this.openUrl("https://w3drive.w3q.w3q-g.w3link.io/");
     },
     goUni() {
-      this.openUrl("https://app-uniswap-org.eth.w3link.io/");
+      this.openUrl("https://app-uniswap-org.w3eth.io/");
     },
     goEns() {
-      this.openUrl("https://app-ens-domain.eth.w3link.io/");
+      this.openUrl("https://app-ens-domain.w3eth.io/");
     },
     goVblog() {
-      this.openUrl("https://vitalikblog.eth.w3link.io/");
+      this.openUrl("https://vitalikblog.w3eth.io/");
     }
   },
 };

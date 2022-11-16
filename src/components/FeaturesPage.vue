@@ -24,7 +24,7 @@
           <img class="feature-context-image" src="@/assets/feature-icon3.png" />
           <span class="feature-context-title">web3:// Access Protocol</span>
           <span class="feature-context-message">Decentralized access to dynamic web objects hosted by smart contracts and EthStorage.
-            Visit <a class="f-link" href="https://w3url.eth.w3link.io/" target="_blank">Web3URL</a> for more details.</span>
+            Visit <a class="f-link" href="https://w3url.w3eth.io/" target="_blank">Web3URL</a> for more details.</span>
         </div>
       </div>
 
