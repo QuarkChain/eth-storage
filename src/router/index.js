@@ -12,7 +12,6 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  base: '/eth-store.eth/',
   routes
 })
 

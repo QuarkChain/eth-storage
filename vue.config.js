@@ -8,6 +8,6 @@ module.exports = {
     }
   },
   productionSourceMap: false,
-  publicPath: '/eth-store.eth/',
+  publicPath: '/',
   runtimeCompiler: true,
 };
