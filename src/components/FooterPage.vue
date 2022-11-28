@@ -12,7 +12,7 @@
     <a href="https://t.me/ethstorage" target="_blank">
       <img class="footer-img" src="@/assets/telegram.png">
     </a>
-    <a href="https://discord.gg/3CTgdC2WT3" target="_blank">
+    <a href="https://discord.gg/xhCwaMp7ps" target="_blank">
       <img class="footer-img" src="@/assets/discord.png">
     </a>
   </div>
