@@ -25,7 +25,7 @@
           </b-navbar-item>
           <b-navbar-dropdown label="Community">
             <b-navbar-item href="https://twitter.com/EthStorage" target="_blank">Twitter</b-navbar-item>
-            <b-navbar-item href="https://discord.gg/mZqqUZxjed" target="_blank">Discord</b-navbar-item>
+            <b-navbar-item href="https://discord.gg/xhCwaMp7ps" target="_blank">Discord</b-navbar-item>
             <b-navbar-item href="https://t.me/ethstorage" target="_blank">Telegram</b-navbar-item>
           </b-navbar-dropdown>
           <b-navbar-item href="https://github.com/ethstorage" target="_blank">Developer</b-navbar-item>
