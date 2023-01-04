@@ -126,7 +126,7 @@ a.w3q-link:hover {
   align-items: center;
   width: 125px;
   height: 35px;
-  background: #1B60FF;
+  background: #6979A0;
   border-radius: 4px;
   padding-left: 8px;
   cursor: pointer;
@@ -141,7 +141,7 @@ a.w3q-link:hover {
   font-size: 14px;
   color: #FFFFFF;
   margin-left: 5px;
-  font-family: AlibabaPuHuiTiM;
+  font-family: AlibabaPuHuiTiR;
 }
 
 .header {
