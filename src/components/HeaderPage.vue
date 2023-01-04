@@ -29,6 +29,12 @@
             <b-navbar-item href="https://t.me/ethstorage" target="_blank">Telegram</b-navbar-item>
           </b-navbar-dropdown>
           <b-navbar-item href="https://github.com/ethstorage" target="_blank">Developer</b-navbar-item>
+          <b-navbar-item href="https://www.youtube.com/watch?v=rRI-3RV_JHw" target="_blank">
+            <div class="devcon-layout">
+              <img class="devcon-img" src="@/assets/devcon.png" alt="devcon"/>
+              <span class="devcon-text">Devcon Talk</span>
+            </div>
+          </b-navbar-item>
         </template>
       </b-navbar>
       <div class="header">
@@ -114,6 +120,30 @@ a.w3q-link:hover {
   font-family: AlibabaPuHuiTiB;
 }
 
+.devcon-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 125px;
+  height: 35px;
+  background: #1B60FF;
+  border-radius: 4px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+.devcon-layout:hover {
+  box-shadow: 6px 6px 10px rgba(0,0,0,0.1);
+}
+.devcon-img {
+  width: 20px;
+}
+.devcon-text {
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-left: 5px;
+  font-family: AlibabaPuHuiTiM;
+}
+
 .header {
   background: url("../assets/header-bg.png") no-repeat center top;
   background-size: auto 95%;
@@ -183,6 +213,20 @@ a.w3q-link:hover {
   .navbar-text {
     font-size: 14px;
     margin-left: 8px;
+  }
+
+  .devcon-layout {
+    width: 98%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .devcon-img {
+    width: 18px;
+  }
+  .devcon-text {
+    font-size: 14px;
   }
 
   .header {
