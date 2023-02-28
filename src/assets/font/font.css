@@ -18,3 +18,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'AlibabaPuHuiTiM';
+    src: url("AlibabaSans-Medium.otf");
+    font-weight: normal;
+    font-style: normal;
+}

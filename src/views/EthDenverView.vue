@@ -1,0 +1,299 @@
+<template>
+  <div>
+    <HeaderBanner />
+    <div class="denver">
+      <Header />
+      <div>
+        <div class="denver-title">
+          EthStorage @ EthDenver
+        </div>
+
+        <div class="denver-timeline">
+          <el-row type="flex" class="denver-timeline-item">
+            <el-col :span="2">
+              <li class="timeline-item-layout">
+                <div class="item-node"></div>
+                <div class="item-tail"></div>
+                <div class="item-node"></div>
+              </li>
+              <li class="timeline-item-layout">
+                <div class="item-tail item-tail-footer"></div>
+              </li>
+            </el-col>
+            <el-col :span="22">
+              <el-row class="denver-item">
+                <el-col :span="4" class="denver-item-left">
+                  <p class="denver-item-left-text">From Mar.2<br/>to Mar.5</p>
+                </el-col>
+                <el-col :span="20" class="denver-item-right">
+                  <div class="denver-item-right-title">
+                    <img class="denver-item-right-img" src="../assets/store.png"/>
+                    <span>BOOTH</span>
+                  </div>
+                  <div class="denver-item-right-text">
+                    EthStorage with git3, hexlink and blockeden, from Mar. 2 to Mar. 5 at Infra area.
+                  </div>
+                </el-col>
+              </el-row>
+            </el-col>
+          </el-row>
+
+          <el-row type="flex" class="denver-timeline-item">
+            <el-col :span="2">
+              <li class="timeline-item-layout">
+                <div class="item-node"></div>
+                <div class="item-tail"></div>
+                <div class="item-node"></div>
+              </li>
+              <li class="timeline-item-layout">
+                <div class="item-tail item-tail-footer"></div>
+              </li>
+            </el-col>
+            <el-col :span="22">
+              <el-row class="denver-item">
+                <el-col :span="4" class="denver-item-left">
+                  <p class="denver-item-left-text">Mar 02, 2023<br/>16:20 - 16:40</p>
+                </el-col>
+                <el-col :span="20" class="denver-item-right">
+                  <div class="denver-item-right-title">
+                    <img class="denver-item-right-img" src="../assets/devcon2.png"/>
+                    <span>TALK</span>
+                  </div>
+                  <div class="denver-item-right-text">
+                    EthStorage - Scaling Ethereum Storage via Layer 2 and Data Availability.
+                  </div>
+                </el-col>
+              </el-row>
+            </el-col>
+          </el-row>
+
+          <el-row type="flex" class="denver-timeline-item">
+            <el-col :span="2">
+              <li class="timeline-item-layout">
+                <div class="item-node"></div>
+                <div class="item-tail"></div>
+                <div class="item-node"></div>
+              </li>
+              <li class="timeline-item-layout">
+                <div class="item-tail item-tail-footer"></div>
+              </li>
+            </el-col>
+            <el-col :span="22">
+              <el-row class="denver-item">
+                <el-col :span="4" class="denver-item-left">
+                  <p class="denver-item-left-text">Mar 03, 2023<br/>18:00 - 21:00</p>
+                </el-col>
+                <el-col :span="20" class="denver-item-right">
+                  <div class="denver-item-right-title">
+                    <img class="denver-item-right-img" src="../assets/start.png"/>
+                    <span>SIDE EVENT</span>
+                  </div>
+                  <div class="denver-item-right-text">
+                    Infra & Middleware Meetup with Sentio, NKN, and HyperOracle.
+                  </div>
+                </el-col>
+              </el-row>
+            </el-col>
+          </el-row>
+
+          <el-row type="flex" class="denver-timeline-item">
+            <el-col :span="2">
+              <li class="timeline-item-layout">
+                <div class="item-node"></div>
+                <div class="item-tail"></div>
+                <div class="item-node"></div>
+              </li>
+            </el-col>
+            <el-col :span="22">
+              <el-row class="denver-item">
+                <el-col :span="4" class="denver-item-left">
+                  <p class="denver-item-left-text">Mar 04, 2023<br/>10:30 - 10:45</p>
+                </el-col>
+                <el-col :span="20" class="denver-item-right">
+                  <div class="denver-item-right-title">
+                    <img class="denver-item-right-img" src="../assets/devcon2.png"/>
+                    <span>TALK</span>
+                  </div>
+                  <div class="denver-item-right-text">
+                    Introducing web3:// - Decentralized Access Protocol for EVM.
+                  </div>
+                </el-col>
+              </el-row>
+            </el-col>
+          </el-row>
+        </div>
+
+        <div class="office-layout">
+          <div class="office-layout-title">
+            Official Sponsor of ETHDenver
+          </div>
+          <div class="office-img-layout">
+            <el-col>
+              <img src="../assets/ethdenver.png" class="office-img"/>
+              <p class="office-img-text">ETHDenver</p>
+            </el-col>
+            <img src="../assets/x.png" class="office-x"/>
+            <el-col>
+              <img src="../assets/ethstorage.png" class="office-img"/>
+              <p class="office-img-text">ETHStorage</p>
+            </el-col>
+          </div>
+        </div>
+      </div>
+      <FooterPage />
+    </div>
+  </div>
+</template>
+
+<script>
+import HeaderBanner from '../components/HeaderBanner.vue';
+import Header from '../components/Header.vue';
+import FooterPage from "@/components/FooterPage.vue";
+
+export default {
+  name: "EthDenver",
+  components: {
+    HeaderBanner,
+    Header,
+    FooterPage,
+  },
+};
+</script>
+
+<style scoped>
+.denver {
+  padding-top: 20px;
+  background: url("../assets/denver.png");
+}
+
+.denver-title {
+  font-size: 30px;
+  color: #000000;
+  line-height: 36px;
+  margin-top: 40px;
+  font-family: AlibabaPuHuiTiB;
+}
+
+.denver-timeline{
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+.denver-timeline-item {
+  align-items: self-start;
+}
+
+.timeline-item-layout {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-node {
+  width: 14px;
+  height: 14px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+.item-tail {
+  height: 54px;
+  width: 2px;
+  margin: 4px 0;
+  background: #FFFFFF;
+}
+.item-tail-footer {
+  height: 30px;
+}
+
+
+.denver-item {
+  background: #FFFFFF;
+  border-radius: 8px;
+  height: 91px;
+  border: 1px solid #C0C5FC;
+}
+.denver-item-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  background: #748DC5;
+  border-radius: 8px;
+}
+.denver-item-left-text {
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 24px;
+  text-align: center;
+  font-family: AlibabaPuHuiTiM;
+}
+.denver-item-right {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 90px;
+  padding-left: 40px;
+}
+.denver-item-right-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 16px;
+  color: #000000;
+  font-family: AlibabaPuHuiTiM;
+}
+.denver-item-right-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.denver-item-right-text {
+  font-size: 15px;
+  color: #000000;
+  line-height: 15px;
+  margin-top: 8px;
+  font-family: AlibabaPuHuiTiR;
+}
+
+.office-layout {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid #C0C5FC;
+  padding: 65px;
+  width: 740px;
+  margin: 70px auto 20px;
+}
+.office-layout-title {
+  font-size: 30px;
+  color: #000000;
+  line-height: 36px;
+  margin-bottom: 50px;
+  font-family: AlibabaPuHuiTiB;
+}
+.office-img-layout {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.office-img {
+  width: 120px;
+  height: 120px;
+}
+.office-img-text {
+  font-size: 16px;
+  color: #000000;
+  line-height: 36px;
+  margin-top: -10px;
+  font-family: AlibabaPuHuiTiR;
+}
+.office-x {
+  width: 30px;
+  height: 30px;
+  margin: auto 80px;
+}
+</style>
