@@ -20,8 +20,10 @@
         <b-navbar-item href="https://t.me/ethstorage" target="_blank">Telegram</b-navbar-item>
       </b-navbar-dropdown>
       <b-navbar-item href="https://github.com/ethstorage" target="_blank">Developer</b-navbar-item>
+      <b-navbar-item href="https://www.ethdenver.com/" target="_blank">ETH L2 Grant</b-navbar-item>
       <b-navbar-item>
         <div class="devcon-layout" @click.stop="goEthDenver">
+          <img class="devcon-img" src="@/assets/denv.png" alt="devcon"/>
           <span class="devcon-text">ETHDenver</span>
         </div>
       </b-navbar-item>
@@ -77,7 +79,7 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 110px;
+  width: 120px;
   height: 35px;
   background: #6979A0;
   border-radius: 4px;

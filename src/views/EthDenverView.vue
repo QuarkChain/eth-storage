@@ -5,7 +5,7 @@
       <Header />
       <div>
         <div class="denver-title">
-          EthStorage @ EthDenver
+          EthStorage @ ETHDenver
         </div>
 
         <div class="denver-timeline">
@@ -50,22 +50,20 @@
               </li>
             </el-col>
             <el-col :span="22">
-              <div @click="goTalk1" style="cursor: pointer">
-                <el-row class="denver-item">
-                  <el-col :span="4" class="denver-item-left">
-                    <p class="denver-item-left-text">Mar 02, 2023<br/>16:20 - 16:40</p>
-                  </el-col>
-                  <el-col :span="20" class="denver-item-right">
-                    <div class="denver-item-right-title">
-                      <img class="denver-item-right-img" src="../assets/devcon2.png"/>
-                      <span>TALK</span>
-                    </div>
-                    <div class="denver-item-right-text">
-                      EthStorage - Scaling Ethereum Storage via Layer 2 and Data Availability.
-                    </div>
-                  </el-col>
-                </el-row>
-              </div>
+              <el-row class="denver-item">
+                <el-col :span="4" class="denver-item-left">
+                  <p class="denver-item-left-text">Mar 02, 2023<br/>16:20 - 16:40</p>
+                </el-col>
+                <el-col :span="20" class="denver-item-right">
+                  <div class="denver-item-right-title">
+                    <img class="denver-item-right-img" src="../assets/devcon2.png"/>
+                    <span>TALK</span>
+                  </div>
+                  <div class="denver-item-right-text denver-link" @click="goTalk1">
+                    EthStorage - Scaling Ethereum Storage via Layer 2 and Data Availability.
+                  </div>
+                </el-col>
+              </el-row>
             </el-col>
           </el-row>
 
@@ -81,22 +79,20 @@
               </li>
             </el-col>
             <el-col :span="22">
-              <div @click="goSlid" style="cursor: pointer">
-                <el-row class="denver-item">
-                  <el-col :span="4" class="denver-item-left">
-                    <p class="denver-item-left-text">Mar 03, 2023<br/>18:00 - 21:00</p>
-                  </el-col>
-                  <el-col :span="20" class="denver-item-right">
-                    <div class="denver-item-right-title">
-                      <img class="denver-item-right-img" src="../assets/start.png"/>
-                      <span>SIDE EVENT</span>
-                    </div>
-                    <div class="denver-item-right-text">
-                      Infra & Middleware Meetup with Sentio, NKN, and HyperOracle.
-                    </div>
-                  </el-col>
-                </el-row>
-              </div>
+              <el-row class="denver-item">
+                <el-col :span="4" class="denver-item-left">
+                  <p class="denver-item-left-text">Mar 03, 2023<br/>18:00 - 21:00</p>
+                </el-col>
+                <el-col :span="20" class="denver-item-right">
+                  <div class="denver-item-right-title">
+                    <img class="denver-item-right-img" src="../assets/start.png"/>
+                    <span>SIDE EVENT</span>
+                  </div>
+                  <div class="denver-item-right-text denver-link" @click="goSlid">
+                    Infra & Middleware Meetup with Sentio, NKN, and HyperOracle.
+                  </div>
+                </el-col>
+              </el-row>
             </el-col>
           </el-row>
 
@@ -109,22 +105,20 @@
               </li>
             </el-col>
             <el-col :span="22">
-              <div @click="goTalk2" style="cursor: pointer">
-                <el-row class="denver-item">
-                  <el-col :span="4" class="denver-item-left">
-                    <p class="denver-item-left-text">Mar 04, 2023<br/>10:30 - 10:45</p>
-                  </el-col>
-                  <el-col :span="20" class="denver-item-right">
-                    <div class="denver-item-right-title">
-                      <img class="denver-item-right-img" src="../assets/devcon2.png"/>
-                      <span>TALK</span>
-                    </div>
-                    <div class="denver-item-right-text">
-                      Introducing web3:// - Decentralized Access Protocol for EVM.
-                    </div>
-                  </el-col>
-                </el-row>
-              </div>
+              <el-row class="denver-item">
+                <el-col :span="4" class="denver-item-left">
+                  <p class="denver-item-left-text">Mar 04, 2023<br/>10:30 - 10:45</p>
+                </el-col>
+                <el-col :span="20" class="denver-item-right">
+                  <div class="denver-item-right-title">
+                    <img class="denver-item-right-img" src="../assets/devcon2.png"/>
+                    <span>TALK</span>
+                  </div>
+                  <div class="denver-item-right-text denver-link" @click="goTalk2">
+                    Introducing web3:// - Decentralized Access Protocol for EVM.
+                  </div>
+                </el-col>
+              </el-row>
             </el-col>
           </el-row>
         </div>
@@ -141,7 +135,7 @@
             <img src="../assets/x.png" class="office-x"/>
             <el-col>
               <img src="../assets/ethstorage.png" class="office-img"/>
-              <p class="office-img-text">ETHStorage</p>
+              <p class="office-img-text">EthStorage</p>
             </el-col>
           </div>
         </div>
@@ -278,6 +272,15 @@ export default {
   line-height: 15px;
   margin-top: 8px;
   font-family: AlibabaPuHuiTiR;
+}
+.denver-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.denver-link:hover,
+.denver-link:focus,
+.denver-item:active {
+  color: #1B60FF;
 }
 
 .office-layout {
