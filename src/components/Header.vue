@@ -165,7 +165,7 @@ a.navbar-item.is-active,
 .b-nav {
   background: transparent !important;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   .b-pagination {
     margin-bottom: 230px !important;
   }

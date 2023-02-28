@@ -325,7 +325,7 @@ export default {
   margin: auto 80px;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   .denver {
     padding-top: 10px;
   }
