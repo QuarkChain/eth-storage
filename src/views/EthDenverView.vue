@@ -324,4 +324,8 @@ export default {
   height: 30px;
   margin: auto 80px;
 }
+
+@media screen and (max-width: 420px) {
+
+}
 </style>
