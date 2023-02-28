@@ -89,7 +89,6 @@ export default {
 
 <style scoped>
 .subscribe-div {
-  background: white;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -173,73 +172,11 @@ export default {
   }
 }
 </style>
-
 <style>
-
-.subscribe-div {
-  background: white;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.subscribe-title  {
-  color: #000000;
-  margin-top: 50px;
-  line-height: 12px;
-  font-size: 9px;
-  font-family: AlibabaPuHuiTiR;
-}
-
-.sub-layout {
-  width: 263px;
-  margin-top: 10px;
-  border-radius: 15px;
-  border: 1px solid #000000;
-  background: #FFFFFF;
-}
-.sub-input {
-  background: transparent;
-}
-.sub-input >>> .el-input__inner {
-  background-color: transparent;
-  border: none;
-  height: auto;
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 180px;
-  color: #000000;
-  font-size: 9px;
-  line-height: 12px;
-  font-family: AlibabaPuHuiTiR;
-}
-
-.sub-button {
-  position: absolute !important;
-  z-index: 1;
-  right: 0;
-  width: 180px;
-  height: 30px;
-  font-size: 9px;
-  line-height: 12px;
-  color: #FFFFFF;
-  background: #000000;
-  border-radius: 0 38px 38px 0;
-  border: 1px solid #000000;
-  font-family: AlibabaPuHuiTiR;
-}
-.sub-button:focus,
-.sub-button:hover {
-  color: #FFFFFF;
-  border: 1px solid #000000;
-  background: rgba(0, 0, 0, 0.8);
-}
-
 .footer {
   padding-top: 20px !important;
   padding-bottom: 20px !important;
-  background: white;
+  background: transparent !important;
   height: 100px;
   width: 100%;
   display: flex;
@@ -266,24 +203,6 @@ export default {
   .footer-img {
     width: 25px;
     height: 25px;
-  }
-
-  .sub-layout {
-    width: 185px;
-    margin-top: 10px;
-  }
-  .sub-input >>> .el-input__inner {
-    padding-left: 10px;
-    padding-right: 80px;
-    font-size: 9px;
-    line-height: 29px;
-  }
-  .sub-button {
-    width: 80px;
-    height: 29px;
-    padding: 0 3px;
-    font-size: 9px;
-    line-height: 9px;
   }
 }
 </style>

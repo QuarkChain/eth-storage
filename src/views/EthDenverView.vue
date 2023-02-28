@@ -50,20 +50,22 @@
               </li>
             </el-col>
             <el-col :span="22">
-              <el-row class="denver-item">
-                <el-col :span="4" class="denver-item-left">
-                  <p class="denver-item-left-text">Mar 02, 2023<br/>16:20 - 16:40</p>
-                </el-col>
-                <el-col :span="20" class="denver-item-right">
-                  <div class="denver-item-right-title">
-                    <img class="denver-item-right-img" src="../assets/devcon2.png"/>
-                    <span>TALK</span>
-                  </div>
-                  <div class="denver-item-right-text">
-                    EthStorage - Scaling Ethereum Storage via Layer 2 and Data Availability.
-                  </div>
-                </el-col>
-              </el-row>
+              <div @click="goTalk1" style="cursor: pointer">
+                <el-row class="denver-item">
+                  <el-col :span="4" class="denver-item-left">
+                    <p class="denver-item-left-text">Mar 02, 2023<br/>16:20 - 16:40</p>
+                  </el-col>
+                  <el-col :span="20" class="denver-item-right">
+                    <div class="denver-item-right-title">
+                      <img class="denver-item-right-img" src="../assets/devcon2.png"/>
+                      <span>TALK</span>
+                    </div>
+                    <div class="denver-item-right-text">
+                      EthStorage - Scaling Ethereum Storage via Layer 2 and Data Availability.
+                    </div>
+                  </el-col>
+                </el-row>
+              </div>
             </el-col>
           </el-row>
 
@@ -79,20 +81,22 @@
               </li>
             </el-col>
             <el-col :span="22">
-              <el-row class="denver-item">
-                <el-col :span="4" class="denver-item-left">
-                  <p class="denver-item-left-text">Mar 03, 2023<br/>18:00 - 21:00</p>
-                </el-col>
-                <el-col :span="20" class="denver-item-right">
-                  <div class="denver-item-right-title">
-                    <img class="denver-item-right-img" src="../assets/start.png"/>
-                    <span>SIDE EVENT</span>
-                  </div>
-                  <div class="denver-item-right-text">
-                    Infra & Middleware Meetup with Sentio, NKN, and HyperOracle.
-                  </div>
-                </el-col>
-              </el-row>
+              <div @click="goSlid" style="cursor: pointer">
+                <el-row class="denver-item">
+                  <el-col :span="4" class="denver-item-left">
+                    <p class="denver-item-left-text">Mar 03, 2023<br/>18:00 - 21:00</p>
+                  </el-col>
+                  <el-col :span="20" class="denver-item-right">
+                    <div class="denver-item-right-title">
+                      <img class="denver-item-right-img" src="../assets/start.png"/>
+                      <span>SIDE EVENT</span>
+                    </div>
+                    <div class="denver-item-right-text">
+                      Infra & Middleware Meetup with Sentio, NKN, and HyperOracle.
+                    </div>
+                  </el-col>
+                </el-row>
+              </div>
             </el-col>
           </el-row>
 
@@ -105,20 +109,22 @@
               </li>
             </el-col>
             <el-col :span="22">
-              <el-row class="denver-item">
-                <el-col :span="4" class="denver-item-left">
-                  <p class="denver-item-left-text">Mar 04, 2023<br/>10:30 - 10:45</p>
-                </el-col>
-                <el-col :span="20" class="denver-item-right">
-                  <div class="denver-item-right-title">
-                    <img class="denver-item-right-img" src="../assets/devcon2.png"/>
-                    <span>TALK</span>
-                  </div>
-                  <div class="denver-item-right-text">
-                    Introducing web3:// - Decentralized Access Protocol for EVM.
-                  </div>
-                </el-col>
-              </el-row>
+              <div @click="goTalk2" style="cursor: pointer">
+                <el-row class="denver-item">
+                  <el-col :span="4" class="denver-item-left">
+                    <p class="denver-item-left-text">Mar 04, 2023<br/>10:30 - 10:45</p>
+                  </el-col>
+                  <el-col :span="20" class="denver-item-right">
+                    <div class="denver-item-right-title">
+                      <img class="denver-item-right-img" src="../assets/devcon2.png"/>
+                      <span>TALK</span>
+                    </div>
+                    <div class="denver-item-right-text">
+                      Introducing web3:// - Decentralized Access Protocol for EVM.
+                    </div>
+                  </el-col>
+                </el-row>
+              </div>
             </el-col>
           </el-row>
         </div>
@@ -157,13 +163,32 @@ export default {
     Header,
     FooterPage,
   },
+  methods: {
+    openUrl(url) {
+      console.log(url)
+      window.open(url, "_blank");
+      //_blank : 在新窗口打开
+      //_self : 在当前窗口打开
+      //window.location.href = url : 当前页面重定向
+    },
+    goTalk1() {
+      this.openUrl("https://events.ethdenver.com/eden23/attendease/networking/experience/aa36cd8b-1b43-439b-b66e-171cdb51b98c/a9d5c952-88ec-4db7-8d27-3014ce7e2265");
+    },
+    goTalk2() {
+      this.openUrl("https://events.ethdenver.com/eden23/attendease/networking/experience/40751e71-c44f-4579-be66-e5b2bc349fb4/c290aa40-3d77-4b35-af69-e70fe0af59ed");
+    },
+    goSlid() {
+      this.openUrl("https://www.eventbrite.com/e/infra-middleware-meetup-tickets-523141459187");
+    },
+  }
 };
 </script>
 
 <style scoped>
 .denver {
   padding-top: 20px;
-  background: url("../assets/denver.png");
+  background-size: 100% 100%;
+  background-image: url("../assets/denver.png");
 }
 
 .denver-title {
