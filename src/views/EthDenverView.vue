@@ -22,10 +22,10 @@
             </el-col>
             <el-col :span="22">
               <el-row class="denver-item">
-                <el-col :span="4" class="denver-item-left">
+                <el-col :span="5" class="denver-item-left">
                   <p class="denver-item-left-text">From Mar.2<br/>to Mar.5</p>
                 </el-col>
-                <el-col :span="20" class="denver-item-right">
+                <el-col :span="19" class="denver-item-right">
                   <div class="denver-item-right-title">
                     <img class="denver-item-right-img" src="../assets/store.png"/>
                     <span>BOOTH</span>
@@ -51,10 +51,10 @@
             </el-col>
             <el-col :span="22">
               <el-row class="denver-item">
-                <el-col :span="4" class="denver-item-left">
+                <el-col :span="5" class="denver-item-left">
                   <p class="denver-item-left-text">Mar 02, 2023<br/>16:20 - 16:40</p>
                 </el-col>
-                <el-col :span="20" class="denver-item-right">
+                <el-col :span="19" class="denver-item-right">
                   <div class="denver-item-right-title">
                     <img class="denver-item-right-img" src="../assets/devcon2.png"/>
                     <span>TALK</span>
@@ -80,10 +80,10 @@
             </el-col>
             <el-col :span="22">
               <el-row class="denver-item">
-                <el-col :span="4" class="denver-item-left">
+                <el-col :span="5" class="denver-item-left">
                   <p class="denver-item-left-text">Mar 03, 2023<br/>18:00 - 21:00</p>
                 </el-col>
-                <el-col :span="20" class="denver-item-right">
+                <el-col :span="19" class="denver-item-right">
                   <div class="denver-item-right-title">
                     <img class="denver-item-right-img" src="../assets/start.png"/>
                     <span>SIDE EVENT</span>
@@ -106,10 +106,10 @@
             </el-col>
             <el-col :span="22">
               <el-row class="denver-item">
-                <el-col :span="4" class="denver-item-left">
+                <el-col :span="5" class="denver-item-left">
                   <p class="denver-item-left-text">Mar 04, 2023<br/>10:30 - 10:45</p>
                 </el-col>
-                <el-col :span="20" class="denver-item-right">
+                <el-col :span="19" class="denver-item-right">
                   <div class="denver-item-right-title">
                     <img class="denver-item-right-img" src="../assets/devcon2.png"/>
                     <span>TALK</span>
@@ -326,6 +326,66 @@ export default {
 }
 
 @media screen and (max-width: 420px) {
+  .denver {
+    padding-top: 10px;
+  }
 
+  .denver-title {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 25px;
+  }
+
+  .denver-timeline{
+    max-width: 95%;
+    margin: 25px auto 0;
+  }
+
+  .denver-item-left-text {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .denver-item-right {
+    padding-left: 10px;
+  }
+  .denver-item-right-title {
+    font-size: 12px;
+  }
+  .denver-item-right-img {
+    width: 17px;
+    height: 17px;
+    margin-right: 3px;
+  }
+  .denver-item-right-text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  .office-layout {
+    padding: 35px 15px;
+    width: 90%;
+    margin: 50px auto 20px;
+  }
+  .office-layout-title {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .office-img {
+    width: 70px;
+    height: 70px;
+  }
+  .office-img-text {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: -5px;
+  }
+  .office-x {
+    width: 18px;
+    height: 18px;
+    margin: auto 30px;
+  }
 }
 </style>
