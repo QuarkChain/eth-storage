@@ -31,7 +31,7 @@
                     <span>BOOTH</span>
                   </div>
                   <div class="denver-item-right-text">
-                    EthStorage with git3, hexlink and blockeden, from Mar. 2 to Mar. 5 at Infra area.
+                    EthStorage with git3, hexlink and blockeden at Infra area.
                   </div>
                 </div>
               </div>
