@@ -20,7 +20,7 @@
         <b-navbar-item href="https://t.me/ethstorage" target="_blank">Telegram</b-navbar-item>
       </b-navbar-dropdown>
       <b-navbar-item href="https://github.com/ethstorage" target="_blank">Developer</b-navbar-item>
-      <b-navbar-item href="https://blog.ethereum.org/2023/02/14/layer-2-grants-roundup" target="_blank">ETH L2 Grant</b-navbar-item>
+      <b-navbar-item href="https://blog.ethereum.org/2023/02/14/layer-2-grants-roundup#-cryptography-and-zero-knowledge-proofs" target="_blank">ETH L2 Grant</b-navbar-item>
       <b-navbar-item>
         <div class="devcon-layout" @click.stop="goEthDenver">
           <img class="devcon-img" src="@/assets/denv.png" alt="devcon"/>

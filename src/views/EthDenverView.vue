@@ -21,11 +21,11 @@
               </li>
             </el-col>
             <el-col :span="22">
-              <el-row class="denver-item">
-                <el-col :span="5" class="denver-item-left">
+              <div class="denver-item">
+                <div class="denver-item-left">
                   <p class="denver-item-left-text">From Mar.2<br/>to Mar.5</p>
-                </el-col>
-                <el-col :span="19" class="denver-item-right">
+                </div>
+                <div class="denver-item-right">
                   <div class="denver-item-right-title">
                     <img class="denver-item-right-img" src="../assets/store.png"/>
                     <span>BOOTH</span>
@@ -33,8 +33,8 @@
                   <div class="denver-item-right-text">
                     EthStorage with git3, hexlink and blockeden, from Mar. 2 to Mar. 5 at Infra area.
                   </div>
-                </el-col>
-              </el-row>
+                </div>
+              </div>
             </el-col>
           </el-row>
 
@@ -50,11 +50,11 @@
               </li>
             </el-col>
             <el-col :span="22">
-              <el-row class="denver-item">
-                <el-col :span="5" class="denver-item-left">
+              <div class="denver-item">
+                <div class="denver-item-left">
                   <p class="denver-item-left-text">Mar 02, 2023<br/>16:20 - 16:40</p>
-                </el-col>
-                <el-col :span="19" class="denver-item-right">
+                </div>
+                <div class="denver-item-right">
                   <div class="denver-item-right-title">
                     <img class="denver-item-right-img" src="../assets/devcon2.png"/>
                     <span>TALK</span>
@@ -62,8 +62,8 @@
                   <div class="denver-item-right-text denver-link" @click="goTalk1">
                     EthStorage - Scaling Ethereum Storage via Layer 2 and Data Availability.
                   </div>
-                </el-col>
-              </el-row>
+                </div>
+              </div>
             </el-col>
           </el-row>
 
@@ -79,11 +79,11 @@
               </li>
             </el-col>
             <el-col :span="22">
-              <el-row class="denver-item">
-                <el-col :span="5" class="denver-item-left">
+              <div class="denver-item">
+                <div class="denver-item-left">
                   <p class="denver-item-left-text">Mar 03, 2023<br/>18:00 - 21:00</p>
-                </el-col>
-                <el-col :span="19" class="denver-item-right">
+                </div>
+                <div class="denver-item-right">
                   <div class="denver-item-right-title">
                     <img class="denver-item-right-img" src="../assets/start.png"/>
                     <span>SIDE EVENT</span>
@@ -91,8 +91,8 @@
                   <div class="denver-item-right-text denver-link" @click="goSlid">
                     Infra & Middleware Meetup with Sentio, NKN, and HyperOracle.
                   </div>
-                </el-col>
-              </el-row>
+                </div>
+              </div>
             </el-col>
           </el-row>
 
@@ -105,11 +105,11 @@
               </li>
             </el-col>
             <el-col :span="22">
-              <el-row class="denver-item">
-                <el-col :span="5" class="denver-item-left">
+              <div class="denver-item">
+                <div class="denver-item-left">
                   <p class="denver-item-left-text">Mar 04, 2023<br/>10:30 - 10:45</p>
-                </el-col>
-                <el-col :span="19" class="denver-item-right">
+                </div>
+                <div class="denver-item-right">
                   <div class="denver-item-right-title">
                     <img class="denver-item-right-img" src="../assets/devcon2.png"/>
                     <span>TALK</span>
@@ -117,8 +117,8 @@
                   <div class="denver-item-right-text denver-link" @click="goTalk2">
                     Introducing web3:// - Decentralized Access Protocol for EVM.
                   </div>
-                </el-col>
-              </el-row>
+                </div>
+              </div>
             </el-col>
           </el-row>
         </div>
@@ -214,7 +214,7 @@ export default {
   border-radius: 50%;
 }
 .item-tail {
-  height: 54px;
+  height: 56px;
   width: 2px;
   margin: 4px 0;
   background: #FFFFFF;
@@ -225,9 +225,11 @@ export default {
 
 
 .denver-item {
+  display: flex;
+  flex-flow: row;
   background: #FFFFFF;
   border-radius: 8px;
-  height: 91px;
+  height: 92px;
   border: 1px solid #C0C5FC;
 }
 .denver-item-left {
@@ -235,13 +237,14 @@ export default {
   align-items: center;
   justify-content: center;
   height: 90px;
+  width: 190px;
   background: #748DC5;
   border-radius: 8px;
 }
 .denver-item-left-text {
   font-size: 14px;
-  color: #FFFFFF;
   line-height: 24px;
+  color: #FFFFFF;
   text-align: center;
   font-family: AlibabaPuHuiTiM;
 }
@@ -250,7 +253,8 @@ export default {
   flex-flow: column;
   align-items: flex-start;
   justify-content: center;
-  height: 90px;
+  height: 92px;
+  width: 100%;
   padding-left: 40px;
 }
 .denver-item-right-title {
@@ -268,9 +272,9 @@ export default {
 }
 .denver-item-right-text {
   font-size: 15px;
-  color: #000000;
   line-height: 15px;
   margin-top: 8px;
+  color: #000000;
   font-family: AlibabaPuHuiTiR;
 }
 .denver-link {
@@ -341,9 +345,12 @@ export default {
     margin: 25px auto 0;
   }
 
+  .denver-item-left {
+    width: 120px;
+  }
   .denver-item-left-text {
     font-size: 12px;
-    line-height: 12px;
+    line-height: 20px;
   }
   .denver-item-right {
     padding-left: 10px;
@@ -365,7 +372,7 @@ export default {
 
   .office-layout {
     padding: 35px 15px;
-    width: 90%;
+    width: 85%;
     margin: 50px auto 20px;
   }
   .office-layout-title {
