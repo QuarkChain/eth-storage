@@ -131,7 +131,7 @@ export default {
   position: absolute !important;
   z-index: 1;
   right: -1px;
-  width: 140px;
+  width: 150px;
   height: 50px;
   font-size: 18px;
   line-height: 17px;
