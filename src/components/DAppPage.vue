@@ -112,6 +112,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 .dapp-title {
   margin-top: 80px;
@@ -188,6 +189,7 @@ export default {
 @media screen and (max-width: 500px) {
   .dapp {
     max-width: 100%;
+    padding-bottom: 40px;
   }
   .dapp-title {
     margin-top: 40px;
