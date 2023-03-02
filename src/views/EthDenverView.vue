@@ -140,8 +140,8 @@
           </div>
         </div>
       </div>
-      <FooterPage />
     </div>
+    <FooterPage />
   </div>
 </template>
 
@@ -181,6 +181,7 @@ export default {
 <style scoped>
 .denver {
   padding-top: 20px;
+  padding-bottom: 80px;
   background-size: 100% 100%;
   background-image: url("../assets/denver.png");
 }
@@ -332,6 +333,7 @@ export default {
 @media screen and (max-width: 500px) {
   .denver {
     padding-top: 10px;
+    padding-bottom: 30px;
   }
 
   .denver-title {

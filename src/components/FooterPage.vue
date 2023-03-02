@@ -93,22 +93,24 @@ export default {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  background: black;
 }
 
 .subscribe-title  {
-  color: #000000;
   margin-top: 50px;
-  line-height: 12px;
-  font-size: 12px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
   font-family: AlibabaPuHuiTiR;
 }
 
 .sub-layout {
-  width: 360px;
-  margin-top: 15px;
-  border-radius: 20px;
-  border: 1px solid #000000;
-  background: #FFFFFF;
+  width: 500px;
+  margin-top: 25px;
+  border-radius: 29px;
+  border: 2px solid #FFFFFF;
+  background: #000000;
+  height: 52px;
 }
 .sub-input {
   background: transparent;
@@ -117,11 +119,11 @@ export default {
   background-color: transparent;
   border: none;
   width: 100%;
+  height: 50px;
   padding-left: 20px;
-  padding-right: 110px;
-  color: #000000;
-  font-size: 12px;
-  line-height: 40px;
+  padding-right: 140px;
+  color: #FFFFFF;
+  font-size: 18px;
   font-family: AlibabaPuHuiTiR;
 }
 
@@ -129,44 +131,45 @@ export default {
   position: absolute !important;
   z-index: 1;
   right: -1px;
-  width: 110px;
-  height: 40px;
-  font-size: 12px;
+  width: 140px;
+  height: 50px;
+  font-size: 18px;
   line-height: 17px;
-  color: #FFFFFF;
-  background: #000000;
-  border-radius: 0 20px 20px 0;
-  border: 1px solid #000000;
+  color: #000000;
+  background: #FFFFFF;
+  border-radius: 0 29px 29px 0;
+  border: 1px solid #FFFFFF;
   font-family: AlibabaPuHuiTiR;
 }
 .sub-button:focus,
 .sub-button:hover {
-  color: #FFFFFF;
-  border: 1px solid #000000;
-  background: rgba(0, 0, 0, 0.8);
+  color: #000000;
+  border: 0;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 @media screen and (max-width: 500px) {
   .subscribe-title  {
-    margin-top: 25px;
+    margin-top: 30px;
+    font-size: 16px;
   }
 
   .sub-layout {
     width: 76%;
+    height: 38px;
     margin-bottom: 5px;
   }
 
   .sub-input >>> .el-input__inner {
     padding-left: 15px;
-    padding-right: 105px;
-    height: 32px;
+    padding-right: 110px;
+    height: 38px;
     font-size: 10px !important;
-    line-height: 32px !important;
   }
 
   .sub-button {
-    width: 105px;
-    height: 32px;
+    width: 110px;
+    height: 36px;
     line-height: 10px;
     font-size: 10px;
   }
@@ -174,24 +177,28 @@ export default {
 </style>
 <style>
 .footer {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-  background: transparent !important;
-  height: 100px;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  background: black !important;
+  height: 130px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .footer a {
-  color: #000;
+  color: #ffffff;
   font-size: 13px;
   padding: 10px;
   vertical-align: middle;
 }
+.footer a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 .footer-img {
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(329deg) brightness(105%) contrast(102%);
 }
 
 @media screen and (max-width: 500px) {

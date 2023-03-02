@@ -8,6 +8,11 @@
           <div>
             <p class="header-title1">Scaling the Storage</p>
             <p class="header-title2">of the World Computer</p>
+            <div class="header-grant" @click="goGrant">
+              <img class="header-eth" src="../assets/eth.png"/>
+              <span class="grant-text">Supported By <span class="grant-text2">Ethereum ESP</span></span>
+              <img class="header-go" src="../assets/go.png"/>
+            </div>
           </div>
           <DocumentationIcon class="header-logo"/>
         </div>
@@ -28,6 +33,11 @@ export default {
     Header,
     HeaderBanner
   },
+  methods: {
+    goGrant(){
+      window.open('https://blog.ethereum.org/2023/02/14/layer-2-grants-roundup#-cryptography-and-zero-knowledge-proofs', "_blank");
+    },
+  }
 };
 </script>
 
@@ -73,6 +83,32 @@ export default {
   width: 650px;
 }
 
+.header-grant {
+  cursor: pointer;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+.header-eth {
+  width: 45px;
+}
+.grant-text {
+  font-size: 29px;
+  color: #000000;
+  line-height: 40px;
+  letter-spacing: 1px;
+  padding: 0 25px;
+  font-family: AlibabaPuHuiTiR;
+}
+.grant-text2 {
+  font-family: AlibabaPuHuiTiH;
+}
+.header-go {
+  width: 28px;
+}
+
 @media screen and (max-width: 500px) {
   .home {
     padding-top: 15px;
@@ -84,8 +120,8 @@ export default {
   .header-content {
     padding-top: 20px;
     padding-bottom: 40px;
-    width: 360px;
-    justify-content: space-between;
+    width: 98%;
+    justify-content: space-around;
     margin: 0 auto;
   }
   .header-title1 {
@@ -103,6 +139,21 @@ export default {
   .header-logo {
     width: 150px;
     height: 160px;
+  }
+
+  .header-grant {
+    margin-top: 10px;
+  }
+  .header-eth {
+    width: 18px;
+  }
+  .grant-text {
+    font-size: 10px;
+    line-height: 0;
+    padding: 0 5px;
+  }
+  .header-go {
+    width: 15px;
   }
 }
 </style>
