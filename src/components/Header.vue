@@ -20,8 +20,8 @@
         <b-navbar-item href="https://t.me/ethstorage" target="_blank">Telegram</b-navbar-item>
       </b-navbar-dropdown>
       <b-navbar-item href="https://github.com/ethstorage" target="_blank">Developer</b-navbar-item>
-      <b-navbar-item>
-        <div class="devcon-layout" @click.stop="goEthDenver">
+      <b-navbar-item href="https://www.youtube.com/watch?v=7ir-fSEisnc" target="_blank">
+        <div class="devcon-layout">
           <img class="devcon-img" src="@/assets/denv.png" alt="devcon"/>
           <span class="devcon-text">ETHDenver</span>
         </div>
@@ -40,9 +40,6 @@
 export default {
   name: "Header",
   methods: {
-    goEthDenver(){
-      this.$router.push({path: "/denver"});
-    },
     goHome() {
       this.$router.push({path: "/"});
     }
