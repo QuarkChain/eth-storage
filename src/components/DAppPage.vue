@@ -63,7 +63,7 @@
             <div class="dapp-item-link">web3://w3music.w3q/</div>
           </div>
         </div>
-        <div class="dapp-table dapp-table-mg-top dapp-table-left">
+        <div class="dapp-table dapp-table-mg-top">
           <div class="dapp-item" @click="goStanfordBlockchain">
             <img class="dapp-item-img" src="@/assets/stanford.png"/>
             <div class="dapp-item-title">Stanford Blockchain Review</div>
