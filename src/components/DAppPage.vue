@@ -56,19 +56,32 @@
             <div class="dapp-item-message">Your private hard drive on EthStorage.</div>
             <div class="dapp-item-link">web3://w3-drive.eth/</div>
           </div>
+          <div class="dapp-item" @click="goW3Music">
+            <img class="dapp-item-img" src="@/assets/w3music.png"/>
+            <div class="dapp-item-title">W3Music</div>
+            <div class="dapp-item-message">Fully on-chain music NFT.</div>
+            <div class="dapp-item-link">web3://w3music.w3q/</div>
+          </div>
+        </div>
+        <div class="dapp-table dapp-table-mg-top dapp-table-left">
           <div class="dapp-item" @click="goStanfordBlockchain">
             <img class="dapp-item-img" src="@/assets/stanford.png"/>
             <div class="dapp-item-title">Stanford Blockchain Review</div>
             <div class="dapp-item-message">Stanford Blockchain Club's Official Industry Journal.</div>
             <div class="dapp-item-link">web3://stanfordblockchainreview.w3q/</div>
           </div>
-        </div>
-        <div class="dapp-table dapp-table-mg-top dapp-table-left">
           <div class="dapp-item" @click="goBlockEden">
             <img class="dapp-item-img" src="@/assets/blockeden.png"/>
             <div class="dapp-item-title">BlockEden</div>
-            <div class="dapp-item-message">A managed storage solution for creators and developers from any blockchain.</div>
+            <div class="dapp-item-message">A managed storage solution for creators and developers from any blockchain.
+            </div>
             <div class="dapp-item-link">https://blockeden.xyz/dstore/</div>
+          </div>
+          <div class="dapp-item" @click="goGit3">
+            <img class="dapp-item-img" src="@/assets/git3.png"/>
+            <div class="dapp-item-title">Git3</div>
+            <div class="dapp-item-message">Git protocol for the open web.</div>
+            <div class="dapp-item-link">https://git3.sh</div>
           </div>
         </div>
       </div>
@@ -115,6 +128,12 @@ export default {
     },
     goBlockEden() {
       this.openUrl("https://blockeden.xyz/dstore/");
+    },
+    goW3Music() {
+      this.openUrl("https://w3music.w3q.w3q-g.w3link.io/#/");
+    },
+    goGit3() {
+      this.openUrl("https://git3.sh");
     }
   },
 };
