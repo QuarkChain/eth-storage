@@ -60,7 +60,7 @@
             <img class="dapp-item-img" src="@/assets/w3music.png"/>
             <div class="dapp-item-title">W3Music</div>
             <div class="dapp-item-message">Fully on-chain music NFT.</div>
-            <div class="dapp-item-link">web3://w3music.w3q/</div>
+            <div class="dapp-item-link">web3://w3-music.eth/</div>
           </div>
         </div>
         <div class="dapp-table dapp-table-mg-top">
@@ -68,7 +68,7 @@
             <img class="dapp-item-img" src="@/assets/stanford.png"/>
             <div class="dapp-item-title">Stanford Blockchain Review</div>
             <div class="dapp-item-message">Stanford Blockchain Club's Official Industry Journal.</div>
-            <div class="dapp-item-link">web3://stanfordblockchainreview.w3q/</div>
+            <div class="dapp-item-link">web3://stanfordblockchainreview.eth/</div>
           </div>
           <div class="dapp-item" @click="goBlockEden">
             <img class="dapp-item-img" src="@/assets/blockeden.png"/>
@@ -124,13 +124,13 @@ export default {
       this.openUrl("https://vitalikblog.w3eth.io/");
     },
     goStanfordBlockchain() {
-      this.openUrl("https://stanfordblockchainreview.w3q.w3q-g.w3link.io/#/");
+      this.openUrl("https://stanfordblockchainreview.w3eth.io/");
     },
     goBlockEden() {
       this.openUrl("https://blockeden.xyz/dstore/");
     },
     goW3Music() {
-      this.openUrl("https://w3music.w3q.w3q-g.w3link.io/#/");
+      this.openUrl("https://w3-music.w3eth.io/");
     },
     goGit3() {
       this.openUrl("https://git3.sh");
