@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="main-app">
+    <HeaderBanner />
     <HeaderPage/>
     <ExplorePage/>
     <HigherPage/>
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import HeaderBanner from '../components/HeaderBanner.vue';
 import HeaderPage from '../components/HeaderPage.vue';
 import ExplorePage from '../components/ExplorePage.vue';
 import HigherPage from '../components/HigherPage.vue';
@@ -22,6 +24,7 @@ import FooterPage from "@/components/FooterPage.vue";
 export default {
   name: "Home",
   components: {
+    HeaderBanner,
     HeaderPage,
     ExplorePage,
     HigherPage,
@@ -32,3 +35,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.main-app {
+  background: #FFFFFF;
+}
+</style>

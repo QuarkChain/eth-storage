@@ -4142,6 +4142,19 @@ ethers@^5.5.4:
     "@ethersproject/web" "5.7.0"
     "@ethersproject/wordlists" "5.7.0"
 
+ethfs-uploader@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/ethfs-uploader/-/ethfs-uploader-1.2.0.tgz#3e9c58053213be1d2b8e1aec422137d0af864271"
+  integrity sha512-oc7TwCyTMrl4gyLlQMQW85xMh86KHVA/MFWd1NBfUq9oqcg34650J9RqEfq2H1Q+GMORFcV6jZGPmaZju+pleA==
+  dependencies:
+    colors-cli "^1.0.28"
+    eth-ens-namehash "^2.0.8"
+    ethers "^5.5.4"
+    fs "^0.0.1-security"
+    js-sha3 "^0.8.0"
+    minimist "^1.2.5"
+    rxjs "^7.5.5"
+
 event-pubsub@4.3.0:
   version "4.3.0"
   resolved "https://registry.npmmirror.com/event-pubsub/-/event-pubsub-4.3.0.tgz#f68d816bc29f1ec02c539dc58c8dd40ce72cb36e"

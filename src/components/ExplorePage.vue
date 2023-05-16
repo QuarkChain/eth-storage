@@ -9,7 +9,6 @@
 
 <style scoped>
 .home {
-  background: #FFFFFF;
 }
 
 .explore {

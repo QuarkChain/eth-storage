@@ -1,122 +1,185 @@
 <template>
   <div>
-    <HeaderBanner />
-    <div class="home">
-      <Header />
-      <div class="header">
-        <div class="header-content">
-          <div>
-            <p class="header-title1">Scaling the Storage</p>
-            <p class="header-title2">of the World Computer</p>
-            <div class="header-grant" @click="goGrant">
-              <img class="header-eth" src="../assets/eth.png"/>
-              <span class="grant-text">Supported By <span class="grant-text2">Ethereum ESP</span></span>
-              <img class="header-go" src="../assets/go.png"/>
-            </div>
+    <Header/>
+    <div class="header">
+      <p class="header-title1">Scaling the <span class="header-title1-color">storage</span> of</p>
+      <p class="header-title2">
+        the <span class="title-color2">world</span> <span class="title-color3">computer</span>
+      </p>
+
+      <div class="header-content">
+        <div class="header-content-lt">
+          <img class="lt-img" src="@/assets/header-connectors1.svg"/>
+          <div class="lt-text">
+            Expanding the storage capacity is crucial for the world computer to onboard the next billion users.
           </div>
-          <DocumentationIcon class="header-logo"/>
         </div>
+        <div class="header-content-rt">
+          <img src="@/assets/header-connectors2.svg"/>
+          <span class="rt-text" @click="goGrant">Supported By <span class="grant-text2">Ethereum ESP</span></span>
+          <img class="rt-go" src="../assets/arrow-right-blue.png"/>
+        </div>
+      </div>
+
+      <div class="header-content">
+        <div class="header-content-lb">
+          <div class="lb-text" @click.stop="goEthDenver">
+            Watch ETHDenver Talk<img class="rt-go" src="../assets/arrow-right-blue.png"/>
+          </div>
+          <div class="lb-text lb-text-margin" @click.stop="goDevcon">
+            Watch Devcon Talk<img class="rt-go" src="../assets/arrow-right-blue.png"/>
+          </div>
+        </div>
+        <img class="header-font-icon" src="@/assets/header-font.svg"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import DocumentationIcon from './IconHeaderLogo.vue';
-import HeaderBanner from './HeaderBanner.vue';
 import Header from './Header.vue';
 
 export default {
   name: "HeaderPage",
   components: {
-    DocumentationIcon,
     Header,
-    HeaderBanner
   },
   methods: {
-    goGrant(){
+    goGrant() {
       window.open('https://blog.ethereum.org/2023/02/14/layer-2-grants-roundup#-cryptography-and-zero-knowledge-proofs', "_blank");
+    },
+    goEthDenver() {
+      window.open('https://www.youtube.com/watch?v=7ir-fSEisnc', "_blank");
+    },
+    goDevcon() {
+      window.open('https://www.youtube.com/watch?v=rRI-3RV_JHw', "_blank");
     },
   }
 };
 </script>
 
 <style scoped>
-.home {
-  background: linear-gradient(91deg, #DAE3EB 0%, #EEF2FF 100%);
-  padding-top: 20px;
+.header {
+  background: url("../assets/header-bg.png") top 30px center no-repeat;
 }
 
-.header {
-  background: url("../assets/header-bg.png") no-repeat center top;
-  background-size: auto 95%;
+.header-title1 {
+  padding-top: 216px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  color: #000000;
+  text-align: center;
+  font-family: 'Futura';
 }
+.header-title1-color {
+  color: #E6AFAA;
+}
+
+.header-title2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  text-align: center;
+  color: #000000;
+  font-family: 'Futura';
+}
+.title-color2 {
+  color: #59A5FF;
+}
+.title-color3 {
+  color: #9671FF;
+}
+
+
 
 .header-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  align-items: flex-start;
 }
-.header-title1 {
-  font-size: 70px;
-  line-height: 90px;
-  font-weight: normal;
+.header-content-lt {
+  margin-top: -45px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.lt-img {
+  width: 86px;
+  height: 92px;
+  margin-right: 90px;
+}
+.lt-text {
+  width: 100%;
+  height: 190px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
   color: #000000;
-  margin-top: -60px;
-  font-family: AlibabaPuHuiTiH;
-}
-.header-title2 {
-  background: #000000;
-  border-radius: 60px;
-  font-weight: normal;
-  color: #FFFFFF;
-  margin-top: 40px;
-  font-size: 50px;
-  line-height: 50px;
-  padding: 20px 50px;
-  font-family: AlibabaPuHuiTiH;
-}
-.header-logo {
-  width: 650px;
+  padding-top: 25px;
+  text-align: left;
+  font-family: 'Avenir';
 }
 
-.header-grant {
-  cursor: pointer;
+.header-content-rt {
+  padding-left: 460px;
   display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 35px;
+  flex-direction: row;
+  align-items: flex-end;
 }
-.header-eth {
-  width: 45px;
-}
-.grant-text {
-  font-size: 29px;
+.rt-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
   color: #000000;
-  line-height: 40px;
-  letter-spacing: 1px;
-  padding: 0 25px;
-  font-family: AlibabaPuHuiTiR;
+  padding-left: 25px;
+  font-family: 'Avenir';
+  cursor: pointer;
 }
 .grant-text2 {
-  font-family: AlibabaPuHuiTiH;
+  font-weight: 700;
 }
-.header-go {
-  width: 28px;
+.rt-go {
+  width: 16px;
+  padding-bottom: 9px;
+  margin-left: 4px;
 }
 
+
+.header-content-lb {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+}
+.lb-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 33px;
+  color: #000000;
+  font-family: 'Avenir';
+  cursor: pointer;
+}
+.lb-text-margin {
+  margin-top: 15px;
+}
+.header-font-icon {
+  margin-left: 450px;
+  width: 380px;
+  height: 350px;
+}
 @media screen and (max-width: 500px) {
-  .home {
-    padding-top: 15px;
-  }
-
   .header {
     background-size: 100% auto;
   }
+
   .header-content {
     padding-top: 20px;
     padding-bottom: 40px;
@@ -124,36 +187,19 @@ export default {
     justify-content: space-around;
     margin: 0 auto;
   }
+
   .header-title1 {
     font-size: 18px;
     line-height: 18px;
     margin-top: 0;
   }
+
   .header-title2 {
     border-radius: 35px;
     margin-top: 10px;
     font-size: 13px;
     line-height: 13px;
     padding: 8px;
-  }
-  .header-logo {
-    width: 150px;
-    height: 160px;
-  }
-
-  .header-grant {
-    margin-top: 10px;
-  }
-  .header-eth {
-    width: 18px;
-  }
-  .grant-text {
-    font-size: 10px;
-    line-height: 0;
-    padding: 0 5px;
-  }
-  .header-go {
-    width: 15px;
   }
 }
 </style>

@@ -14,8 +14,8 @@
 <style scoped>
 .header-banner {
   width: 100%;
-  background: #6979A0;
-  min-height: 36px;
+  background: #59A5FF;
+  min-height: 40px;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -30,8 +30,12 @@
 }
 
 .header-text {
-  line-height: 36px;
-  font-size: 15px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
 }
 
 .header-br {
@@ -40,13 +44,12 @@
 
 a.w3q-link {
   text-decoration: none;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #FFFFFF;
 }
-
 a.w3q-link:link,
 a.w3q-link:visited,
 a.w3q-link:hover {
-  color: #eeeeee;
+  color: #FFFFFF;
   background-color: transparent;
 }
 
