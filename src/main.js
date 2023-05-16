@@ -7,7 +7,6 @@ import router from './router';
 
 import 'element-ui/lib/theme-chalk/index.css';
 import 'buefy/dist/buefy.css';
-import './assets/font/font.css';
 import './assets/main.css'
 
 Vue.use(Element)

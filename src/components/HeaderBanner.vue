@@ -14,7 +14,7 @@
 <style scoped>
 .header-banner {
   width: 100%;
-  background: #59A5FF;
+  background: #9671FF;
   min-height: 40px;
   color: #fff;
   display: flex;

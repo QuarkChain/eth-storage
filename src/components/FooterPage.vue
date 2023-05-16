@@ -93,7 +93,6 @@ export default {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  background: black;
 }
 
 .subscribe-title  {
@@ -179,7 +178,7 @@ export default {
 .footer {
   padding-top: 40px !important;
   padding-bottom: 40px !important;
-  background: black !important;
+  background: transparent !important;
   height: 130px;
   width: 100%;
   display: flex;

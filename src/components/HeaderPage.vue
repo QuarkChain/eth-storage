@@ -60,7 +60,10 @@ export default {
 
 <style scoped>
 .header {
-  background: url("../assets/header-bg.png") top 30px center no-repeat;
+  background: url("../assets/header-bg.png") top center no-repeat;
+  background-size: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header-title1 {
@@ -98,7 +101,7 @@ export default {
 .header-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
 }
 .header-content-lt {
@@ -111,7 +114,7 @@ export default {
 .lt-img {
   width: 86px;
   height: 92px;
-  margin-right: 90px;
+  margin-right: 45px;
 }
 .lt-text {
   width: 100%;
@@ -127,7 +130,7 @@ export default {
 }
 
 .header-content-rt {
-  padding-left: 460px;
+  margin-top: 15px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -157,10 +160,10 @@ export default {
   flex-direction: column;
   align-items: flex-start;
   width: 300px;
+  margin-top: 95px;
 }
 .lb-text {
   font-style: normal;
-  font-weight: 400;
   font-size: 23px;
   line-height: 33px;
   color: #000000;
@@ -172,6 +175,7 @@ export default {
 }
 .header-font-icon {
   margin-left: 450px;
+  margin-top: 95px;
   width: 380px;
   height: 350px;
 }

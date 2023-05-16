@@ -38,6 +38,6 @@ export default {
 
 <style scoped>
 .main-app {
-  background: #FFFFFF;
+  background: linear-gradient(0.07deg, #FFFFFF 0.06%, #E4EDF6 33.01%, #EEF3FA 64.15%, #FDFDFE 91.74%);
 }
 </style>
