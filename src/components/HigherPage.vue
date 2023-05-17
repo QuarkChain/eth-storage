@@ -131,16 +131,13 @@
   width: 700px;
   margin-top: 45px;
 }
-.higher-icon2{
-  margin-top: 80px;
-}
 
 
 .higher-rt {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-top: 210px;
+  margin-top: 185px;
   margin-left: 15px;
 }
 .higher-rt-arrow {
@@ -273,10 +270,6 @@ a.f-link:hover {
   .higher-rt-font {
     display: none;
   }
-  .higher-icon2{
-    margin-top: 30px;
-  }
-
 
   .feature-title {
     margin-top: 70px;

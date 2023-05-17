@@ -16,18 +16,19 @@
         </div>
         <div class="header-content-rt">
           <img class="rt-img" src="@/assets/header-connectors2.svg"/>
-          <span class="rt-text" @click="goGrant">Supported By <span class="grant-text2">Ethereum ESP</span></span>
-          <img class="rt-go" src="../assets/arrow-right-blue.png"/>
+          <span class="rt-text" @click="goGrant">
+            Supported By <span class="grant-text2">Ethereum ESP</span> <img class="rt-go" src="@/assets/arrow-right-blue.png"/>
+          </span>
         </div>
       </div>
 
       <div class="header-content">
         <div class="header-content-lb">
           <div class="lb-text" @click.stop="goEthDenver">
-            Watch ETHDenver Talk<img class="rt-go" src="../assets/arrow-right-blue.png"/>
+            Watch ETHDenver Talk <img class="rt-go" src="@/assets/arrow-right-blue.png"/>
           </div>
           <div class="lb-text lb-text-margin" @click.stop="goDevcon">
-            Watch Devcon Talk<img class="rt-go" src="../assets/arrow-right-blue.png"/>
+            Watch Devcon Talk <img class="rt-go" src="@/assets/arrow-right-blue.png"/>
           </div>
         </div>
         <img class="header-font-icon" src="@/assets/header-font.svg"/>
@@ -145,13 +146,15 @@ export default {
   font-family: 'Avenir';
   cursor: pointer;
 }
+.rt-text:hover {
+  filter: opacity(50%);
+}
 .grant-text2 {
   font-weight: 700;
 }
 .rt-go {
   width: 16px;
-  padding-bottom: 9px;
-  margin-left: 4px;
+  padding-bottom: 2px;
 }
 
 
@@ -169,6 +172,9 @@ export default {
   color: #000000;
   font-family: 'Avenir';
   cursor: pointer;
+}
+.lb-text:hover {
+  filter: opacity(50%);
 }
 .lb-text-margin {
   margin-top: 15px;
@@ -233,9 +239,6 @@ export default {
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
   .lb-text-margin {
     margin-top: 10px;

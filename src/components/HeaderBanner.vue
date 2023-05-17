@@ -43,8 +43,7 @@ a.w3q-link:hover {
   background-color: transparent;
 }
 a.w3q-link:hover {
-  color: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  filter: opacity(50%);
   background-color: transparent;
 }
 

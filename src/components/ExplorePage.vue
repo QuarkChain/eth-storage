@@ -100,6 +100,7 @@
   }
   .explore-message {
     width: 100%;
+    margin-top: 15px;
     text-align: left;
   }
   .explore-rt-arrow {
