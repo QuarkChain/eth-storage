@@ -111,40 +111,48 @@
   }
 
   .application-title {
-    margin-top: 40px;
-    font-size: 18px;
-    line-height: 25px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 125%;
   }
 
   .application-context {
-    display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    margin-top: 20px;
-    margin-bottom: 40px;
   }
 
   .application-context-item {
-    align-items: center;
-  }
-
-  .application-context-title {
+    justify-content: space-between;
+    width: 90%;
+    height: 180px;
     margin-top: 20px;
-    font-size: 15px;
-    line-height: 20px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
+  .application-context-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .application-context-title {
+    font-size: 16px;
+  }
   .application-context-message {
-    margin-top: 3px;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .application-image {
+    height: 40px;
+    margin-bottom: 20px;
   }
 
-  .application-image {
-    width: 260px;
+  .application-item-margin {
+    margin-top: 20px;
   }
 }
 </style>

@@ -6,7 +6,7 @@
           <div class="higher-lt">
             <img class="higher-lt-arrow" src="@/assets/higher-arrow.svg" />
             <div>
-              <p class="higher-title">Higher<br><span style="color: #A381FD">Capacity</span></p>
+              <p class="higher-title">Higher <br class="br-phone"/><span style="color: #A381FD">Capacity</span></p>
               <p class="higher-message">EthStorage enhances the storage capacity of Ethereum, increasing it from the terabyte (TB) level to the petabyte (PB) level.</p>
             </div>
           </div>
@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      <div class="higher-item">
+      <div class="higher-item higher-item2">
         <div class="higher-icon higher-icon2">
           <img src="../assets/higher2.png" alt="higher image">
         </div>
@@ -43,7 +43,7 @@
               <span class="feature-context-message">Smart contract programmable CRUD for large-value reads/writes with ~ PB capacity.</span>
             </div>
           </div>
-          <div class="feature-context-item">
+          <div class="feature-context-item feature-item-margin">
             <img class="feature-context-image" src="@/assets/feature-icon2.png"/>
             <div class="feature-context-item-text">
               <span class="feature-context-title">Proof of Storage on Large Dynamic Datasets</span>
@@ -59,7 +59,7 @@
               <span class="feature-context-message">Increase data upload speed using KZG commitment and Reed-Solomon code powered by Danksharding.</span>
             </div>
           </div>
-          <div class="feature-context-item">
+          <div class="feature-context-item feature-item-margin">
             <img class="feature-context-image" src="@/assets/feature-icon3.png"/>
             <div class="feature-context-item-text">
               <span class="feature-context-title">web3:// Access Protocol</span>
@@ -221,14 +221,104 @@ a.f-link:hover {
   background: transparent;
 }
 @media screen and (max-width: 500px) {
+  .home {
+    background: none;
+  }
   .higher {
     max-width: 100%;
   }
 
+  .higher-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .higher-lt {
+    justify-content: center;
+    margin-top: 0;
+  }
+  .higher-lt-arrow {
+    display: none;
+  }
   .higher-title {
-    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .higher-message {
+    width: 90%;
+    margin: 15px auto 0;
+  }
+  .higher-lt-font {
+    display: none;
+  }
+
+  .higher-icon{
+    width: 90%;
+    margin-top: 30px;
+  }
+
+
+  .higher-item2 {
+    flex-direction: column-reverse;
+  }
+  .higher-rt {
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .higher-rt-arrow {
+    display: none;
+  }
+  .higher-rt-font {
+    display: none;
+  }
+  .higher-icon2{
+    margin-top: 30px;
+  }
+
+
+  .feature-title {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .feature-context {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .feature-context-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+  }
+  .feature-context-image {
+    width: 24px;
+    height: 24px;
+  }
+  .feature-context-item-text {
+    width: 100%;
+  }
+  .feature-context-title {
     font-size: 18px;
-    line-height: 18px;
+  }
+  .feature-context-message {
+    font-size: 14px;
+  }
+  .feature-margin {
+    padding-bottom: 0;
+  }
+  .feature-item-margin {
+    margin-top: 20px;
+  }
+
+  .br-phone {
+    display: none;
   }
 }
 </style>

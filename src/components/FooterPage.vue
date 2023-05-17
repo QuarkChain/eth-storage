@@ -154,7 +154,7 @@ export default {
   padding-right: 140px;
   color: #000000;
   font-size: 18px;
-  font-family: AlibabaPuHuiTiR;
+  font-family: 'Avenir';
 }
 .sub-button {
   position: absolute !important;
@@ -217,29 +217,60 @@ export default {
  }
 
 @media screen and (max-width: 500px) {
+  .footer-div {
+    background: none;
+  }
+
+  .footer-top {
+    width: 100%;
+    padding-top: 80px;
+    justify-content: center;
+  }
+
+  .footer-font {
+    display: none;
+  }
+  .subscribe-div {
+    width: 90%;
+  }
   .subscribe-title  {
-    margin-top: 30px;
-    font-size: 16px;
+    font-family: 'Futura';
+    line-height: 125%;
+    color: #000000;
   }
-
   .sub-layout {
-    width: 76%;
-    height: 38px;
-    margin-bottom: 5px;
+    width: 100%;
+    margin-top: 15px;
+    height: 50px;
   }
-
   .sub-input >>> .el-input__inner {
+    height: 48px;
     padding-left: 15px;
-    padding-right: 110px;
-    height: 38px;
-    font-size: 10px !important;
+    padding-right: 120px;
+    font-size: 15px;
+  }
+  .sub-button {
+    width: 120px;
+    height: 48px;
+    font-size: 15px;
+  }
+  .footer-empty {
+    display: none;
   }
 
-  .sub-button {
-    width: 110px;
-    height: 36px;
-    line-height: 10px;
-    font-size: 10px;
+  .footer-b {
+    padding-bottom: 30px;
+    width: 90%;
+    margin: 80px auto 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .community-layout {
+    margin-top: 15px;
+  }
+  .community-icon {
+    margin: auto 10px;
   }
 }
 </style>

@@ -87,7 +87,6 @@
           <div class="dapp-item-link">https://git3.sh</div>
         </div>
       </div>
-<!--      https://codepen.io/fitri/pen/oPMKNv-->
     </div>
   </div>
 </template>
@@ -243,57 +242,47 @@ export default {
 @media screen and (max-width: 500px) {
   .dapp {
     max-width: 100%;
-    padding-bottom: 40px;
   }
 
   .dapp-title {
-    margin-top: 40px;
-    font-size: 18px;
-    line-height: 18px;
+    margin-top: 70px;
+    font-size: 24px;
+  }
+  .dapp-table-margin {
+    margin-top: 22px;
   }
 
-  .dapp-table-margin {
-    margin-top: 15px;
-    margin-bottom: 30px;
-  }
   .dapp-table {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
   .dapp-table-mg-top {
-    margin-top: 0;
+    margin-top: 0px;
   }
 
   .dapp-item {
-    flex-direction: column;
-    align-items: center;
-    width: 350px;
-    height: 220px;
-    border-radius: 11px;
-    padding: 11px 15px 0;
-    margin: 20px 0 0;
+    width: 90%;
+    height: 230px;
+    padding: 10px 15px;
+    margin: 8px auto;
   }
 
   .dapp-item-img {
-    margin-top: 0;
-    margin-left: 0;
-    width: 45px;
+    width: 70px;
   }
   .dapp-item-title {
-    font-size: 13px;
-    line-height: 15px;
-    margin-top: 7px;
+    margin-top: 3px;
+    font-size: 16px;
   }
   .dapp-item-message {
-    font-size: 13px;
-    line-height: 25px;
-    text-align: center;
-    margin-top: 7px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .dapp-item-link {
-    font-size: 11px;
-    line-height: 11px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
   }
 }
 </style>
