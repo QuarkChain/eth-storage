@@ -263,8 +263,8 @@ export default {
 
   .dapp-item {
     width: 90%;
-    height: 230px;
-    padding: 10px 15px;
+    height: 220px;
+    padding: 10px;
     margin: 8px auto;
   }
 
@@ -272,7 +272,7 @@ export default {
     width: 70px;
   }
   .dapp-item-title {
-    margin-top: 3px;
+    margin-top: 0;
     font-size: 16px;
   }
   .dapp-item-message {
