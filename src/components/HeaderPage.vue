@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="header-content-rt">
-          <img src="@/assets/header-connectors2.svg"/>
+          <img class="rt-img" src="@/assets/header-connectors2.svg"/>
           <span class="rt-text" @click="goGrant">Supported By <span class="grant-text2">Ethereum ESP</span></span>
           <img class="rt-go" src="../assets/arrow-right-blue.png"/>
         </div>
@@ -181,29 +181,74 @@ export default {
 }
 @media screen and (max-width: 500px) {
   .header {
-    background-size: 100% auto;
+    background: url("../assets/header-bg.png") top 30px center no-repeat;
+    background-size: 99%;
+    max-width: 100%;
   }
 
-  .header-content {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    width: 98%;
-    justify-content: space-around;
-    margin: 0 auto;
-  }
 
   .header-title1 {
-    font-size: 18px;
-    line-height: 18px;
-    margin-top: 0;
+    padding-top: 130px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .header-title2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
   }
 
-  .header-title2 {
-    border-radius: 35px;
+
+  .header-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-content-lt {
+    margin-top: 0;
+  }
+  .lt-text {
+    width: 100%;
+    height: auto;
+    padding-top: 38px;
+    text-align: center;
+  }
+
+  .header-content-rt {
+    margin-top: 29px;
+    align-items: center;
+  }
+  .rt-text {
+    padding-left: 0;
+  }
+
+
+
+  .header-content-lb {
+    align-items: center;
+    margin-top: 46px;
+  }
+  .lb-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .lb-text-margin {
     margin-top: 10px;
-    font-size: 13px;
-    line-height: 13px;
-    padding: 8px;
+  }
+
+  .lt-img {
+    display: none;
+  }
+  .rt-img {
+    display: none;
+  }
+  .header-font-icon {
+    display: none;
   }
 }
 </style>

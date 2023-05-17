@@ -4,8 +4,9 @@
     <div class="explore-right">
       <div class="explore-rt">
         <div>
-          <p class="explore-title">Explore the<br><span style="color: #59A5FF">Frontier</span> of<br>Scalability</p>
-          <p class="explore-message">EthStorage takes the scalability of the<br>Ethereum mainnet and layer 2 to the<br>next level.</p>
+          <p class="explore-title">Explore the <br class="br-phone"/>
+            <span style="color: #59A5FF">Frontier</span> of <br class="br-phone"/>Scalability</p>
+          <p class="explore-message">EthStorage takes the scalability of the <br class="br-phone">Ethereum mainnet and layer 2 to the <br class="br-phone">next level.</p>
         </div>
         <img class="explore-rt-arrow" src="@/assets/explore-arrow.svg" />
       </div>
@@ -71,19 +72,44 @@
 @media screen and (max-width: 500px) {
   .explore {
     max-width: 100%;
-  }
-
-  .explore-title {
-    margin-top: 40px;
-    font-size: 18px;
-    line-height: 18px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
 
   .explore-img {
     width: 90%;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    content: url("../assets/explore-phone.png");
+    margin-top: 30px;
+  }
+
+  .explore-right {
+    margin-left: 0;
+    margin-top: 120px;
+    width: 90%;
+  }
+  .explore-rt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .explore-title {
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .explore-message {
+    width: 100%;
+    text-align: left;
+  }
+  .explore-rt-arrow {
+    display: none;
+  }
+  .explore-rt-font {
+    display: none;
+  }
+  .br-phone {
+    display: none;
   }
 }
 </style>

@@ -107,7 +107,7 @@ a.navbar-item.is-active,
   }
 
   .navbar-menu {
-    background: #FFFFFF !important;
+    background: linear-gradient(0.07deg, #E4EDF6 25%, #FFFFFF 91.74%) !important;
   }
 
   .navbar-burger {
