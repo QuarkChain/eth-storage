@@ -19,33 +19,9 @@
       <b-navbar-item href="https://github.com/ethstorage" target="_blank">
         <span class="item-text">Developer<img class="item-arrow" src="@/assets/arrow-right.png"/></span>
       </b-navbar-item>
-      <b-navbar-item>
-        <div class="community-layout">
-          <img class="community-icon" src="@/assets/twitter.png" alt="twitter" @click.stop="goTwitter"/>
-          <img class="community-icon" src="@/assets/discord.png" alt="discord" @click.stop="goDiscord"/>
-          <img class="community-icon" src="@/assets/telegram.png" alt="telegram" @click.stop="goTelegram"/>
-        </div>
-      </b-navbar-item>
     </template>
   </b-navbar>
 </template>
-
-<script>
-export default {
-  name: "Header",
-  methods: {
-    goTwitter(){
-      window.open('https://twitter.com/EthStorage', "_blank");
-    },
-    goDiscord(){
-      window.open('https://discord.gg/xhCwaMp7ps', "_blank");
-    },
-    goTelegram(){
-      window.open('https://t.me/ethstorage', "_blank");
-    },
-  }
-};
-</script>
 
 <style scoped>
 .navbar {
@@ -82,17 +58,6 @@ export default {
   height: 16px;
   margin-left: 7px;
   margin-top: -2px;
-}
-
-.community-layout {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.community-icon {
-  margin: auto 15px;
-  width: 28px;
 }
 
 @media screen and (max-width: 500px) {
@@ -133,7 +98,7 @@ a.navbar-item.is-active,
 .navbar-link:focus-within,
 .navbar-link:hover,
 .navbar-link.is-active {
-  color: rgba(0, 0, 0, 0.5) !important;
+  filter: opacity(50%);
   background-color: transparent !important;
 }
 @media screen and (max-width: 500px) {

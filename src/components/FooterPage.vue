@@ -1,30 +1,27 @@
 <template>
-  <div>
-    <div class="subscribe-div">
-      <div class="subscribe-title">Sign up for EthStorage updates</div>
-      <div class="sub-layout">
-        <el-input class="sub-input" v-model="subscribeEmail" type="email" placeholder="Email Address"></el-input>
-        <el-button class="sub-button" :loading="subscribeProgress" @click="subscribe">
-          SUBSCRIBE
-        </el-button>
+  <div class="footer-div">
+    <div class="footer-top">
+      <img class="footer-font" src="@/assets/footer-font.svg" />
+      <div class="subscribe-div">
+        <div class="subscribe-title">Sign up for EthStorage updates</div>
+        <div class="sub-layout">
+          <el-input class="sub-input" v-model="subscribeEmail" type="email" placeholder="Email Address"></el-input>
+          <el-button class="sub-button" :loading="subscribeProgress" @click="subscribe">
+            SUBSCRIBE
+          </el-button>
+        </div>
       </div>
+      <div class="footer-empty"/>
     </div>
-    <div class="footer">
-      <a href="https://github.com/ethstorage/" target="_blank">
-        <img class="footer-img" src="@/assets/github.png">
-      </a>
-      <a href="https://twitter.com/EthStorage" target="_blank">
-        <img class="footer-img" src="@/assets/twiter.png">
-      </a>
-      <a href="https://ethstorage.medium.com/" target="_blank">
-        <img class="footer-img" src="@/assets/medium.png">
-      </a>
-      <a href="https://t.me/ethstorage" target="_blank">
-        <img class="footer-img" src="@/assets/telegram.png">
-      </a>
-      <a href="https://discord.gg/xhCwaMp7ps" target="_blank">
-        <img class="footer-img" src="@/assets/discord.png">
-      </a>
+    <div class="footer-b">
+      <div class="footer-b-text">2023 EthStorage</div>
+      <div class="community-layout">
+        <img class="community-icon" src="@/assets/twitter.png" alt="twitter" @click.stop="goTwitter"/>
+        <img class="community-icon" src="@/assets/discord.png" alt="discord" @click.stop="goDiscord"/>
+        <img class="community-icon" src="@/assets/telegram.png" alt="telegram" @click.stop="goTelegram"/>
+        <img class="community-icon" src="@/assets/github.png" alt="discord" @click.stop="goGithub"/>
+        <img class="community-icon" src="@/assets/medium.png" alt="telegram" @click.stop="goMedium"/>
+      </div>
     </div>
   </div>
 </template>
@@ -82,33 +79,67 @@ export default {
           type: 'error'
         });
       });
+    },
+    goTwitter(){
+      window.open('https://twitter.com/EthStorage', "_blank");
+    },
+    goDiscord(){
+      window.open('https://discord.gg/xhCwaMp7ps', "_blank");
+    },
+    goTelegram(){
+      window.open('https://t.me/ethstorage', "_blank");
+    },
+    goGithub() {
+      window.open('https://github.com/ethstorage/', "_blank");
+    },
+    goMedium() {
+      window.open('https://ethstorage.medium.com/', "_blank");
     }
   }
 };
 </script>
 
 <style scoped>
+.footer-div {
+  background: url("../assets/footer-bg.png") bottom right no-repeat;
+  background-size: 30%;
+}
+
+.footer-top {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 194px;
+}
+
+.footer-font {
+  width: 265px;
+  height: 162px;
+}
+
 .subscribe-div {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
 }
-
 .subscribe-title  {
-  margin-top: 50px;
-  font-size: 18px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
   line-height: 24px;
-  color: #FFFFFF;
-  font-family: AlibabaPuHuiTiR;
+  color: #383838;
 }
-
 .sub-layout {
   width: 500px;
   margin-top: 25px;
+  background: #FFFFFF;
+  border: 2px solid #383838;
   border-radius: 29px;
-  border: 2px solid #FFFFFF;
-  background: #000000;
   height: 52px;
 }
 .sub-input {
@@ -121,31 +152,69 @@ export default {
   height: 50px;
   padding-left: 20px;
   padding-right: 140px;
-  color: #FFFFFF;
+  color: #000000;
   font-size: 18px;
   font-family: AlibabaPuHuiTiR;
 }
-
 .sub-button {
   position: absolute !important;
   z-index: 1;
   right: -1px;
   width: 150px;
   height: 50px;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 17px;
-  color: #000000;
-  background: #FFFFFF;
+  color: #FFFFFF;
+  background: #383838;
   border-radius: 0 29px 29px 0;
-  border: 1px solid #FFFFFF;
-  font-family: AlibabaPuHuiTiR;
+  border: 1px solid #383838;
+  font-family: 'Avenir';
+  font-style: normal;
 }
 .sub-button:focus,
 .sub-button:hover {
-  color: #000000;
+  color: #FFFFFF;
   border: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(56, 56, 56, 0.7);
 }
+
+.footer-empty {
+  width: 100px;
+  height: 100px;
+}
+
+.footer-b {
+  padding-bottom: 80px;
+  width: 1200px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-b-text {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #000000;
+}
+.community-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.community-icon {
+  margin: auto 15px;
+  width: 28px;
+  cursor: pointer;
+}
+ .community-icon:hover {
+   opacity: .6;
+ }
 
 @media screen and (max-width: 500px) {
   .subscribe-title  {
@@ -171,44 +240,6 @@ export default {
     height: 36px;
     line-height: 10px;
     font-size: 10px;
-  }
-}
-</style>
-<style>
-.footer {
-  padding-top: 40px !important;
-  padding-bottom: 40px !important;
-  background: transparent !important;
-  height: 130px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer a {
-  color: #ffffff;
-  font-size: 13px;
-  padding: 10px;
-  vertical-align: middle;
-}
-.footer a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.footer-img {
-  width: 50px;
-  height: 50px;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(329deg) brightness(105%) contrast(102%);
-}
-
-@media screen and (max-width: 500px) {
-  .footer {
-    padding-top: 0;
-    padding-bottom: 0;
-    height: 56px;
-  }
-  .footer-img {
-    width: 25px;
-    height: 25px;
   }
 }
 </style>
