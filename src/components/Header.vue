@@ -68,10 +68,10 @@
 @media screen and (max-width: 500px) {
   .navbar {
     max-width: 100%;
-    padding-left: 15px;
-    padding-right: 0;
+    padding: 0;
   }
   .navbar-icon {
+    margin-left: 15px;
     height: 25px;
   }
   .navbar-text {
