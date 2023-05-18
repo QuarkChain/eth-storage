@@ -1,7 +1,7 @@
 <template>
   <div class="feature">
     <p class="feature-message">Feature Comparison</p>
-    <img class="feature-img" src="@/assets/feature.png" alt="feature image">
+    <img class="feature-img" alt="feature image">
   </div>
 </template>
 
@@ -28,6 +28,7 @@
 .feature-img {
   width: 1200px;
   margin-top: 15px;
+  content: url("../assets/feature.png");
 }
 
 @media screen and (max-width: 500px) {

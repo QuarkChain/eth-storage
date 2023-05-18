@@ -25,9 +25,10 @@
 
 <style scoped>
 .navbar {
-  max-width: 1340px;
+  max-width: 1390px;
   height: 52px;
   margin: 20px auto 0;
+  padding: 0 25px;
   background: transparent;
 }
 .navbar-logo {
@@ -66,8 +67,9 @@
 
 @media screen and (max-width: 500px) {
   .navbar {
-    max-width: 95%;
+    max-width: 100%;
     padding-left: 15px;
+    padding-right: 0;
   }
   .navbar-icon {
     height: 25px;
