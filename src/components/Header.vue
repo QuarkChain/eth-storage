@@ -47,7 +47,7 @@
   font-size: 23px;
   margin-left: 15px;
   color: #000000 !important;
-  font-family: 'SF Pro';
+  font-family: SFProDisplay;
 }
 
 .item-text {
