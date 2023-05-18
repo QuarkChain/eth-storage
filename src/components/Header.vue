@@ -17,7 +17,7 @@
         <span class="item-text">Technology<img class="item-arrow" src="@/assets/arrow-right.png"/></span>
       </b-navbar-item>
       <b-navbar-item href="https://github.com/ethstorage" target="_blank">
-        <span class="item-text">Developer<img class="item-arrow" src="@/assets/arrow-right.png"/></span>
+        <span class="item-text item-text2">Developer<img class="item-arrow" src="@/assets/arrow-right.png"/></span>
       </b-navbar-item>
     </template>
   </b-navbar>
@@ -53,6 +53,10 @@
 .item-text {
   margin: 0 15px;
 }
+.item-text2 {
+  margin: 0 -12px 0 15px ;
+}
+
 .item-arrow {
   width: 16px;
   height: 16px;
@@ -71,6 +75,9 @@
   .navbar-text {
     font-size: 14px;
     margin-left: 8px;
+  }
+  .item-text2 {
+    margin: 0 15px;
   }
 }
 </style>
@@ -107,7 +114,7 @@ a.navbar-item.is-active,
   }
 
   .navbar-menu {
-    background: linear-gradient(0.07deg, #E4EDF6 25%, #FFFFFF 91.74%) !important;
+    background: #DCE9F9 !important;
   }
 
   .navbar-burger {
