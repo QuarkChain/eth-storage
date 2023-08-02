@@ -67,12 +67,12 @@
         </div>
       </div>
       <div class="dapp-table dapp-table-mg-top">
-        <div class="dapp-item" @click="goStanfordBlockchain">
-          <img class="dapp-item-img" src="@/assets/stanford.png"/>
-          <div class="dapp-item-title">Stanford Blockchain Review</div>
-          <div class="dapp-item-message">Stanford Blockchain Club's Official Industry Journal.</div>
-          <div class="dapp-item-link">web3://stanfordblockchainreview.eth/</div>
-        </div>
+<!--        <div class="dapp-item" @click="goStanfordBlockchain">-->
+<!--          <img class="dapp-item-img" src="@/assets/stanford.png"/>-->
+<!--          <div class="dapp-item-title">Stanford Blockchain Review</div>-->
+<!--          <div class="dapp-item-message">Stanford Blockchain Club's Official Industry Journal.</div>-->
+<!--          <div class="dapp-item-link">web3://stanfordblockchainreview.eth/</div>-->
+<!--        </div>-->
         <div class="dapp-item" @click="goBlockEden">
           <img class="dapp-item-img" src="@/assets/blockeden.png"/>
           <div class="dapp-item-title">BlockEden</div>
