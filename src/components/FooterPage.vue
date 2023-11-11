@@ -21,7 +21,7 @@
         <img class="community-icon" src="@/assets/discord.png" alt="discord" @click.stop="goDiscord"/>
         <img class="community-icon" src="@/assets/telegram.png" alt="telegram" @click.stop="goTelegram"/>
         <img class="community-icon" src="@/assets/github.png" alt="discord" @click.stop="goGithub"/>
-        <img class="community-icon" src="@/assets/medium.png" alt="telegram" @click.stop="goMedium"/>
+        <img class="community-icon" src="@/assets/medium.svg" alt="telegram" @click.stop="goMedium"/>
       </div>
     </div>
   </div>
@@ -215,7 +215,7 @@ export default {
   cursor: pointer;
 }
  .community-icon:hover {
-   opacity: .6;
+   opacity: .7;
  }
 
 @media screen and (max-width: 500px) {

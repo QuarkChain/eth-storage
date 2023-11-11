@@ -1,84 +1,127 @@
 <template>
-  <div class="dapp">
-    <p class="dapp-title">Live dApps on Testnet</p>
-    <div class="dapp-table-margin">
-      <div class="dapp-table">
-        <div class="dapp-item" @click="goUni">
-          <img class="dapp-item-img" src="@/assets/uni.png"/>
-          <div class="dapp-item-title">Uniswap</div>
-          <div class="dapp-item-message">Uniswap frontend hosted by EthStorage.</div>
-          <div class="dapp-item-link">web3://app-uniswap-org.eth/</div>
-        </div>
-        <div class="dapp-item" @click="goEns">
-          <img class="dapp-item-img" src="@/assets/ens.png"/>
-          <div class="dapp-item-title">ENS</div>
-          <div class="dapp-item-message">ENS frontend hosted by EthStorage.</div>
-          <div class="dapp-item-link">web3://app-ens-domain.eth/</div>
-        </div>
-        <div class="dapp-item" @click="goVblog">
-          <img class="dapp-item-img" src="@/assets/vblog.png"/>
-          <div class="dapp-item-title">Vitalik Blog</div>
-          <div class="dapp-item-message">Vitalik blog hosted by EthStorage.</div>
-          <div class="dapp-item-link">web3://vitalikblog.eth/</div>
-        </div>
-      </div>
-      <div class="dapp-table dapp-table-mg-top">
-        <div class="dapp-item" @click="goBlog">
-          <img class="dapp-item-img" src="@/assets/deblog.png"/>
-          <div class="dapp-item-title">W3Blog</div>
-          <div class="dapp-item-message">Fully decentralized blog platform. The frontend and contents are all deployed
-            on EthStorage.
+  <div class="home">
+    <p class="dapp-title">Applications Enabled by EthStorage</p>
+    <div class="dapp-bg">
+      <div class="dapp">
+        <div class="dapp-table-line">
+          <div class="dapp-item dapp-item-color1">
+            <div class="dapp-item-left">
+              <div class="dapp-item-title">Trusted Website Host</div>
+              <div class="dapp-item-message">
+                Uniswap, AAVE, Curve, OpenSea, ENS, etc.
+              </div>
+            </div>
+            <div class="dapp-item-right">
+              <div class="dapp-item-app" @click="goUni">
+                <img class="dapp-item-img" src="@/assets/uni.png"/>
+                <div class="dapp-item-text">Uniswap</div>
+              </div>
+              <div class="dapp-item-app" @click="goEns">
+                <img class="dapp-item-img" src="@/assets/ens.png"/>
+                <div class="dapp-item-text">ENS</div>
+              </div>
+            </div>
           </div>
-          <div class="dapp-item-link">web3://w3-blog.eth/</div>
-        </div>
-        <div class="dapp-item" @click="goRbot">
-          <img class="dapp-item-img" src="@/assets/qrbot.png"/>
-          <div class="dapp-item-title">Web3 QRobot</div>
-          <div class="dapp-item-message">An NFT collection of cute robots that can be minted freely. All the metadata
-            including the images are deployed on EthStorage.
+          <div class="dapp-item dapp-item-color2">
+            <div class="dapp-item-left">
+              <div class="dapp-item-title">Decentralized Social Network</div>
+              <div class="dapp-item-message">
+                Decentralized medium (Mirror), decentralized twitter, personal blog, etc.
+              </div>
+            </div>
+            <div class="dapp-item-right">
+              <div class="dapp-item-app" @click="goBlog">
+                <img class="dapp-item-img" src="@/assets/deblog.png"/>
+                <div class="dapp-item-text">Web3 Blog</div>
+              </div>
+              <div class="dapp-item-app" @click="goVblog">
+                <img class="dapp-item-img" src="@/assets/vblog.png"/>
+                <div class="dapp-item-text">Vitalik Blog</div>
+              </div>
+            </div>
           </div>
-          <div class="dapp-item-link">web3://w3-qrobot.eth/</div>
-        </div>
-        <div class="dapp-item" @click="goW3mail">
-          <img class="dapp-item-img" src="@/assets/w3mail.png"/>
-          <div class="dapp-item-title">W3Mail</div>
-          <div class="dapp-item-message">Fully decentralized email service on EthStorage.</div>
-          <div class="dapp-item-link">web3://w3-email.eth/</div>
-        </div>
-      </div>
-      <div class="dapp-table dapp-table-mg-top">
-        <div class="dapp-item" @click="goW3box">
-          <img class="dapp-item-img" src="@/assets/w3box.png"/>
-          <div class="dapp-item-title">W3Box</div>
-          <div class="dapp-item-message">The file hosting service on EthStorage.</div>
-          <div class="dapp-item-link">web3://w3-box.eth/</div>
-        </div>
-        <div class="dapp-item" @click="goW3drive">
-          <img class="dapp-item-img" src="@/assets/w3drive.png"/>
-          <div class="dapp-item-title">W3Drive</div>
-          <div class="dapp-item-message">Your private hard drive on EthStorage.</div>
-          <div class="dapp-item-link">web3://w3-drive.eth/</div>
-        </div>
-        <div class="dapp-item" @click="goW3Music">
-          <img class="dapp-item-img" src="@/assets/w3music.png"/>
-          <div class="dapp-item-title">W3Music</div>
-          <div class="dapp-item-message">Fully on-chain music NFT.</div>
-          <div class="dapp-item-link">web3://w3-music.eth/</div>
-        </div>
-      </div>
-      <div class="dapp-table dapp-table-mg-top">
-        <div class="dapp-item" @click="goBlockEden">
-          <img class="dapp-item-img" src="@/assets/blockeden.png"/>
-          <div class="dapp-item-title">BlockEden</div>
-          <div class="dapp-item-message">A managed storage solution for creators and developers from any blockchain.
+          <div class="dapp-item dapp-item-color3">
+            <div class="dapp-item-left">
+              <div class="dapp-item-title">Composable NFT</div>
+              <div class="dapp-item-message">
+                ERC721 and image with on-chain programmability.
+              </div>
+            </div>
+            <div class="dapp-item-right">
+              <div class="dapp-item-app" @click="goRbot">
+                <img class="dapp-item-img" src="@/assets/qrbot.png"/>
+                <div class="dapp-item-text">Web3 QRobot</div>
+              </div>
+              <div class="dapp-item-app" @click="goW3Music">
+                <img class="dapp-item-img" src="@/assets/w3music.png"/>
+                <div class="dapp-item-text">W3Music</div>
+              </div>
+            </div>
           </div>
-          <div class="dapp-item-link">https://blockeden.xyz/dstore/</div>
         </div>
-        <div class="dapp-item" @click="goGit3">
-          <img class="dapp-item-img" src="@/assets/git3.png"/>
-          <div class="dapp-item-title">Git3</div>
-          <div class="dapp-item-message">Git protocol for the open web.</div>
-          <div class="dapp-item-link">https://git3.sh</div>
+
+        <div class="dapp-table-line dapp-table-line-margin">
+          <div class="dapp-item dapp-item-color2">
+            <div class="dapp-item-left">
+              <div class="dapp-item-title">Web2 to Web3 Applications</div>
+              <div class="dapp-item-message">
+                Decentralized dropbox, decentralized tiktok, etc.
+              </div>
+            </div>
+            <div class="dapp-item-right dapp-item-right2">
+              <div class="dapp-item-right-line">
+                <div class="dapp-item-app dapp-item-app1" @click="goW3box">
+                  <img class="dapp-item-img" src="@/assets/w3box.png"/>
+                  <div class="dapp-item-text">W3Box</div>
+                </div>
+                <div class="dapp-item-app dapp-item-app2" @click="goW3drive">
+                  <img class="dapp-item-img" src="@/assets/w3drive.png"/>
+                  <div class="dapp-item-text">W3Drive</div>
+                </div>
+              </div>
+              <div class="dapp-item-right-line">
+                <div class="dapp-item-app dapp-item-app2" @click="goW3mail">
+                  <img class="dapp-item-img" src="@/assets/w3mail.png"/>
+                  <div class="dapp-item-text">W3Mail</div>
+                </div>
+                <div class="dapp-item-app dapp-item-app1" @click="goGit3">
+                  <img class="dapp-item-img" src="@/assets/git3.png"/>
+                  <div class="dapp-item-text">Git3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dapp-item dapp-item-color3">
+            <div class="dapp-item-left">
+              <div class="dapp-item-title">Permanent Storage for Rollups</div>
+              <div class="dapp-item-message">
+                EthStorage could serve as a long-term storage solution for all the Layer 2.
+              </div>
+            </div>
+            <div class="dapp-item-right dapp-item-right2">
+              <div class="dapp-item-right-line">
+                <div class="dapp-item-disable dapp-item-app3">
+                  <img class="dapp-item-img" src="@/assets/arb.png"/>
+                  <div class="dapp-item-text">Arbitrum</div>
+                </div>
+                <div class="dapp-item-disable dapp-item-app4">
+                  <img class="dapp-item-img" src="@/assets/op.png"/>
+                  <div class="dapp-item-text">Optimism</div>
+                </div>
+              </div>
+              <div class="dapp-item-right-line">
+                <div class="dapp-item-disable dapp-item-app1">
+                  <img class="dapp-item-img" src="@/assets/zksync.png"/>
+                  <div class="dapp-item-text">zkSync</div>
+                </div>
+                <div class="dapp-item-disable dapp-item-app2">
+                  <img class="dapp-item-img" src="@/assets/matic.png"/>
+                  <div class="dapp-item-text">Polygon</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -136,108 +179,168 @@ export default {
 </script>
 
 <style scoped>
+.home {
+  padding: 80px 0 0;
+}
+
+.dapp-title {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: #000000;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: Satoshi;
+}
+
+.dapp-bg {
+  background: url("../assets/app-bg.svg") no-repeat;
+  background-size: 100% auto;
+  object-fit: cover;
+  padding-bottom: 90px;
+}
 .dapp {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.dapp-title {
-  margin-top: 80px;
-  font-family: 'Futura';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 48px;
-  color: #000000;
-}
-
-.dapp-table-margin {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 64px;
-}
-
-.dapp-table {
+.dapp-table-line {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-
-.dapp-table-mg-top {
-  margin-top: 40px;
-}
-
-.dapp-table-left {
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  justify-content: left;
+}
+.dapp-table-line-margin {
+  margin-top: 460px;
+  margin-bottom: 30px;
 }
 
 .dapp-item {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  height: 224px;
+  padding: 24px;
+  justify-content: space-between;
   align-items: flex-start;
-  cursor: pointer;
-  width: 360px;
-  height: 280px;
-  background: #FFFFFF;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
-  padding: 10px 15px 0;
-  margin: 0 20px;
+  border-radius: 24px;
+  margin: 0 12px;
+}
+.dapp-item-color1 {
+  background: #FFF3F1;
+}
+.dapp-item-color2 {
+  background: #F4F1FF;
+}
+.dapp-item-color3 {
+  background: #EDF6FF;
 }
 
-.dapp-item:hover {
+.dapp-item-left {
+  display: flex;
+  padding: 8px 0px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.dapp-item-title {
+  width: 176px;
+  text-align: left;
+  color: #3D4746;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  font-family: Satoshi;
+}
+.dapp-item-message {
+  width: 176px;
+  text-align: left;
+  color: #6C605D;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-family: Satoshi;
+}
+
+
+.dapp-item-right {
+  display: flex;
+  width: 106px;
+  margin-left: 54px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.dapp-item-app {
+  display: flex;
+  width: 106px;
+  padding: 8px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  background: #FFF;
+  cursor: pointer;
+}
+.dapp-item-app:hover {
   background: #F6F9FC;
-  border: 1px solid #F6F9FC;
 }
 
 .dapp-item-img {
-  width: 80px;
+  width: 48px;
+  height: 48px;
 }
-
-.dapp-item-title {
-  margin-top: 3px;
-  margin-left: 15px;
-  font-family: 'Avenir';
+.dapp-item-text {
+  color: #3D4746;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  color: #000000;
+  font-weight: 500;
+  line-height: normal;
+  font-family: Satoshi;
 }
 
-.dapp-item-message {
-  margin-top: 6px;
-  margin-left: 15px;
-  font-family: 'Avenir';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
-  color: #000000;
-  text-align: left;
+.dapp-item-right2 {
+  width: auto;
 }
 
-.dapp-item-link {
-  color: #1B60FF;
-  margin-top: auto;
-  margin-bottom: 20px;
-  margin-left: 15px;
-  font-family: 'Avenir';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
-  text-align: left;
+.dapp-item-right-line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
 }
-
+.dapp-item-disable {
+  display: flex;
+  width: 106px;
+  padding: 8px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  background: #FFF;
+  cursor: default;
+  pointer-events: none;
+}
+.dapp-item-app1 {
+  width: 64px;
+}
+.dapp-item-app2 {
+  width: 193px;
+}
+.dapp-item-app3 {
+  width: 160px;
+}
+.dapp-item-app4 {
+  width: 98px;
+}
 
 @media screen and (max-width: 500px) {
   .dapp {
@@ -249,18 +352,10 @@ export default {
     font-size: 24px;
   }
 
-  .dapp-table-margin {
-    margin-top: 22px;
-  }
-
   .dapp-table {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-  }
-
-  .dapp-table-mg-top {
-    margin-top: 0px;
   }
 
   .dapp-item {

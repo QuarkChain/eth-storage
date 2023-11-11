@@ -29,7 +29,6 @@
 <style scoped>
 .home {
   background: #F4F1FF;
-  background-size: 100% auto;
 }
 
 .higher {

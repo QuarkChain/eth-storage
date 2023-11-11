@@ -138,8 +138,8 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: -400px;
-  padding-right: 15px;
+  margin-top: -370px;
+  padding-right: 25px;
 }
 .header-font-icon {
   width: 312px;

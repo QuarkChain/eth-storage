@@ -19,7 +19,7 @@
 }
 
 .explore-title {
-  margin-top: -25px;
+  margin-top: -55px;
   color: #000000;
   text-align: center;
   font-size: 32px;
