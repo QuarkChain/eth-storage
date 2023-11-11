@@ -7,7 +7,7 @@
         <div class="sub-layout">
           <el-input class="sub-input" v-model="subscribeEmail" type="email" placeholder="Email Address"></el-input>
           <el-button class="sub-button" :loading="subscribeProgress" @click="subscribe">
-            SUBSCRIBE
+            Subscribe
           </el-button>
         </div>
       </div>
@@ -15,6 +15,7 @@
     </div>
     <div class="footer-b">
       <div class="footer-b-text">2023 EthStorage</div>
+      <img class="community-icon" src="@/assets/ethstorage.svg" alt="twitter" />
       <div class="community-layout">
         <img class="community-icon" src="@/assets/twitter.png" alt="twitter" @click.stop="goTwitter"/>
         <img class="community-icon" src="@/assets/discord.png" alt="discord" @click.stop="goDiscord"/>
@@ -101,8 +102,8 @@ export default {
 
 <style scoped>
 .footer-div {
-  background: url("../assets/footer-bg.png") bottom right no-repeat;
-  background-size: 30%;
+  background: #825BF2 url("../assets/footer-bg.svg") bottom right no-repeat;
+  background-size: 29%;
 }
 
 .footer-top {
@@ -111,8 +112,8 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 194px;
+  align-items: flex-start;
+  padding-top: 85px;
 }
 
 .footer-font {
@@ -127,18 +128,19 @@ export default {
   justify-content: center;
 }
 .subscribe-title  {
-  font-family: 'Avenir';
-  font-style: normal;
-  font-weight: 400;
+  color: #FFF;
+  text-align: center;
   font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 24px;
-  color: #383838;
+  font-family: Satoshi;
 }
 .sub-layout {
   width: 500px;
   margin-top: 25px;
   background: #FFFFFF;
-  border: 2px solid #383838;
+  border: 2px solid #FFFFFF;
   border-radius: 29px;
   height: 52px;
 }
@@ -152,30 +154,30 @@ export default {
   height: 50px;
   padding-left: 20px;
   padding-right: 140px;
-  color: #000000;
+  color: #9588E5;
   font-size: 18px;
-  font-family: 'Avenir';
+  font-family: Satoshi;
 }
 .sub-button {
   position: absolute !important;
   z-index: 1;
-  right: -1px;
-  width: 150px;
-  height: 50px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 17px;
+  right: 3px;
+  margin-top: 3px;
+  display: inline-flex;
+  height: 44px;
   color: #FFFFFF;
-  background: #383838;
-  border-radius: 0 29px 29px 0;
-  border: 1px solid #383838;
-  font-family: 'Avenir';
+  background: #171F1A;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 16px;
   font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  font-family: Satoshi;
 }
 .sub-button:focus,
 .sub-button:hover {
   color: #FFFFFF;
-  border: 0;
   background: rgba(56, 56, 56, 0.7);
 }
 
@@ -185,21 +187,21 @@ export default {
 }
 
 .footer-b {
-  padding-bottom: 80px;
-  width: 1200px;
-  margin: 30px auto 0;
+  padding-bottom: 20px;
+  width: 1300px;
+  margin: 50px auto 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 .footer-b-text {
-  font-family: 'Avenir';
-  font-style: normal;
-  font-weight: 400;
+  color: #FFF;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 140%;
-  color: #000000;
+  font-family: Satoshi;
 }
 .community-layout {
   display: flex;

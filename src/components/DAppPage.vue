@@ -67,12 +67,6 @@
         </div>
       </div>
       <div class="dapp-table dapp-table-mg-top">
-<!--        <div class="dapp-item" @click="goStanfordBlockchain">-->
-<!--          <img class="dapp-item-img" src="@/assets/stanford.png"/>-->
-<!--          <div class="dapp-item-title">Stanford Blockchain Review</div>-->
-<!--          <div class="dapp-item-message">Stanford Blockchain Club's Official Industry Journal.</div>-->
-<!--          <div class="dapp-item-link">web3://stanfordblockchainreview.eth/</div>-->
-<!--        </div>-->
         <div class="dapp-item" @click="goBlockEden">
           <img class="dapp-item-img" src="@/assets/blockeden.png"/>
           <div class="dapp-item-title">BlockEden</div>
@@ -174,9 +168,11 @@ export default {
   flex-direction: row;
   justify-content: center;
 }
+
 .dapp-table-mg-top {
   margin-top: 40px;
 }
+
 .dapp-table-left {
   width: 100%;
   justify-content: left;
@@ -196,6 +192,7 @@ export default {
   padding: 10px 15px 0;
   margin: 0 20px;
 }
+
 .dapp-item:hover {
   background: #F6F9FC;
   border: 1px solid #F6F9FC;
@@ -204,6 +201,7 @@ export default {
 .dapp-item-img {
   width: 80px;
 }
+
 .dapp-item-title {
   margin-top: 3px;
   margin-left: 15px;
@@ -214,6 +212,7 @@ export default {
   line-height: 25px;
   color: #000000;
 }
+
 .dapp-item-message {
   margin-top: 6px;
   margin-left: 15px;
@@ -225,6 +224,7 @@ export default {
   color: #000000;
   text-align: left;
 }
+
 .dapp-item-link {
   color: #1B60FF;
   margin-top: auto;
@@ -248,6 +248,7 @@ export default {
     margin-top: 70px;
     font-size: 24px;
   }
+
   .dapp-table-margin {
     margin-top: 22px;
   }
@@ -257,6 +258,7 @@ export default {
     justify-content: center;
     width: 100%;
   }
+
   .dapp-table-mg-top {
     margin-top: 0px;
   }
@@ -271,14 +273,17 @@ export default {
   .dapp-item-img {
     width: 70px;
   }
+
   .dapp-item-title {
     margin-top: 0;
     font-size: 16px;
   }
+
   .dapp-item-message {
     font-size: 14px;
     line-height: 20px;
   }
+
   .dapp-item-link {
     font-size: 14px;
     line-height: 20px;
