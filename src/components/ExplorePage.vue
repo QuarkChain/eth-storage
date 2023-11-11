@@ -26,7 +26,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  font-family: SatoshiBlod;
+  font-family: Satoshi;
 }
 .explore-message {
   color: #000000;
@@ -40,7 +40,7 @@
 }
 
 .explore-img {
-  width: 95%;
+  width: 100%;
   margin-top: 35px;
   margin-bottom: 90px;
 }

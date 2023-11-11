@@ -1,55 +1,88 @@
 <template>
-  <div class="application">
-    <p class="application-title">New Applications Enabled by EthStorage</p>
-    <div class="application-context">
-      <div class="application-context-item">
-        <div class="application-context-text">
-          <span class="application-context-title">Trusted Website Host</span>
-          <span class="application-context-message">Uniswap, AAVE, Curve, OpenSea, ENS, etc.</span>
+  <div class="home">
+    <div class="application">
+      <p class="application-title">Core Features of EthStorage</p>
+      <div class="application-context">
+        <div class="application-context-item">
+          <img class="application-image" src="@/assets/f1.png"/>
+          <div class="application-context-text">
+            <div class="application-context-index">01</div>
+            <span class="application-context-title">Programmable Large KV Store</span>
+            <span class="application-context-message">Smart contract programmable CRUD for large-value reads/writes with ~ PB capacity.</span>
+          </div>
         </div>
-        <img class="application-image" src="@/assets/application-icon1.png"/>
+        <div class="application-context-item">
+          <img class="application-image" src="@/assets/f2.png"/>
+          <div class="application-context-text">
+            <div class="application-context-index">02</div>
+            <span class="application-context-title">Proof of Storage on Large Dynamic Datasets</span>
+            <span class="application-context-message">Use random sampling and dynamic data sharding to prove data retention and encourage re-replication.</span>
+          </div>
+        </div>
       </div>
-      <div class="application-context-item">
-        <div class="application-context-text">
-          <span class="application-context-title">Decentralized Social Network</span>
-          <span class="application-context-message">Decentralized medium (Mirror),<br>decentralized twitter, personal blog, etc.</span>
+
+      <div class="application-context">
+        <div class="application-context-item">
+          <img class="application-image" src="@/assets/f3.png"/>
+          <div class="application-context-text">
+            <div class="application-context-index">03</div>
+            <span class="application-context-title">High Replication Guarantee</span>
+            <span class="application-context-message">
+              The storage contract in L1 can set the desired number of replicas, and the actual count can be calculated using the contract's difficulty parameter.
+            </span>
+          </div>
         </div>
-        <img class="application-image" src="@/assets/application-icon2.png"/>
+        <div class="application-context-item">
+          <img class="application-image" src="@/assets/f4.png"/>
+          <div class="application-context-text">
+            <div class="application-context-index">04</div>
+            <span class="application-context-title">web3:// Access Protocol</span>
+            <span class="application-context-message">Decentralized access to dynamic web objects hosted by smart contracts and EthStorage. Visit Web3URL for more details.</span>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="application-context">
-      <div class="application-context-item application-item-margin">
-        <div class="application-context-text">
-          <span class="application-context-title">Web2 to Web3 Applications</span>
-          <span class="application-context-message">Decentralized dropbox, decentralized<br>tiktok, etc.</span>
+
+      <div class="application-context">
+        <div class="application-context-item">
+          <img class="application-image" src="@/assets/f5.png"/>
+          <div class="application-context-text">
+            <div class="application-context-index">05</div>
+            <span class="application-context-title">Proof of Publication via Data Availability</span>
+            <span class="application-context-message">Increase data upload speed using KZG commitment and Reed-Solomon code powered by Danksharding.</span>
+          </div>
         </div>
-        <img class="application-image" src="@/assets/application-icon3.png"/>
-      </div>
-      <div class="application-context-item application-item-margin">
-        <div class="application-context-text">
-          <span class="application-context-title">Composable NFT</span>
-          <span class="application-context-message">ERC721 and image with on-chain<br>programmability.</span>
+        <div class="application-context-item">
+          <img class="application-image" src="@/assets/f6.png"/>
+          <div class="application-context-text">
+            <div class="application-context-index">06</div>
+            <span class="application-context-title">ETH Compatible</span>
+            <span class="application-context-message">Users and developers can reuse various tools from the Ethereum ecosystem, including Metamask, Solidity, Hardhat, and more.</span>
+          </div>
         </div>
-        <img class="application-image" src="@/assets/application-icon4.png"/>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.home {
+  background: #F9F8FF;
+  padding: 80px 0 98px;
+}
+
 .application {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .application-title {
-  margin-top: 96px;
-  font-family: 'Futura';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 60px;
   color: #000000;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: Satoshi;
 }
 
 .application-context {
@@ -61,50 +94,56 @@
 
 .application-context-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 435px;
-  height: 245px;
+  width: 505px;
+  height: 170px;
   margin-top: 54px;
-  margin-left: 60px;
-  margin-right: 60px;
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 115px;
+}
+
+.application-image {
+  height: 96px;
+  margin-right: 24px;
 }
 
 .application-context-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
+  justify-content: start;
+  align-items: start;
+  height: 100%;
+}
+.application-context-index {
+  color: #A189FF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  font-family: Satoshi;
 }
 .application-context-title {
-  font-family: 'Avenir';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
+  text-align: left;
+  margin-top: 8px;
   color: #000000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  font-family: Satoshi;
 }
 .application-context-message {
-  margin-top: 3px;
-  font-family: 'Avenir';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+  text-align: left;
+  margin-top: 15px;
   color: #000000;
-}
-.application-image {
-  height: 74px;
-  margin-bottom: 33px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  font-family: Satoshi;
 }
 
-.application-item-margin {
-  margin-top: 64px;
-}
+
 @media screen and (max-width: 500px) {
   .application {
     max-width: 100%;

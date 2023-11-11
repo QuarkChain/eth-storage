@@ -119,7 +119,7 @@ export default {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  font-family: SatoshiBlod;
+  font-family: Satoshi;
 }
 .lb-text:hover {
   filter: opacity(80%);

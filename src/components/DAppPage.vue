@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div>
     <p class="dapp-title">Applications Enabled by EthStorage</p>
     <div class="dapp-bg">
       <div class="dapp">
@@ -179,10 +179,6 @@ export default {
 </script>
 
 <style scoped>
-.home {
-  padding: 80px 0 0;
-}
-
 .dapp-title {
   margin-top: 80px;
   margin-bottom: 80px;

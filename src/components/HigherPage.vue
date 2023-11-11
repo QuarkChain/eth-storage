@@ -58,7 +58,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  font-family: SatoshiBlod;
+  font-family: Satoshi;
 }
 
 .higher-message {
