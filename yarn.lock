@@ -8845,7 +8845,7 @@ vue-async-computed@^3.9.0:
 
 vue-banner-better@^1.3.0:
   version "1.3.0"
-  resolved "https://registry.npmmirror.com/vue-banner-better/-/vue-banner-better-1.3.0.tgz#e7b9772233253693718136ce24e10dbaf9f16071"
+  resolved "https://registry.npmjs.org/vue-banner-better/-/vue-banner-better-1.3.0.tgz#e7b9772233253693718136ce24e10dbaf9f16071"
   integrity sha512-3MqaR8cYZUpSSP7g2nO6aMwGZZRqsE536VK0pMijlNqpkGT/0n09wPBy+vkHCuZm3+C5B16qGrMpWUzHq1q1Qg==
 
 vue-eslint-parser@^7.0.0:

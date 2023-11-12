@@ -1,46 +1,50 @@
 <template>
-  <div class="feature">
-    <p class="feature-message">Feature Comparison</p>
-    <img class="feature-img" alt="feature image">
-
-    <div>
-      <p class="feature-title">EthStorage Features</p>
-      <div class="feature-context">
-        <div class="feature-context-item">
-          <img class="feature-context-image" src="@/assets/feature-icon1.png"/>
-          <div class="feature-context-item-text">
-            <span class="feature-context-title">Programmable Large KV Store</span>
-            <span class="feature-context-message">Smart contract programmable CRUD for large-value reads/writes with ~ PB capacity.</span>
-          </div>
-        </div>
-        <div class="feature-context-item feature-item-margin">
-          <img class="feature-context-image" src="@/assets/feature-icon2.png"/>
-          <div class="feature-context-item-text">
-            <span class="feature-context-title">Proof of Storage on Large Dynamic Datasets</span>
-            <span class="feature-context-message">Use random sampling and dynamic data sharding to prove data retention and encourage re-replication.</span>
-          </div>
-        </div>
-      </div>
-      <div class="feature-context feature-margin">
-        <div class="feature-context-item">
-          <img class="feature-context-image" src="@/assets/feature-icon4.png"/>
-          <div class="feature-context-item-text">
-            <span class="feature-context-title">Proof of Publication via Data Availability</span>
-            <span class="feature-context-message">Increase data upload speed using KZG commitment and Reed-Solomon code powered by Danksharding.</span>
-          </div>
-        </div>
-        <div class="feature-context-item feature-item-margin">
-          <img class="feature-context-image" src="@/assets/feature-icon3.png"/>
-          <div class="feature-context-item-text">
-            <span class="feature-context-title">web3:// Access Protocol</span>
-            <span class="feature-context-message">Decentralized access to dynamic web objects hosted by smart contracts and EthStorage.
-                    Visit <a class="f-link" href="https://w3url.w3eth.io/" target="_blank">Web3URL</a> for more details.</span>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div>
+    <WorkPage1 />
+    <WorkPage2 />
+    <WorkPage3 />
+    <WorkPage4 />
+    <WorkPage5 />
   </div>
+<!--  <Banner width="100%" height="768px" :indicator="indicator">-->
+<!--    <Slide>-->
+<!--      <WorkPage1 />-->
+<!--    </Slide>-->
+<!--    <Slide>-->
+<!--      <WorkPage1 />-->
+<!--    </Slide>-->
+<!--    <Slide>-->
+<!--      <WorkPage1 />-->
+<!--    </Slide>-->
+<!--  </Banner>-->
 </template>
+
+<script>
+import WorkPage1 from "./WorkPage1";
+import WorkPage2 from "./WorkPage2";
+import WorkPage3 from "./WorkPage3";
+import WorkPage4 from "./WorkPage4";
+import WorkPage5 from "./WorkPage5";
+
+export default {
+  data() {
+    return {
+      indicator: {
+        clickable: true,
+        type: "pill",
+        showCounter: false
+      }
+    };
+  },
+  components: {
+    WorkPage1,
+    WorkPage2,
+    WorkPage3,
+    WorkPage4,
+    WorkPage5,
+  }
+}
+</script>
 
 <style scoped>
 .feature {

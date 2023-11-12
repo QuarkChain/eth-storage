@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Buefy from 'buefy';
 import Element from 'element-ui';
+import Banner from "vue-banner-better";
 
 import App from './App.vue';
 import router from './router';
@@ -12,6 +13,8 @@ import './assets/font/font.css';
 
 Vue.use(Element)
 Vue.use(Buefy);
+// use plugin,it will mount Banner and slide components globally
+Vue.use(Banner);
 
 Vue.config.productionTip = false;
 new Vue({
