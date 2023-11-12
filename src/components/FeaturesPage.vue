@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner>
+    <Banner arrow="2" :showPage="false">
       <div class="fly-banner-slider">
         <WorkPage1 />
       </div>
@@ -48,3 +48,14 @@ export default {
   }
 }
 </script>
+
+<style>
+.fly-banner-container {
+  width: 100vw;
+  height: 820px;
+}
+.fly-banner-slider {
+  width: 100vw;
+  height: 820px;
+}
+</style>

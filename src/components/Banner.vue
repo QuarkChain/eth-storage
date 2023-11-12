@@ -31,11 +31,31 @@
          v-if="arrow && length > 1"
          :class="{ hover: arrow === 1 }"
          @click="btnClick(false)">
+      <svg width="64" height="82" viewBox="0 0 64 82" fill="none" :stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M53.8095 1.219L23.3717 36.2094C23.357 36.2262 23.3485 36.2475 23.3473 36.2698L22.8409 45.9318C22.8359 46.0268 22.9538 46.0744 23.0162 46.0027L53.454 11.0123C53.4687 10.9954 53.4773 10.9742 53.4784 10.9519L53.9848 1.28986C53.9898 1.1949 53.8719 1.14725 53.8095 1.219Z"
+              fill="white"/>
+        <path d="M43.5943 71.4378L4.48192 36.3739C4.41936 36.3178 4.3197 36.3592 4.31531 36.4432L3.80539 46.1729C3.80381 46.2031 3.81598 46.2324 3.8385 46.2526L42.9509 81.3165C43.0134 81.3726 43.1131 81.3312 43.1175 81.2473L43.6274 71.5175C43.629 71.4873 43.6168 71.458 43.5943 71.4378Z"
+              fill="white"/>
+        <path d="M62.547 71.4727H43.7245C43.6713 71.4727 43.6274 71.5143 43.6246 71.5674L43.1118 81.3537C43.1088 81.4109 43.1543 81.459 43.2116 81.459H62.0341C62.0873 81.459 62.1312 81.4173 62.134 81.3642L62.6468 71.5779C62.6498 71.5207 62.6043 71.4727 62.547 71.4727Z"
+              fill="white"/>
+        <path d="M35.0191 1H53.7611C53.8498 1 53.9076 1.10618 53.8531 1.16891L23.4097 36.1657C23.3761 36.2044 23.3837 36.2664 23.4268 36.305L62.4643 71.3019C62.5343 71.3646 62.5025 71.4708 62.4138 71.4708H53.1414H43.6719C43.6451 71.4708 43.6181 71.4601 43.597 71.4412L4.40406 36.305C4.36097 36.2664 4.35335 36.2044 4.38696 36.1657L34.9515 1.02959C34.968 1.01066 34.9923 1 35.0191 1Z"
+              fill="white"/>
+      </svg>
     </div>
     <div class="fly-banner-btn fly-banner-next"
          v-if="arrow && length > 1"
          :class="{ hover: arrow === 1 }"
          @click="btnClick(true)">
+      <svg width="64" height="82" viewBox="0 0 64 82" fill="none" :stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.1905 1.219L40.6283 36.2094C40.643 36.2262 40.6515 36.2475 40.6527 36.2698L41.1591 45.9318C41.1641 46.0268 41.0462 46.0744 40.9838 46.0027L10.546 11.0123C10.5313 10.9954 10.5227 10.9742 10.5216 10.9519L10.0152 1.28986C10.0102 1.1949 10.1281 1.14725 10.1905 1.219Z"
+              fill="white"/>
+        <path d="M20.4057 71.4378L59.5181 36.3739C59.5806 36.3178 59.6803 36.3592 59.6847 36.4432L60.1946 46.1729C60.1962 46.2031 60.184 46.2324 60.1615 46.2526L21.0491 81.3165C20.9866 81.3726 20.8869 81.3312 20.8825 81.2473L20.3726 71.5175C20.371 71.4873 20.3832 71.458 20.4057 71.4378Z"
+              fill="white"/>
+        <path d="M1.45303 71.4727H20.2755C20.3287 71.4727 20.3726 71.5143 20.3754 71.5674L20.8882 81.3537C20.8912 81.4109 20.8457 81.459 20.7884 81.459H1.96591C1.91272 81.459 1.86883 81.4173 1.86605 81.3642L1.35317 71.5779C1.35017 71.5207 1.39575 71.4727 1.45303 71.4727Z"
+              fill="white"/>
+        <path d="M28.9809 1H10.2389C10.1502 1 10.0924 1.10618 10.1469 1.16891L40.5903 36.1657C40.6239 36.2044 40.6163 36.2664 40.5732 36.305L1.53569 71.3019C1.46572 71.3646 1.49746 71.4708 1.58619 71.4708H10.8586H20.3281C20.3549 71.4708 20.3819 71.4601 20.403 71.4412L59.5959 36.305C59.639 36.2664 59.6467 36.2044 59.613 36.1657L29.0485 1.02959C29.032 1.01066 29.0077 1 28.9809 1Z"
+              fill="white"/>
+      </svg>
     </div>
   </div>
 </template>
@@ -47,7 +67,7 @@ export default {
     //轮播模式。base为插卡式轮播（默认），baseY纵向轮播（需给slider设定为图片的高度 ），loop无缝轮播，fade为淡入淡出轮播，card为3d轮播
     mode: {
       type: String,
-      default: 'base'
+      default: 'loop'
     },
     //轮播间隔时长(ms)，0为关闭自动轮播
     autoPlay: {
@@ -87,7 +107,8 @@ export default {
       index: 0,//索引
       oldIndex: null,//上一次的索引
       timer: null,//计时器
-      clickTime: 0//点击时间
+      clickTime: 0,//点击时间
+      currentColor: "#4AA6FF"
     };
   },
   mounted() {
@@ -110,7 +131,7 @@ export default {
         this.containerWidth *= this.many; //重新获取容器的宽度
       }
       this.bannerWidth = parseFloat(getComputedStyle(this.banner[0]).width) + parseFloat(getComputedStyle(this.banner[0]).marginLeft) + parseFloat(getComputedStyle(this.banner[0]).marginRight);//获取单张轮播图含margin的真实宽
-      this.showNum = Math.ceil(this.containerWidth / this.bannerWidth);
+      this.showNum = 1;
       (this.many && this.mode === 'base') && (this.length = Math.ceil(this.length / this.showNum)); //总共切换的次数。默认轮播的多图模式下才会用
 
       /* 轮播图的初始化 */
@@ -292,6 +313,15 @@ export default {
         this.oldIndex = this.index;
       } else {
         --key;
+      }
+
+      const colorMod = this.index % 5;
+      if (colorMod === 0 || colorMod === 3) {
+        this.currentColor = "#4AA6FF";
+      } else if (colorMod === 1 || colorMod === 4) {
+        this.currentColor = "#FF8972";
+      } else {
+        this.currentColor = "#9671FF";
       }
       this.$emit('change', this.index, key);
       !type && this.auto();//非事件触发才自动轮播
@@ -499,11 +529,9 @@ img {
   position: absolute;
   top: 50%;
   z-index: 10;
-  width: 36px;
-  height: 36px;
-  background-color: rgba(31, 45, 61, .11);
+  width: 80px;
+  height: 80px;
   cursor: pointer;
-  border-radius: 50%;
   user-select: none;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -511,11 +539,11 @@ img {
 }
 
 .fly-banner-prev {
-  left: 15px;
+  left: 35px;
 }
 
 .fly-banner-next {
-  right: 15px;
+  right: 50px;
 }
 
 .fly-banner-prev.hover {
@@ -578,31 +606,17 @@ img {
   }
 }
 
-.fly-banner-btn:before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #fff;
-  transform: rotate(135deg) scaleY(1);
-  transition: transform .15s ease-in .05s;
-  transform-origin: center;
-}
-
 .fly-banner-prev:before {
-  left: 14px;
   border-left: 0;
   border-top: 0;
 }
 
 .fly-banner-next:before {
-  right: 14px;
   border-right: 0;
   border-bottom: 0;
 }
 
 .fly-banner-btn:hover {
-  background-color: rgba(31, 45, 61, .5);
+  opacity: 0.4;
 }
 </style>

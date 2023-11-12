@@ -36,7 +36,7 @@
 
 .work-step {
   margin-top: 16px;
-  color: #4AA6FF;
+  color: #9671FF;
   text-align: center;
   font-size: 24px;
   font-style: normal;

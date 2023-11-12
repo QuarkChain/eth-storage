@@ -12,6 +12,7 @@
 <style scoped>
 .home {
   background: #F5FAFF;
+  height: 100%;
 }
 
 .work {
