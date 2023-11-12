@@ -37,7 +37,8 @@
           <div class="application-context-text">
             <div class="application-context-index">04</div>
             <span class="application-context-title">web3:// Access Protocol</span>
-            <span class="application-context-message">Decentralized access to dynamic web objects hosted by smart contracts and EthStorage. Visit Web3URL for more details.</span>
+            <span class="application-context-message">Decentralized access to dynamic web objects hosted by smart contracts and EthStorage.
+              Visit <a class="f-link" href="https://w3url.w3eth.io/" target="_blank">Web3URL</a> for more details.</span>
           </div>
         </div>
       </div>
@@ -143,6 +144,12 @@
   font-family: Satoshi;
 }
 
+a.f-link:link,
+a.f-link:visited,
+a.f-link:hover {
+  color: #A189FF;
+  background: transparent;
+}
 
 @media screen and (max-width: 500px) {
   .application {
