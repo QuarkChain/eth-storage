@@ -3,11 +3,9 @@
     <Header/>
     <div class="header">
       <div class="content">
-        <div class="header-title1">Scaling the <span class="header-title1-color">Storage</span> of</div>
-        <div class="header-title2">
-          the <span class="title-color2">World Computer</span>
+        <div class="header-title1">
+          Scaling the<br class="br-phone"/> <span class="header-color1">Storage</span> of<br class="br-pc"/> the<br class="br-phone"/> <span class="title-color2">World Computer</span>
         </div>
-
         <div class="lt-text">
           Expanding the storage capacity is crucial for the<br>
           world computer to onboard the next billion users.
@@ -76,18 +74,8 @@ export default {
   font-style: normal;
   font-family: SatoshiBold;
 }
-.header-title1-color {
+.header-color1 {
   color: #E6AFAA;
-}
-
-.header-title2 {
-  text-align: left;
-  color: #000000;
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 120%;
-  font-style: normal;
-  font-family: SatoshiBold;
 }
 .title-color2 {
   color: #9671FF;
@@ -145,72 +133,57 @@ export default {
   width: 312px;
   height: 285px;
 }
+
+.br-phone {
+  display: none;
+}
 @media screen and (max-width: 500px) {
   .header {
-    background: url("../assets/header-bg.png") top 30px center no-repeat;
-    background-size: 99%;
+    background: url("../assets/header-bg-phone.png") bottom center no-repeat;
+    background-size: 100%;
+    height: 530px;
+  }
+  .content {
     max-width: 100%;
   }
 
-
   .header-title1 {
-    padding-top: 130px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 36px;
   }
-  .header-title2 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
+  .lt-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
   }
 
-
-  .header-content {
-    flex-direction: column;
+  .header-clo-item {
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  .header-content-lt {
-    margin-top: 0;
-  }
-  .lt-text {
-    width: 100%;
-    height: auto;
-    padding-top: 38px;
-    text-align: center;
-  }
-
-  .header-content-rt {
-    margin-top: 29px;
-    align-items: center;
-  }
-  .rt-text {
-    padding-left: 0;
-  }
-
-
-
-  .header-content-lb {
-    align-items: center;
-    margin-top: 46px;
-  }
   .lb-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
   }
   .lb-text-margin {
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-left: 24px;
+  }
+  .rt-go {
+    width: 12px;
+    padding-bottom: 2px;
   }
 
-  .lt-img {
+  .header-content {
     display: none;
   }
-  .rt-img {
-    display: none;
+  .br-phone {
+    display: inherit;
   }
-  .header-font-icon {
+  .br-pc {
     display: none;
   }
 }

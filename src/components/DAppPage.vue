@@ -99,7 +99,7 @@
                 EthStorage could serve as a long-term storage solution for all the Layer 2.
               </div>
             </div>
-            <div class="dapp-item-right dapp-item-right2">
+            <div class="dapp-item-right">
               <div class="dapp-item-right-line">
                 <div class="dapp-item-disable dapp-item-app3">
                   <img class="dapp-item-img" src="@/assets/arb.png"/>
@@ -269,7 +269,6 @@ export default {
 
 .dapp-item-right {
   display: flex;
-  width: 106px;
   margin-left: 54px;
   flex-direction: column;
   justify-content: space-between;
@@ -303,10 +302,6 @@ export default {
   font-family: Satoshi;
 }
 
-.dapp-item-right2 {
-  width: auto;
-}
-
 .dapp-item-right-line {
   display: flex;
   justify-content: flex-end;
@@ -316,7 +311,6 @@ export default {
 }
 .dapp-item-disable {
   display: flex;
-  width: 106px;
   padding: 8px;
   flex-direction: column;
   align-items: center;
@@ -339,46 +333,83 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
+  .dapp-title {
+    margin-top: 50px;
+    margin-bottom: 38px;
+    font-size: 24px;
+  }
+
+  .dapp-bg {
+    background: url("../assets/app-bg.png") no-repeat 50% 58%;
+    background-size: 100% auto;
+    padding-bottom: 0;
+  }
   .dapp {
     max-width: 100%;
   }
 
-  .dapp-title {
-    margin-top: 70px;
-    font-size: 24px;
-  }
-
-  .dapp-table {
+  .dapp-table-line {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+  .dapp-table-line-margin {
+    margin-top: 200px;
+    margin-bottom: 50px;
+  }
+
+
+  .dapp-item {
+    height: 180px;
+    padding: 18px 22px;
+    margin: 12px 0;
     width: 100%;
   }
 
-  .dapp-item {
-    width: 90%;
-    height: 220px;
-    padding: 10px;
-    margin: 8px auto;
+  .dapp-item-left {
+    padding: 6px 0;
   }
-
-  .dapp-item-img {
-    width: 70px;
-  }
-
   .dapp-item-title {
-    margin-top: 0;
-    font-size: 16px;
+    width: 140px;
+    font-size: 18px;
   }
-
   .dapp-item-message {
-    font-size: 14px;
-    line-height: 20px;
+    width: 140px;
+    font-size: 12px;
   }
 
-  .dapp-item-link {
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 10px;
+
+  .dapp-item-right {
+    margin-left: auto;
+  }
+  .dapp-item-app {
+    width: 80px;
+    padding: 8px;
+  }
+  .dapp-item-img {
+    width: 36px;
+    height: 36px;
+  }
+  .dapp-item-text {
+    font-size: 10px;
+  }
+
+
+  .dapp-item-right-line {
+    gap: 8px;
+  }
+  .dapp-item-app1 {
+    width: 50px;
+  }
+  .dapp-item-app2 {
+    width: 110px;
+  }
+  .dapp-item-app3 {
+    width: 100px;
+  }
+  .dapp-item-app4 {
+    width: 60px;
   }
 }
 </style>

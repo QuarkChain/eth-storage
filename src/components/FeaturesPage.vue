@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner arrow="2" :showPage="false">
+    <Banner class="work-pc" arrow="2" :showPage="false">
       <div class="fly-banner-slider">
         <WorkPage1 />
       </div>
@@ -17,6 +17,14 @@
         <WorkPage5 />
       </div>
     </Banner>
+
+    <div class="work-phone">
+      <WorkPage1 />
+      <WorkPage2 />
+      <WorkPage3 />
+      <WorkPage4 />
+      <WorkPage5 />
+    </div>
   </div>
 </template>
 
@@ -50,6 +58,9 @@ export default {
 </script>
 
 <style>
+.work-phone {
+  display: none;
+}
 .fly-banner-container {
   width: 100vw;
   height: 820px;
@@ -57,5 +68,15 @@ export default {
 .fly-banner-slider {
   width: 100vw;
   height: 820px;
+}
+
+@media screen and (max-width: 500px) {
+  .work-pc {
+    display: none;
+  }
+  .work-phone {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

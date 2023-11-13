@@ -15,7 +15,7 @@
     </div>
     <div class="footer-b">
       <div class="footer-b-text">2023 EthStorage</div>
-      <img class="community-icon" src="@/assets/ethstorage.svg" alt="twitter" />
+      <img class="community-icon2" src="@/assets/ethstorage.svg" alt="twitter" />
       <div class="community-layout">
         <img class="community-icon" src="@/assets/twitter.png" alt="twitter" @click.stop="goTwitter"/>
         <img class="community-icon" src="@/assets/discord.png" alt="discord" @click.stop="goDiscord"/>
@@ -209,6 +209,11 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
+.community-icon2 {
+  width: 28px;
+}
+
 .community-icon {
   margin: auto 15px;
   width: 28px;
@@ -220,58 +225,60 @@ export default {
 
 @media screen and (max-width: 500px) {
   .footer-div {
-    background: none;
+    background: #825BF2;
   }
 
   .footer-top {
     width: 100%;
-    padding-top: 80px;
+    padding-top: 50px;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .footer-font {
     display: none;
   }
-  .subscribe-div {
-    width: 90%;
-  }
+
   .subscribe-title  {
-    line-height: 125%;
-    color: #000000;
+    font-size: 18px;
   }
   .sub-layout {
     width: 100%;
-    margin-top: 15px;
-    height: 50px;
+    margin-top: 20px;
+    height: 44px;
   }
   .sub-input >>> .el-input__inner {
-    height: 48px;
+    height: 44px;
     padding-left: 15px;
-    padding-right: 120px;
-    font-size: 15px;
+    padding-right: 110px;
+    font-size: 14px;
   }
   .sub-button {
-    width: 120px;
-    height: 48px;
-    font-size: 15px;
+    right: 1px;
+    margin-top: 1px;
+    height: 40px;
+    font-size: 12px;
   }
   .footer-empty {
     display: none;
   }
 
   .footer-b {
+    width: 92%;
+    margin: 60px auto 0;
     padding-bottom: 30px;
-    width: 90%;
-    margin: 80px auto 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-  .community-layout {
-    margin-top: 15px;
+  .footer-b-text {
+    font-size: 12px;
+  }
+  .community-icon2 {
+    display: none;
   }
   .community-icon {
-    margin: auto 10px;
+    margin: 0;
+    padding: 0 8px;
+    width: 34px;
   }
 }
 </style>

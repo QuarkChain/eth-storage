@@ -152,15 +152,15 @@ a.f-link:hover {
 }
 
 @media screen and (max-width: 500px) {
+  .home {
+    padding: 50px 0;
+  }
   .application {
     max-width: 100%;
   }
 
   .application-title {
-    margin-top: 70px;
-    margin-bottom: 10px;
     font-size: 24px;
-    line-height: 125%;
   }
 
   .application-context {
@@ -170,35 +170,25 @@ a.f-link:hover {
   }
 
   .application-context-item {
-    justify-content: space-between;
-    width: 90%;
-    height: 180px;
-    margin-top: 20px;
+    width: 86%;
+    height: 135px;
+    margin-top: 40px;
     margin-left: 0;
     margin-right: 0;
   }
 
-  .application-context-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-  }
-  .application-context-title {
-    font-size: 16px;
-  }
-  .application-context-message {
-    margin-top: 5px;
-    font-size: 14px;
-  }
   .application-image {
-    height: 40px;
-    margin-bottom: 20px;
+    height: 60px;
+    margin-right: 16px;
   }
 
-  .application-item-margin {
-    margin-top: 20px;
+  .application-context-title {
+    margin-top: 6px;
+    font-size: 18px;
+  }
+  .application-context-message {
+    margin-top: 12px;
+    font-size: 12px;
   }
 }
 </style>

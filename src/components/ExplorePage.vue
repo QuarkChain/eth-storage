@@ -48,45 +48,20 @@
 @media screen and (max-width: 500px) {
   .explore {
     max-width: 100%;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
   }
 
-  .explore-img {
-    width: 90%;
-    margin-top: 30px;
-  }
-
-  .explore-right {
-    margin-left: 0;
-    margin-top: 120px;
-    width: 90%;
-  }
-  .explore-rt {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
   .explore-title {
-    width: 80%;
+    margin-top: 30px;
     font-size: 24px;
-    text-align: center;
-    margin: 0 auto;
   }
   .explore-message {
+    margin-top: 50px;
+    font-size: 12px;
+  }
+  .explore-img {
     width: 100%;
-    margin-top: 15px;
-    text-align: left;
-  }
-  .explore-rt-arrow {
-    display: none;
-  }
-  .explore-rt-font {
-    display: none;
-  }
-  .br-phone {
-    display: none;
+    margin-top: -5px;
+    margin-bottom: 50px;
   }
 }
 </style>

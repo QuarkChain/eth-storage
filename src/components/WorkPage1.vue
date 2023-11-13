@@ -69,15 +69,23 @@
     max-width: 100%;
   }
 
-  .feature-message {
+  .work-title {
+    margin-top: 50px;
     font-size: 24px;
-    margin-top: 40px;
+  }
+  .work-step {
+    margin-top: 12px;
+    font-size: 18px;
+  }
+  .work-message {
+    margin-top: 12px;
+    font-size: 12px;
   }
 
-  .feature-img {
-    width: 90%;
-    margin-top: 30px;
-    content: url("../assets/feature-phone.png");
+  .work-img {
+    width: 88%;
+    margin-top: 24px;
+    margin-bottom: 50px;
   }
 }
 </style>

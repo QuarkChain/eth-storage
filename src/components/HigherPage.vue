@@ -3,7 +3,7 @@
     <div class="higher">
       <div class="higher-item">
         <div class="higher-lt">
-          <p class="higher-title">Higher <br class="br-phone"/>Capacity</p>
+          <p class="higher-title"><span class="title-color">Higher</span> <br class="br-phone"/>Capacity</p>
           <p class="higher-message">EthStorage enhances the storage capacity of Ethereum, increasing it from the
             terabyte (TB) level to the petabyte (PB) level.</p>
         </div>
@@ -14,7 +14,7 @@
 
       <div class="higher-item higher-item2">
         <div class="higher-lt">
-          <p class="higher-title">Lower <br class="br-phone"/>Cost</p>
+          <p class="higher-title"><span class="title-color2">Lower</span> <br class="br-phone"/>Cost</p>
           <p class="higher-message">EthStorage significantly decreases the storage cost of Ethereum, reducing them
             by a factor of 10,000.</p>
         </div>
@@ -299,10 +299,6 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
-  .home {
-    background: none;
-  }
-
   .higher {
     max-width: 100%;
   }
@@ -310,103 +306,71 @@ export default {
   .higher-item {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    padding: 50px 24px 0;
   }
 
   .higher-lt {
-    justify-content: center;
-    margin-top: 0;
-  }
-
-  .higher-lt-arrow {
-    display: none;
-  }
-
-  .higher-title {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  .higher-message {
-    width: 90%;
-    margin: 15px auto 0;
-  }
-
-  .higher-lt-font {
-    display: none;
-  }
-
-  .higher-icon {
-    width: 90%;
-    margin-top: 30px;
-  }
-
-
-  .higher-item2 {
-    flex-direction: column-reverse;
-  }
-
-  .higher-rt {
-    justify-content: center;
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .higher-rt-arrow {
-    display: none;
-  }
-
-  .higher-rt-font {
-    display: none;
-  }
-
-  .feature-title {
-    margin-top: 70px;
-    margin-bottom: 10px;
-    font-size: 24px;
-  }
-
-  .feature-context {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  .feature-context-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: flex-start;
-    width: 90%;
   }
-
-  .feature-context-image {
-    width: 24px;
-    height: 24px;
+  .higher-title {
+    font-size: 24px;
   }
-
-  .feature-context-item-text {
+  .higher-message {
+    width: 100%;
+    margin-top: 18px;
+    font-size: 12px;
+  }
+  .higher-icon {
+    margin-top: 26px;
     width: 100%;
   }
 
-  .feature-context-title {
-    font-size: 18px;
+  .higher-item2 {
+    padding: 60px 24px 50px;
+  }
+  .higher-right2 {
+    margin-top: 26px;
+    width: 100%;
+    height: inherit;
+    padding: 20px 15px;
   }
 
-  .feature-context-message {
+  .cost-title {
     font-size: 14px;
   }
-
-  .feature-margin {
-    padding-bottom: 0;
+  .cost-item-right-val {
+    font-size: 24px;
+    margin-right: 5px;
   }
 
-  .feature-item-margin {
-    margin-top: 20px;
+  .cost-item {
+    margin-top: 15px;
+  }
+  .cost-item-value {
+    margin-top: 5px;
+    font-size: 16px;
+    min-width: 120px;
+  }
+  .cost-item-text {
+    font-size: 16px;
+  }
+  .line {
+    margin-bottom: 15px;
   }
 
+  .slid-bar {
+    margin-top: 0px;
+  }
+
+  .title-color {
+    color: #10DCCA;
+  }
+  .title-color2 {
+    color: #FFBD59;
+  }
   .br-phone {
     display: none;
   }
