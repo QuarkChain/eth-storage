@@ -192,7 +192,7 @@ export default {
 }
 
 .dapp-bg {
-  background: url("../assets/app-bg.svg") no-repeat;
+  background: url("../assets/app-bg.png") no-repeat;
   background-size: 100% auto;
   object-fit: cover;
   padding-bottom: 90px;
