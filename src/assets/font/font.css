@@ -1,25 +1,4 @@
 @font-face {
-    font-family: AlibabaSansB;
-    src: url("AlibabaSans-Bold.otf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Futura;
-    src: url("Futur.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Avenir;
-    src: url("Avenir-Book.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: Satoshi;
     src: url("Satoshi-Medium.otf");
     font-weight: normal;

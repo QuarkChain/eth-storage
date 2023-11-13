@@ -48,7 +48,7 @@
   font-size: 23px;
   margin-left: 15px;
   color: #000000 !important;
-  font-family: AlibabaSansB;
+  font-family: SatoshiBlod;
 }
 
 .item-text {
@@ -96,7 +96,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
-  font-family: 'Avenir';
+  font-family: Satoshi;
 }
 a.navbar-item:focus-within,
 a.navbar-item:hover,

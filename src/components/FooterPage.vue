@@ -236,7 +236,6 @@ export default {
     width: 90%;
   }
   .subscribe-title  {
-    font-family: 'Futura';
     line-height: 125%;
     color: #000000;
   }
