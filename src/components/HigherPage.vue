@@ -365,12 +365,6 @@ export default {
     margin-top: 0px;
   }
 
-  .title-color {
-    color: #10DCCA;
-  }
-  .title-color2 {
-    color: #FFBD59;
-  }
   .br-phone {
     display: none;
   }

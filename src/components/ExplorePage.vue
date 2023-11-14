@@ -19,7 +19,7 @@
 }
 
 .explore-title {
-  margin-top: -55px;
+  margin-top: -105px;
   color: #000000;
   text-align: center;
   font-size: 32px;
@@ -59,7 +59,7 @@
     font-size: 12px;
   }
   .explore-img {
-    width: 100%;
+    width: 98%;
     margin-top: -5px;
     margin-bottom: 50px;
   }

@@ -21,7 +21,7 @@
         <img class="community-icon" src="@/assets/discord.png" alt="discord" @click.stop="goDiscord"/>
         <img class="community-icon" src="@/assets/telegram.png" alt="telegram" @click.stop="goTelegram"/>
         <img class="community-icon" src="@/assets/github.png" alt="discord" @click.stop="goGithub"/>
-        <img class="community-icon" src="@/assets/medium.svg" alt="telegram" @click.stop="goMedium"/>
+        <img class="community-icon" src="@/assets/medium.png" alt="telegram" @click.stop="goMedium"/>
       </div>
     </div>
   </div>
@@ -182,7 +182,7 @@ export default {
 }
 
 .footer-empty {
-  width: 100px;
+  width: 265px;
   height: 100px;
 }
 
@@ -197,6 +197,8 @@ export default {
 }
 .footer-b-text {
   color: #FFF;
+  width: 290px;
+  text-align: left;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -270,6 +272,7 @@ export default {
     padding-bottom: 30px;
   }
   .footer-b-text {
+    width: initial;
     font-size: 12px;
   }
   .community-icon2 {

@@ -48,7 +48,7 @@
   font-size: 23px;
   margin-left: 15px;
   color: #000000 !important;
-  font-family: SatoshiBlod;
+  font-family: SatoshiBold;
 }
 
 .item-text {

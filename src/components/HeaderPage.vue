@@ -55,9 +55,9 @@ export default {
 
 <style scoped>
 .header {
-  background: url("../assets/header-bg.png") center center no-repeat;
-  background-size: 100%;
-  height: 1100px;
+  background: url("../assets/header-bg.png") 55% bottom no-repeat;
+  background-size: auto 92%;
+  height: 820px;
 }
 .content {
   max-width: 1200px;
@@ -122,12 +122,12 @@ export default {
 }
 
 .header-content {
+  max-width: 1300px;
+  margin: -260px auto 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: -370px;
-  padding-right: 25px;
 }
 .header-font-icon {
   width: 312px;

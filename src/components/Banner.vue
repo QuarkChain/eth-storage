@@ -179,11 +179,11 @@ export default {
           break;
       }
 
-      (this.autoPlay && this.length > 1) && this.auto();//是否自动轮播
+      (this.autoPlay > 0 && this.length > 1) && this.auto();//是否自动轮播
     },
     /** 自动轮播 */
     auto() {
-      if (this.autoPlay && this.length > 1) { //自动轮播开启且轮播图个数大于1才自动轮播
+      if (this.autoPlay > 0 && this.length > 1) { //自动轮播开启且轮播图个数大于1才自动轮播
         this.timer = setInterval(() => {
           this.changePic(this.index + 1);
         }, this.autoPlay);

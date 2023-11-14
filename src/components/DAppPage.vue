@@ -192,10 +192,8 @@ export default {
 }
 
 .dapp-bg {
-  background: url("../assets/app-bg.png") no-repeat;
-  background-size: 100% auto;
-  object-fit: cover;
-  padding-bottom: 90px;
+  background: url("../assets/app-bg.png") center center no-repeat;
+  background-size: auto 100%;
 }
 .dapp {
   max-width: 1200px;
@@ -215,7 +213,7 @@ export default {
 }
 .dapp-table-line-margin {
   margin-top: 460px;
-  margin-bottom: 30px;
+  margin-bottom: 120px;
 }
 
 .dapp-item {
@@ -340,8 +338,8 @@ export default {
   }
 
   .dapp-bg {
-    background: url("../assets/app-bg.png") no-repeat 50% 58%;
-    background-size: 100% auto;
+    background: url("../assets/app-bg.png") no-repeat center 61%;
+    background-size: 200% auto;
     padding-bottom: 0;
   }
   .dapp {
@@ -355,7 +353,7 @@ export default {
     width: 95%;
   }
   .dapp-table-line-margin {
-    margin-top: 200px;
+    margin-top: 180px;
     margin-bottom: 50px;
   }
 

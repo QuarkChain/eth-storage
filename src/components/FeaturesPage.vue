@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner class="work-pc" arrow="2" :showPage="false">
+    <Banner class="work-pc" arrow="2" autoPlay="-1" :showPage="false">
       <div class="fly-banner-slider">
         <WorkPage1 />
       </div>
