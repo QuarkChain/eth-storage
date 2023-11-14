@@ -59,7 +59,7 @@
 .work-img {
   width: 876px;
   margin-top: 24px;
-  margin-bottom: 92px;
+  margin-bottom: 70px;
   content: url("../assets/work4.svg");
 }
 
