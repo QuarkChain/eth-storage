@@ -46,7 +46,7 @@
                 Permanent storage fee per 128KB: 600000 Gwei<br/><br/>
                 * Please note that the cost does not cover<br/>any data uploading expenses.
               </div>
-              <i class="el-icon-info hover-icon" slot="reference"/>
+              <font-awesome-icon :icon="['fas', 'info-circle']" class="hover-icon" slot="reference"/>
             </el-popover>
           </div>
           <div class="cost-line">
