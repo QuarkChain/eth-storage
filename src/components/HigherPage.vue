@@ -22,14 +22,20 @@
             <div class="cost-title">How much data do you<br>want to store?</div>
             <div class="cost-item-right-line">
               <div class="cost-item-right-val">{{ fileSize }}GB</div>
-              <el-select class="cost-item-gas" v-model="gasPrice">
-                <el-option
+              <b-dropdown v-model="gasPrice" :mobile-modal="false" aria-role="list">
+                <template #trigger>
+                  <el-button class="cost-item-gas">
+                    Gas price {{gasPrice}} Gwei <i class="el-icon-arrow-down"></i>
+                  </el-button>
+                </template>
+                <b-dropdown-item
                     v-for="item in options"
                     :key="item.value"
-                    :label="item.label"
-                    :value="item.value">
-                </el-option>
-              </el-select>
+                    :value="item.value"
+                    aria-role="listitem">
+                  <div class="cost-item-gas-i">{{ item.label }}</div>
+                </b-dropdown-item>
+              </b-dropdown>
             </div>
           </div>
           <el-slider class="slid-bar" v-model="fileSize" :min="1" :max="100"/>
@@ -39,12 +45,17 @@
                         trigger="hover" width="260px">
               <div class="hover-text">
                 Gas cost per 32 bytes: 20000 gas<br/><br/>
-                Data replicas: 5000<br/>
-                Profit margin for data providers: 50%<br/>
-                Yearly discounted rate of ETH/TB: 5%<br/>
+
+                Annual cost of storing 1 TB of data: $22.14<br/>
                 ETH price: $1000<br/>
-                Permanent storage fee per 128KB: 600000 Gwei<br/><br/>
-                * Please note that the cost does not cover<br/>any data uploading expenses.
+                Profit margin for data providers: 50%<br/>
+                Data replicas: 5000<br/>
+                Yearly discounted rate of ETH/TB: 5%<br/><br/>
+
+                * Please note that the cost does not cover any<br/>data uploading expenses.<br/>
+                * Learn to perform storage cost calculation with<br/>our online
+                <a class="f-link" href="https://docs.google.com/spreadsheets/d/1DR4I6eF6lb4pHgDrHId76OpF1gVeybXaNSEZOAdzoL4/"
+                   target="_blank">calculator</a>.
               </div>
               <font-awesome-icon :icon="['fas', 'info-circle']" class="hover-icon" slot="reference"/>
             </el-popover>
@@ -84,13 +95,13 @@ export default {
     options: [
       {
         value: 10,
-        label: 'Gas price 10 Gwei',
+        label: '10 Gwei',
       }, {
         value: 50,
-        label: 'Gas price 50 Gwei',
+        label: '50 Gwei',
       }, {
         value: 90,
-        label: 'Gas price 90 Gwei',
+        label: '90 Gwei',
       }
     ],
   }),
@@ -100,7 +111,7 @@ export default {
       return cost.toFixed(0, BigNumber.ROUND_UP);
     },
     esCostStr() {
-      const cost = this.toTokenUnitsBN(this.esCost(), 9);
+      const cost = this.toTokenUnitsBN(this.esCost(), 12);
       return cost.toFixed(2, BigNumber.ROUND_UP);
     }
   },
@@ -125,9 +136,11 @@ export default {
       return price.times(20000 / 32).times(this.fileSize * 1000 * 1000 * 1000);
     },
     esCost() {
-      // (data_size / 128000) * 600000 / 1e9
-      const file = new BigNumber(this.fileSize * 1000 * 1000 * 1000 / 128000);
-      return file.times(600000);
+      // B1 / B3 * B4 / B5 / B2 * B6 / 1000000000000
+      // 22.14/0.5*5000/0.05/1000*20000000000/1000000000000
+      const info = new BigNumber(22.14/0.5*5000/0.05/1000);
+      const file = new BigNumber(this.fileSize * 1000 * 1000 * 1000);
+      return info.times(file);
     }
   },
 };
@@ -231,10 +244,9 @@ export default {
 
 .cost-item-gas {
   margin-top: -3px;
-}
-
-.cost-item-gas >>> .el-input__inner {
-  color: #000;
+  background-color: transparent !important;
+  color: #000 !important;
+  padding: 12px 0;
   text-align: right;
   font-size: 12px;
   font-style: normal;
@@ -243,7 +255,15 @@ export default {
   border: none;
   font-family: Satoshi;
 }
-
+.cost-item-gas-i {
+  text-align: right;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  font-family: Satoshi;
+}
 .cost-item-gas >>> .el-select__caret,
 .cost-item-gas >>> .el-input__suffix-inner {
   color: #000 !important;
@@ -326,6 +346,14 @@ export default {
 .hover-icon {
   color: #5E2DE8;
 }
+
+a.f-link:link,
+a.f-link:visited,
+a.f-link:hover {
+  color: #A189FF;
+  text-decoration: underline;
+  background: transparent;
+}
 @media screen and (max-width: 500px) {
   .higher {
     max-width: 100%;
@@ -398,5 +426,20 @@ export default {
   .br-phone {
     display: none;
   }
+}
+</style>
+
+<style>
+.dropdown-content  {
+  width: 110px;
+}
+a.dropdown-item, .dropdown .dropdown-menu .has-link a, button.dropdown-item {
+  padding-right: 25px;
+}
+a.dropdown-item.is-active,
+.dropdown .dropdown-menu .has-link a.is-active,
+button.dropdown-item.is-active {
+  background-color: #5E2DE8 !important;
+  color: #fff;
 }
 </style>
