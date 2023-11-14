@@ -45,7 +45,7 @@
               <div class="line"/>
             </div>
             <div class="cost-item">
-              <div class="cost-item-title">Current ETH Cost</div>
+              <div class="cost-item-title">EthStorage Cost</div>
               <div class="cost-item-line">
                 <div class="cost-item-value">{{ this.esCostStr }}</div>
                 <div class="cost-item-text">ETH</div>
@@ -313,15 +313,17 @@ export default {
   .higher-lt {
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
   .higher-title {
     font-size: 24px;
+    text-align: center;
   }
   .higher-message {
     width: 100%;
     margin-top: 18px;
     font-size: 12px;
+    text-align: center;
   }
   .higher-icon {
     margin-top: 26px;

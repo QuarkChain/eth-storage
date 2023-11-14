@@ -116,7 +116,7 @@ a.navbar-item.is-active,
   }
 
   .navbar-menu {
-    background: #DCE9F9 !important;
+    background: #FFFFFF !important;
   }
 
   .navbar-burger {

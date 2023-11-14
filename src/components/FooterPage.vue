@@ -3,7 +3,7 @@
     <div class="footer-top">
       <img class="footer-font" src="@/assets/footer-font.svg" />
       <div class="subscribe-div">
-        <div class="subscribe-title">Sign up for EthStorage updates</div>
+        <div class="subscribe-title">Sign Up for EthStorage Updates</div>
         <div class="sub-layout">
           <el-input class="sub-input" v-model="subscribeEmail" type="email" placeholder="Email Address"></el-input>
           <el-button class="sub-button" :loading="subscribeProgress" @click="subscribe">

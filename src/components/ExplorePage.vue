@@ -55,12 +55,12 @@
     font-size: 24px;
   }
   .explore-message {
-    margin-top: 50px;
+    margin-top: 18px;
     font-size: 12px;
   }
   .explore-img {
-    width: 98%;
-    margin-top: -5px;
+    width: 95%;
+    margin-top: 24px;
     margin-bottom: 50px;
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="dapp-title">Applications Enabled by EthStorage</p>
+    <p class="dapp-title">Applications Enabled<br class="dapp-phone">by EthStorage</p>
     <div class="dapp-bg">
       <div class="dapp">
         <div class="dapp-table-line">
@@ -60,7 +60,7 @@
           </div>
         </div>
 
-        <div class="dapp-table-line dapp-table-line-margin">
+        <div class="dapp-table-line">
           <div class="dapp-item dapp-item-color2">
             <div class="dapp-item-left">
               <div class="dapp-item-title">Web2 to Web3 Applications</div>
@@ -194,9 +194,11 @@ export default {
 .dapp-bg {
   background: url("../assets/app-bg.png") center center no-repeat;
   background-size: auto 100%;
+  margin-bottom: 110px;
 }
 .dapp {
   max-width: 1200px;
+  height: 980px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -210,10 +212,6 @@ export default {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-.dapp-table-line-margin {
-  margin-top: 460px;
-  margin-bottom: 120px;
 }
 
 .dapp-item {
@@ -330,6 +328,9 @@ export default {
   width: 98px;
 }
 
+.dapp-phone {
+  display: none;
+}
 @media screen and (max-width: 500px) {
   .dapp-title {
     margin-top: 50px;
@@ -338,12 +339,12 @@ export default {
   }
 
   .dapp-bg {
-    background: url("../assets/app-bg.png") no-repeat center 61%;
-    background-size: 200% auto;
-    padding-bottom: 0;
+    background: none;
+    margin-bottom: 50px;
   }
   .dapp {
     max-width: 100%;
+    height: auto;
   }
 
   .dapp-table-line {
@@ -352,11 +353,6 @@ export default {
     align-items: center;
     width: 95%;
   }
-  .dapp-table-line-margin {
-    margin-top: 180px;
-    margin-bottom: 50px;
-  }
-
 
   .dapp-item {
     height: 180px;
@@ -408,6 +404,10 @@ export default {
   }
   .dapp-item-app4 {
     width: 60px;
+  }
+
+  .dapp-phone {
+    display: inline;
   }
 }
 </style>
