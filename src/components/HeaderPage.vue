@@ -144,7 +144,7 @@ export default {
   .header {
     background: url("../assets/header-bg-phone.png") bottom center no-repeat;
     background-size: 100%;
-    height: 530px;
+    height: 600px;
   }
   .content {
     max-width: 100%;
@@ -162,18 +162,12 @@ export default {
   }
 
   .header-clo-item {
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
   }
   .lb-text {
     margin-top: 15px;
     font-size: 14px;
     font-weight: 500;
-  }
-  .lb-text-margin {
-    margin-top: 15px;
-    margin-left: 24px;
   }
   .rt-go {
     width: 12px;

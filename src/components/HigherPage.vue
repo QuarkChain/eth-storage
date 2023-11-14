@@ -15,8 +15,7 @@
       <div class="higher-item higher-item2">
         <div class="higher-lt">
           <p class="higher-title"><span class="title-color2">Lower</span> <br class="br-phone"/>Cost</p>
-          <p class="higher-message">EthStorage significantly decreases the storage cost of Ethereum, reducing them
-            by a factor of 10,000.</p>
+          <p class="higher-message">EthStorage significantly decreases Ethereum's storage costs by more than 1000 times.</p>
         </div>
         <div class="higher-right2">
           <div class="cost-line">
@@ -34,10 +33,25 @@
             </div>
           </div>
           <el-slider class="slid-bar" v-model="fileSize" :min="1" :max="100"/>
-          <div class="cost-title">Cost Comparison</div>
+          <div class="cost-title">
+            Cost Comparison
+            <el-popover placement="top-start"
+                        trigger="hover" width="260px">
+              <div class="hover-text">
+                Gas cost per 32 bytes: 20000 gas<br/><br/>
+                Data replicas: 5000<br/>
+                Profit margin for data providers: 50%<br/>
+                Yearly discounted rate of ETH/TB: 5%<br/>
+                ETH price: $1000<br/>
+                Permanent storage fee per 128KB: 600000 Gwei<br/><br/>
+                * Please note that the cost does not cover<br/>any data uploading expenses.
+              </div>
+              <i class="el-icon-info hover-icon" slot="reference"/>
+            </el-popover>
+          </div>
           <div class="cost-line">
             <div class="cost-item">
-              <div class="cost-item-title">Current ETH Cost</div>
+              <div class="cost-item-title">Current ETH Cost *</div>
               <div class="cost-item-line">
                 <div class="cost-item-value">{{ this.ethCostStr }}</div>
                 <div class="cost-item-text">ETH</div>
@@ -45,7 +59,7 @@
               <div class="line"/>
             </div>
             <div class="cost-item">
-              <div class="cost-item-title">EthStorage Cost</div>
+              <div class="cost-item-title">EthStorage Cost *</div>
               <div class="cost-item-line">
                 <div class="cost-item-value">{{ this.esCostStr }}</div>
                 <div class="cost-item-text">ETH</div>
@@ -65,18 +79,18 @@ import BigNumber from "bignumber.js";
 export default {
   name: "HigherPage",
   data: () => ({
-    fileSize: 23,
-    gasPrice: 15,
+    fileSize: 20,
+    gasPrice: 10,
     options: [
       {
-        value: 15,
-        label: 'Gas price 15 Gwei',
+        value: 10,
+        label: 'Gas price 10 Gwei',
       }, {
-        value: 55,
-        label: 'Gas price 55 Gwei',
+        value: 50,
+        label: 'Gas price 50 Gwei',
       }, {
-        value: 95,
-        label: 'Gas price 95 Gwei',
+        value: 90,
+        label: 'Gas price 90 Gwei',
       }
     ],
   }),
@@ -86,8 +100,8 @@ export default {
       return cost.toFixed(0, BigNumber.ROUND_UP);
     },
     esCostStr() {
-      const cost = this.toTokenUnitsBN(this.esCost(), 18);
-      return cost.toFixed(0, BigNumber.ROUND_UP);
+      const cost = this.toTokenUnitsBN(this.esCost(), 9);
+      return cost.toFixed(2, BigNumber.ROUND_UP);
     }
   },
   methods: {
@@ -105,13 +119,15 @@ export default {
     ethCost() {
       // (Gas Cost Per Byte) * (Gas Price) * (Data Size)
       // Gas Cost Per Byte = 20000 / 32
-      // Data Size = 1G = 1024^3
+      // Data Size = 1G = 1000^3
       // Gas Price = 15 Gwei
       const price = this.toBaseUnitBN(this.gasPrice, 9);
-      return price.times(20000 / 32).times(this.fileSize * 1024 * 1024 * 1024);
+      return price.times(20000 / 32).times(this.fileSize * 1000 * 1000 * 1000);
     },
     esCost() {
-      return this.ethCost().div(10000);
+      // (data_size / 128000) * 600000 / 1e9
+      const file = new BigNumber(this.fileSize * 1000 * 1000 * 1000 / 128000);
+      return file.times(600000);
     }
   },
 };
@@ -298,6 +314,18 @@ export default {
   border: 2px solid #5E2DE8;
 }
 
+.hover-text {
+  text-align: left;
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  font-family: Satoshi;
+}
+.hover-icon {
+  color: #5E2DE8;
+}
 @media screen and (max-width: 500px) {
   .higher {
     max-width: 100%;

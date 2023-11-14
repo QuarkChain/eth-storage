@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner class="work-pc" arrow="2" autoPlay="-1" :showPage="false">
+    <Banner class="work-pc" :arrow="arrowType" :autoPlay="autoTime" :showPage="false">
       <div class="fly-banner-slider">
         <WorkPage1 />
       </div>
@@ -39,6 +39,8 @@ import WorkPage5 from "./WorkPage5";
 export default {
   data() {
     return {
+      autoTime: 0,
+      arrowType: 2,
       indicator: {
         clickable: true,
         type: "pill",

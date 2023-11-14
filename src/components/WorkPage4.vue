@@ -3,7 +3,7 @@
     <div class="work">
       <div class="work-title">How EthStorage Works</div>
       <div class="work-step">Step 4/5</div>
-      <div class="work-message">Storage providers submit storage proof to L1, verifying a substantial<br>number of replicas in the L2 networks.</div>
+      <div class="work-message">Storage providers submit storage proof to L1, proving a substantial<br>number of replicas in the L2 networks.</div>
       <img class="work-img" alt="work image" />
     </div>
   </div>

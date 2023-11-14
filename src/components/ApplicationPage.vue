@@ -28,7 +28,7 @@
             <div class="application-context-index">03</div>
             <span class="application-context-title">High Replication Guarantee</span>
             <span class="application-context-message">
-              The storage contract in L1 can set the desired number of replicas, and the actual count can be calculated using the contract's difficulty parameter.
+              EthStorage incentivizes storage providers by using ETH as the storage fee and ensures a large number of replicas in the layer 2 network.
             </span>
           </div>
         </div>
