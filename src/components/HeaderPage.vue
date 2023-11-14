@@ -144,7 +144,7 @@ export default {
   .header {
     background: url("../assets/header-bg-phone.png") bottom center no-repeat;
     background-size: 100%;
-    height: 600px;
+    height: 620px;
   }
   .content {
     max-width: 100%;
@@ -168,6 +168,9 @@ export default {
     margin-top: 15px;
     font-size: 14px;
     font-weight: 500;
+  }
+  .lb-text-margin {
+    margin-top: 12px;
   }
   .rt-go {
     width: 12px;
