@@ -21,6 +21,9 @@
           <div class="lb-text lb-text-margin" @click.stop="goDevcon">
             Watch Devcon Talk <img class="rt-go" src="@/assets/arrow-right.svg"/>
           </div>
+          <div class="lb-text lb-text-margin" @click.stop="goGrant">
+            Supported by ESP Grant <img class="rt-go" src="@/assets/arrow-right.svg"/>
+          </div>
         </div>
       </div>
     </div>

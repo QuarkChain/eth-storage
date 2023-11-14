@@ -198,7 +198,7 @@ export default {
 }
 .dapp {
   max-width: 1200px;
-  height: 980px;
+  height: 820px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
