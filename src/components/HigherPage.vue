@@ -410,7 +410,7 @@ a.f-link:hover {
   .cost-item-value {
     margin-top: 5px;
     font-size: 16px;
-    min-width: 120px;
+    min-width: 100px;
   }
   .cost-item-text {
     font-size: 16px;

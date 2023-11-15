@@ -171,7 +171,7 @@ a.f-link:hover {
 
   .application-context-item {
     width: 86%;
-    height: 135px;
+    height: auto;
     margin-top: 40px;
     margin-left: 0;
     margin-right: 0;
@@ -185,10 +185,11 @@ a.f-link:hover {
   .application-context-title {
     margin-top: 6px;
     font-size: 18px;
+    line-height: 140%;
   }
   .application-context-message {
     margin-top: 12px;
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 </style>
