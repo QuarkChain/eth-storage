@@ -258,7 +258,7 @@ export default {
   }
   .sub-button {
     right: 1px;
-    margin-top: 1px;
+    margin-top: 0px;
     height: 40px;
     font-size: 12px;
   }
