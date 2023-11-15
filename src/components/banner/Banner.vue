@@ -376,7 +376,7 @@ export default {
       const colorMod = this.activeIndex % 5;
       if (colorMod === 1 || colorMod === 4) {
         this.currentColor = "#4AA6FF";
-      } else if (colorMod === 2 || colorMod === 5) {
+      } else if (colorMod === 2 || colorMod === 0) {
         this.currentColor = "#FF8972";
       } else {
         this.currentColor = "#9671FF";
