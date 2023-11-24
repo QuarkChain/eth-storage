@@ -103,7 +103,7 @@ export default {
 <style scoped>
 .footer-div {
   background: #825BF2 url("../assets/footer-bg.png") no-repeat bottom 0 right 100px;
-  background-size: 29%;
+  background-size: 400px;
 }
 
 .footer-top {
