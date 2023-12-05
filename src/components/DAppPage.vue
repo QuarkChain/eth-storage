@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="dapp-title">Applications Enabled<br class="dapp-phone">by EthStorage</p>
+    <p class="dapp-title">Applications Enabled<br class="dapp-phone"> by EthStorage</p>
     <div class="dapp-bg">
       <div class="dapp">
         <div class="dapp-table-line">
@@ -26,7 +26,7 @@
             <div class="dapp-item-left">
               <div class="dapp-item-title">Decentralized Social Network</div>
               <div class="dapp-item-message">
-                Decentralized medium (Mirror), decentralized twitter, personal blog, etc.
+                Decentralized Medium (Mirror), decentralized Twitter, personal blog, etc.
               </div>
             </div>
             <div class="dapp-item-right">
@@ -65,7 +65,7 @@
             <div class="dapp-item-left">
               <div class="dapp-item-title">Web2 to Web3 Applications</div>
               <div class="dapp-item-message">
-                Decentralized dropbox, decentralized tiktok, etc.
+                Decentralized Dropbox, decentralized Tiktok, etc.
               </div>
             </div>
             <div class="dapp-item-right dapp-item-right2">
