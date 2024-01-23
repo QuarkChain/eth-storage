@@ -94,9 +94,9 @@
 
           <div class="dapp-item dapp-item-color3">
             <div class="dapp-item-left">
-              <div class="dapp-item-title">Permanent Storage for Rollups</div>
+              <div class="dapp-item-title">Long-Term DA for Rollups</div>
               <div class="dapp-item-message">
-                EthStorage could serve as a long-term storage solution for all the Layer 2.
+                EthStorage could serve as a long-term DA solution for all the Layer 2.
               </div>
             </div>
             <div class="dapp-item-right">
