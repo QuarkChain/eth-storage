@@ -16,8 +16,8 @@
           target="_blank">
         <span class="item-text">Technology<img class="item-arrow" src="@/assets/arrow-right.png"/></span>
       </b-navbar-item>
-      <b-navbar-item href="https://github.com/ethstorage" target="_blank">
-        <span class="item-text item-text2">Developer<img class="item-arrow" src="@/assets/arrow-right.png"/></span>
+      <b-navbar-item href="https://docs.ethstorage.io/" target="_blank">
+        <span class="item-text item-text2">Documentation<img class="item-arrow" src="@/assets/arrow-right.png"/></span>
       </b-navbar-item>
     </template>
   </b-navbar>
