@@ -1,7 +1,7 @@
 <template>
   <div class="header-banner">
     <p class="header-text">
-      🎉 EthStorage Public Testnet is live on Sepolia. <a href="https://github.com/ethstorage/es-node/blob/main/ONBOARD.md" target="_blank" class="w3q-link">
+      🎉 EthStorage public testnet is live on Sepolia. <a href="https://github.com/ethstorage/es-node/blob/main/ONBOARD.md" target="_blank" class="w3q-link">
       Get involved</a> today!
     </p>
   </div>
