@@ -14,7 +14,7 @@
       <div class="footer-empty"/>
     </div>
     <div class="footer-b">
-      <div class="footer-b-text">2023 EthStorage</div>
+      <div class="footer-b-text">2024 EthStorage</div>
       <img class="community-icon2" src="@/assets/ethstorage.svg" alt="twitter" />
       <div class="community-layout">
         <img class="community-icon" src="@/assets/twitter.png" alt="twitter" @click.stop="goTwitter"/>

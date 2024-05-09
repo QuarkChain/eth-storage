@@ -15,8 +15,11 @@
         <!--        </span>-->
 
         <div class="header-clo-item">
-          <div class="lb-text" @click.stop="goEthDenver">
-            Watch ETHDenver Talk <img class="rt-go" src="@/assets/arrow-right.svg"/>
+          <div class="lb-text" @click.stop="goEthDenver2024">
+            Watch ETHDenver 2024 Talk <img class="rt-go" src="@/assets/arrow-right.svg"/>
+          </div>
+          <div class="lb-text lb-text-margin" @click.stop="goEthDenver">
+            Watch ETHDenver 2023 Talk <img class="rt-go" src="@/assets/arrow-right.svg"/>
           </div>
           <div class="lb-text lb-text-margin" @click.stop="goDevcon">
             Watch Devcon Talk <img class="rt-go" src="@/assets/arrow-right.svg"/>
@@ -45,6 +48,9 @@ export default {
   methods: {
     goGrant() {
       window.open('https://blog.ethereum.org/2023/02/14/layer-2-grants-roundup#-cryptography-and-zero-knowledge-proofs', "_blank");
+    },
+    goEthDenver2024() {
+      window.open('https://www.youtube.com/watch?v=r9fXJ_QuR0Q', "_blank");
     },
     goEthDenver() {
       window.open('https://www.youtube.com/watch?v=7ir-fSEisnc', "_blank");
