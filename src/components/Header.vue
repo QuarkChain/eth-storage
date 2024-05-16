@@ -9,6 +9,11 @@
     <template #start></template>
     <template #end>
       <b-navbar-item
+          href="https://blog.ethstorage.io/"
+          target="_blank">
+        <span class="item-text">Blog<img class="item-arrow" src="@/assets/arrow-right.png"/></span>
+      </b-navbar-item>
+      <b-navbar-item
           href="https://file.w3q.w3q-g.w3link.io/0x67d0481cc9c2e9dad2987e58a365aae977dcb8da/dynamic_data_sharding_0_1_6.pdf"
           target="_blank">
         <span class="item-text">Technology<img class="item-arrow" src="@/assets/arrow-right.png"/></span>

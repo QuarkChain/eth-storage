@@ -1,8 +1,7 @@
 <template>
   <div class="header-banner">
     <p class="header-text">
-      🎉 EthStorage public testnet is live on Sepolia. <a href="https://github.com/ethstorage/es-node/blob/main/ONBOARD.md" target="_blank" class="w3q-link">
-      Get involved</a> today!
+      🎉 EthStorage public testnet 2nd campaign launched. <a href="https://blog.ethstorage.io/building-unstoppable-dapps-on-ethereum-ethstorages-2nd-public-testnet-campaign/" target="_blank" class="w3q-link">Get involved</a> today!
     </p>
   </div>
 </template>
