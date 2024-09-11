@@ -1,13 +1,13 @@
 @font-face {
     font-family: Satoshi;
-    src: url("Satoshi-Medium.otf");
+    src: url("Satoshi-Medium.woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: SatoshiBold;
-    src: url("Satoshi-Black.ttf");
+    src: url("Satoshi-Black.woff2");
     font-weight: normal;
     font-style: normal;
 }
