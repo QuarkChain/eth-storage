@@ -12,7 +12,7 @@
               </div>
             </div>
             <div class="dapp-item-right">
-              <div class="dapp-item-app" @click="goUni">
+              <div class="dapp-item-app app-disable" @click="goUni">
                 <img class="dapp-item-img" src="@/assets/uni.png"/>
                 <div class="dapp-item-text">Uniswap</div>
               </div>
@@ -154,7 +154,7 @@ export default {
       this.openUrl("https://w3-drive.w3eth.io/");
     },
     goUni() {
-      this.openUrl("https://app-uniswap-org.w3eth.io/");
+      // this.openUrl("https://app-uniswap-org.w3eth.io/");
     },
     goEns() {
       this.openUrl("https://app-ens-domain.w3eth.io/");
@@ -330,6 +330,10 @@ export default {
 
 .dapp-phone {
   display: none;
+}
+
+.app-disable {
+  cursor: not-allowed;
 }
 @media screen and (max-width: 500px) {
   .dapp-title {
