@@ -8,7 +8,7 @@
             terabyte (TB) level to the petabyte (PB) level.</p>
         </div>
         <div class="higher-icon">
-          <img src="../assets/higher.svg" alt="higher image">
+          <img src="@/assets/higher.svg" alt="higher image">
         </div>
       </div>
 

@@ -32,7 +32,7 @@
     </div>
     <div class="header-content">
       <div class="header-content-lb" />
-      <img class="header-font-icon" src="@/assets/header-font.png"/>
+      <img class="header-font-icon" src="@/assets/header-font.webp"/>
     </div>
   </div>
 </template>
@@ -64,7 +64,7 @@ export default {
 
 <style scoped>
 .header {
-  background: url("../assets/header-bg.png") 55% bottom no-repeat;
+  background: url("../assets/header-bg.webp") 55% bottom no-repeat;
   background-size: auto 92%;
   height: 820px;
 }
@@ -148,7 +148,7 @@ export default {
 }
 @media screen and (max-width: 500px) {
   .header {
-    background: url("../assets/header-bg-phone.png") bottom center no-repeat;
+    background: url("../assets/header-bg-phone.webp") bottom center no-repeat;
     background-size: 100%;
     height: 620px;
   }

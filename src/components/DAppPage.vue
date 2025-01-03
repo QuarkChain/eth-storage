@@ -192,7 +192,7 @@ export default {
 }
 
 .dapp-bg {
-  background: url("../assets/app-bg.png") center center no-repeat;
+  background: url("../assets/app-bg.webp") center center no-repeat;
   background-size: auto 100%;
   margin-bottom: 110px;
 }

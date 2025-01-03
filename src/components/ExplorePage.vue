@@ -4,7 +4,7 @@
     <div class="explore-message">
       EthStorage takes the scalability of the Ethereum mainnet and <br/> layer 2 to the next level.
     </div>
-    <img class="explore-img" src="@/assets/explore.png" alt="explore image">
+    <img class="explore-img" src="@/assets/explore.webp" alt="explore image">
   </div>
 </template>
 
